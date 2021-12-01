@@ -1,0 +1,26 @@
+# /etc/conf.d/transcendenced: config file for /etc/init.d/transcendenced
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/transcendence/transcendence.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/transcendenced"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/transcendenced.pid"
+
+# Where to write transcendenced data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/transcendenced"
+
+# User and group to own transcendenced process
+#BITCOIND_USER="transcendence"
+#BITCOIND_GROUP="transcendence"
+
+# Path to transcendenced executable
+#BITCOIND_BIN="/usr/bin/transcendenced"
+
+# Nice value to run transcendenced under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
