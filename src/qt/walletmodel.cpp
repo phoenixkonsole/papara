@@ -414,7 +414,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction& tran
                 std::string value;
                 rcp.paymentRequest.SerializeToString(&value);
                 newTx->vOrderForm.push_back(std::make_pair(key, value));
-            } else if (!rcp.message.isEmpty()) // Message from normal transcendence:URI (transcendence:XyZ...?message=example)
+            } else if (!rcp.message.isEmpty()) // Message from normal Parara:URI (Parara:XyZ...?message=example)
             {
                 newTx->vOrderForm.push_back(std::make_pair("Message", rcp.message.toStdString()));
             }
@@ -478,7 +478,7 @@ bool WalletModel::createZTelosSpend(
     }
 
     if (wallet->IsLocked()) {
-        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZTRANSCENDENCE_WALLET_LOCKED);
+        receipt.SetStatus("Error: Wallet locked, unable to create transaction!", ZParara_WALLET_LOCKED);
         return false;
     }
 

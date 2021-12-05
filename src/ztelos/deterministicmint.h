@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef transcendence_DETERMINISTICMINT_H
-#define transcendence_DETERMINISTICMINT_H
+#ifndef Parara_DETERMINISTICMINT_H
+#define Parara_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -64,4 +64,4 @@ public:
     };
 };
 
-#endif //transcendence_DETERMINISTICMINT_H
+#endif //Parara_DETERMINISTICMINT_H

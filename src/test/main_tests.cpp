@@ -1,7 +1,7 @@
 // Copyright (c) 2014 The Bitcoin Core developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2019 The Transcendence developers
+// Copyright (c) 2017-2019 The Parara developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,7 +21,7 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
     BOOST_CHECK(nSubsidy == 0.1 * COIN);
     nSum += nSubsidy;
 
-    /* premine in block 1 (3,000,000 TRANSCENDENCE) */
+    /* premine in block 1 (3,000,000 Parara) */
     nSubsidy = GetBlockValue(1);
     BOOST_CHECK(nSubsidy == 3000000 * COIN);
     nSum += nSubsidy;

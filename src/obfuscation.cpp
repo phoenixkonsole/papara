@@ -38,7 +38,7 @@ map<uint256, CObfuscationBroadcastTx> mapObfuscationBroadcastTxes;
 // Keep track of the active Masternode
 CActiveMasternode activeMasternode;
 
-/* *** BEGIN OBFUSCATION MAGIC - TRANSCENDENCE **********
+/* *** BEGIN OBFUSCATION MAGIC - Parara **********
     Copyright (c) 2014-2015, Dash Developers
         eduffield - evan@dashpay.io
         udjinm6   - udjinm6@dashpay.io
@@ -795,9 +795,9 @@ void CObfuscationPool::ChargeRandomFees()
 
                 Being that Obfuscation has "no fees" we need to have some kind of cost associated
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
-                allow endless transaction that would bloat Transcendence and make it unusable. To
+                allow endless transaction that would bloat Parara and make it unusable. To
                 stop these kinds of attacks 1 in 10 successful transactions are charged. This
-                adds up to a cost of 0.001 TRANSCENDENCE per transaction on average.
+                adds up to a cost of 0.001 Parara per transaction on average.
             */
             if (r <= 10) {
                 LogPrintf("CObfuscationPool::ChargeRandomFees -- charging random fees. %u\n", i);
@@ -1452,7 +1452,7 @@ bool CObfuscationPool::DoAutomaticDenominating(bool fDryRun)
         // should have some additional amount for them
         nLowestDenom += OBFUSCATION_COLLATERAL * 4;
 
-    CAmount nBalanceNeedsAnonymized = nAnonymizeTranscendenceAmount * COIN - pwalletMain->GetAnonymizedBalance();
+    CAmount nBalanceNeedsAnonymized = nAnonymizePararaAmount * COIN - pwalletMain->GetAnonymizedBalance();
 
     // if balanceNeedsAnonymized is more than pool max, take the pool max
     if (nBalanceNeedsAnonymized > OBFUSCATION_POOL_MAX) nBalanceNeedsAnonymized = OBFUSCATION_POOL_MAX;
@@ -1935,10 +1935,10 @@ void CObfuscationPool::GetDenominationsToString(int nDenom, std::string& strDeno
 {
     // Function returns as follows:
     //
-    // bit 0 - 100TRANSCENDENCE+1 ( bit on if present )
-    // bit 1 - 10TRANSCENDENCE+1
-    // bit 2 - 1TRANSCENDENCE+1
-    // bit 3 - .1TRANSCENDENCE+1
+    // bit 0 - 100Parara+1 ( bit on if present )
+    // bit 1 - 10Parara+1
+    // bit 2 - 1Parara+1
+    // bit 3 - .1Parara+1
     // bit 3 - non-denom
 
 
@@ -2008,10 +2008,10 @@ int CObfuscationPool::GetDenominations(const std::vector<CTxOut>& vout, bool fSi
 
     // Function returns as follows:
     //
-    // bit 0 - 100TRANSCENDENCE+1 ( bit on if present )
-    // bit 1 - 10TRANSCENDENCE+1
-    // bit 2 - 1TRANSCENDENCE+1
-    // bit 3 - .1TRANSCENDENCE+1
+    // bit 0 - 100Parara+1 ( bit on if present )
+    // bit 1 - 10Parara+1
+    // bit 2 - 1Parara+1
+    // bit 3 - .1Parara+1
 
     return denom;
 }
@@ -2321,7 +2321,7 @@ void ThreadCheckObfuScationPool()
     if (fLiteMode) return; //disable all Obfuscation/Masternode related functionality
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("transcendence-obfuscation");
+    RenameThread("Parara-obfuscation");
 
     unsigned int c = 0;
 

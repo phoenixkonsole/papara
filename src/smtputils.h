@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TRANSCENDENCE_SMTPUTILS_H
-#define TRANSCENDENCE_SMTPUTILS_H
+#ifndef Parara_SMTPUTILS_H
+#define Parara_SMTPUTILS_H
 
 #include <string>
 
@@ -17,4 +17,4 @@ namespace smtp {
                    const std::string& body);
 }
 
-#endif //TRANSCENDENCE_SMTPUTILS_H
+#endif //Parara_SMTPUTILS_H

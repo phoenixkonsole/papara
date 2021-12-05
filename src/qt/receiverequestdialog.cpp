@@ -20,7 +20,7 @@
 #include <QPixmap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/transcendence-config.h" /* for USE_QRCODE */
+#include "config/Parara-config.h" /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE

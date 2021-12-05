@@ -7,7 +7,7 @@
 #define BITCOIN_QT_ASKPASSPHRASEDIALOG_H
 
 #include <QDialog>
-#include "qt/transcendence/prunnable.h"
+#include "qt/Parara/prunnable.h"
 #include "allocators.h"
 #include <QCheckBox>
 

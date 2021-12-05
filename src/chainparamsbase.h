@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between transcendence-cli and transcendenced)
- * of a given instance of the Transcendence system.
+ * CBaseChainParams defines the base parameters (shared between Parara-cli and Pararad)
+ * of a given instance of the Parara system.
  */
 class CBaseChainParams
 {

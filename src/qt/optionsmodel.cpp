@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/transcendence-config.h"
+#include "config/Parara-config.h"
 #endif
 
 #include "optionsmodel.h"

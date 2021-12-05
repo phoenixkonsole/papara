@@ -10,7 +10,7 @@
 #include "guiutil.h"
 
 #include "util.h"
-#include "qt/transcendence/qtutils.h"
+#include "qt/Parara/qtutils.h"
 
 #include <boost/filesystem.hpp>
 
@@ -199,7 +199,7 @@ bool Intro::pickDataDirectory()
                 TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
             } catch (fs::filesystem_error& e) {
-                QMessageBox::critical(0, tr("Transcendence Core"),
+                QMessageBox::critical(0, tr("Parara Core"),
                     tr("Error: Specified data directory \"%1\" cannot be created.").arg(dataDir));
                 // fall through, back to choosing screen
             }

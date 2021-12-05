@@ -1,7 +1,7 @@
-TESTS += test/test_transcendence test/bitcoin-util-test.py
-bin_PROGRAMS += test/test_transcendence
+TESTS += test/test_Parara test/bitcoin-util-test.py
+bin_PROGRAMS += test/test_Parara
 TEST_SRCDIR = test
-TEST_BINARY=test/test_transcendence$(EXEEXT)
+TEST_BINARY=test/test_Parara$(EXEEXT)
 
 
 EXTRA_DIST += \
@@ -68,7 +68,7 @@ BITCOIN_TESTS =\
   test/sighash_tests.cpp \
   test/sigopcount_tests.cpp \
   test/skiplist_tests.cpp \
-  test/test_transcendence.cpp \
+  test/test_Parara.cpp \
   test/tier_tests.cpp \
   test/timedata_tests.cpp \
   test/torcontrol_tests.cpp \
@@ -86,23 +86,23 @@ BITCOIN_TESTS += \
   test/wallet_tests.cpp 
 endif
 
-test_test_transcendence_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_transcendence_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
-test_test_transcendence_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+test_test_Parara_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_Parara_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
+test_test_Parara_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
   $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB)  $(LIBLEVELDB_SSE42) $(LIBMEMENV) $(UNBOUND_LIBS) \
   $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(LIBSECP256K1) $(EVENT_LIBS) $(EVENT_PTHREADS_LIBS)
 if ENABLE_WALLET
-test_test_transcendence_LDADD += $(LIBBITCOIN_WALLET)
+test_test_Parara_LDADD += $(LIBBITCOIN_WALLET)
 endif
 
-test_test_transcendence_LDADD += $(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-test_test_transcendence_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+test_test_Parara_LDADD += $(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+test_test_Parara_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 
 if ENABLE_ZMQ
-test_test_transcendence_LDADD += $(ZMQ_LIBS)
+test_test_Parara_LDADD += $(ZMQ_LIBS)
 endif
 
-nodist_test_test_transcendence_SOURCES = $(GENERATED_TEST_FILES)
+nodist_test_test_Parara_SOURCES = $(GENERATED_TEST_FILES)
 
 $(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
@@ -110,13 +110,13 @@ CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
 CLEANFILES += $(CLEAN_BITCOIN_TEST)
 
-transcendence_test: $(TEST_BINARY)
+Parara_test: $(TEST_BINARY)
 
-transcendence_test_check: $(TEST_BINARY) FORCE
+Parara_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-transcendence_test_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_transcendence_OBJECTS) $(TEST_BINARY)
+Parara_test_clean : FORCE
+	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_Parara_OBJECTS) $(TEST_BINARY)
 
 check-local:
 	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check

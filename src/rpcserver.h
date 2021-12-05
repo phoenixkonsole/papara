@@ -128,7 +128,7 @@ public:
 };
 
 /**
- * Transcendence RPC command dispatcher.
+ * Parara RPC command dispatcher.
  */
 class CRPCTable
 {

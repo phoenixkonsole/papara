@@ -365,8 +365,8 @@ bitcoin (0.3.19~dfsg-5) unstable; urgency=low
 bitcoin (0.3.19~dfsg-4) unstable; urgency=low
 
   [ Micah Anderson ]
-  * Provide example transcendence.conf.
-  * Add bitcoind(1) and transcendence.conf(5) man pages.
+  * Provide example Parara.conf.
+  * Add bitcoind(1) and Parara.conf(5) man pages.
 
   [ Jonas Smedegaard ]
   * Ease backporting:

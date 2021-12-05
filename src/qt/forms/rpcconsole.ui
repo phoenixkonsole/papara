@@ -425,7 +425,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../transcendence.qrc">
+            <iconset resource="../Parara.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1639,7 +1639,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../transcendence.qrc"/>
+  <include location="../Parara.qrc"/>
  </resources>
  <connections/>
 </ui>

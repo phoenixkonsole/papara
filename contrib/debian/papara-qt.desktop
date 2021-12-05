@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Parara
+Comment=Parara P2P Cryptocurrency
+Comment[fr]=Parara, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Parara, eşten eşe kriptografik sanal para birimi
+Exec=Parara-qt %u
+Terminal=false
+Type=Application
+Icon=Parara128
+MimeType=x-scheme-handler/Parara;
+Categories=Office;Finance;

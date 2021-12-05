@@ -24,11 +24,11 @@ Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
     git clone https://github.com/eastcoastcrypto/gitian.sigs.git
-    git clone https://github.com/eastcoastcrypto/transcendence-detached-sigs.git
+    git clone https://github.com/eastcoastcrypto/Parara-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/eastcoastcrypto/transcendence.git
+    git clone https://github.com/eastcoastcrypto/Parara.git
 
-### Transcendence maintainers/release engineers, suggestion for writing release notes
+### Parara maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -49,7 +49,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./transcendence
+    pushd ./Parara
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -83,7 +83,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../transcendence/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../Parara/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -91,55 +91,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url transcendence=/path/to/transcendence,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url Parara=/path/to/Parara,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Transcendence Core for Linux, Windows, and OS X:
+### Build and sign Parara Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit transcendence=v${VERSION} ../transcendence/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../transcendence/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/transcendence-*.tar.gz build/out/src/transcendence-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit Parara=v${VERSION} ../Parara/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../Parara/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/Parara-*.tar.gz build/out/src/Parara-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit transcendence=v${VERSION} ../transcendence/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../transcendence/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/transcendence-*-win-unsigned.tar.gz inputs/transcendence-win-unsigned.tar.gz
-    mv build/out/transcendence-*.zip build/out/transcendence-*.exe ../
+    ./bin/gbuild --memory 3000 --commit Parara=v${VERSION} ../Parara/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../Parara/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/Parara-*-win-unsigned.tar.gz inputs/Parara-win-unsigned.tar.gz
+    mv build/out/Parara-*.zip build/out/Parara-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit transcendence=v${VERSION} ../transcendence/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../transcendence/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/transcendence-*-osx-unsigned.tar.gz inputs/transcendence-osx-unsigned.tar.gz
-    mv build/out/transcendence-*.tar.gz build/out/transcendence-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit Parara=v${VERSION} ../Parara/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../Parara/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/Parara-*-osx-unsigned.tar.gz inputs/Parara-osx-unsigned.tar.gz
+    mv build/out/Parara-*.tar.gz build/out/Parara-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit transcendence=v${VERSION} ../transcendence/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../transcendence/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/transcendence-*.tar.gz build/out/src/transcendence-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit Parara=v${VERSION} ../Parara/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../Parara/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/Parara-*.tar.gz build/out/src/Parara-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`transcendence-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`transcendence-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`transcendence-${VERSION}-win[32|64]-setup-unsigned.exe`, `transcendence-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`transcendence-${VERSION}-osx-unsigned.dmg`, `transcendence-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`Parara-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`Parara-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`Parara-${VERSION}-win[32|64]-setup-unsigned.exe`, `Parara-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`Parara-${VERSION}-osx-unsigned.dmg`, `Parara-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import transcendence/contrib/gitian-keys/*.gpg
+    gpg --import Parara/contrib/gitian-keys/*.gpg
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../transcendence/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../transcendence/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../transcendence/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../transcendence/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../Parara/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../Parara/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../Parara/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../Parara/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -161,22 +161,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer transcendence-osx-unsigned.tar.gz to osx for signing
-    tar xf transcendence-osx-unsigned.tar.gz
+    transfer Parara-osx-unsigned.tar.gz to osx for signing
+    tar xf Parara-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf transcendence-win-unsigned.tar.gz
+    tar xf Parara-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/transcendence-detached-sigs
+    cd ~/Parara-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -189,25 +189,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [transcendence-detached-sigs](https://github.com/eastcoastcrypto/transcendence-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [Parara-detached-sigs](https://github.com/eastcoastcrypto/Parara-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../transcendence/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../transcendence/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../transcendence/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/transcendence-osx-signed.dmg ../transcendence-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../Parara/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../Parara/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../Parara/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/Parara-osx-signed.dmg ../Parara-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../transcendence/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../transcendence/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../transcendence/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/transcendence-*win64-setup.exe ../transcendence-${VERSION}-win64-setup.exe
-    mv build/out/transcendence-*win32-setup.exe ../transcendence-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../Parara/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../Parara/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../Parara/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/Parara-*win64-setup.exe ../Parara-${VERSION}-win64-setup.exe
+    mv build/out/Parara-*win32-setup.exe ../Parara-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -229,23 +229,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-transcendence-${VERSION}-aarch64-linux-gnu.tar.gz
-transcendence-${VERSION}-arm-linux-gnueabihf.tar.gz
-transcendence-${VERSION}-i686-pc-linux-gnu.tar.gz
-transcendence-${VERSION}-x86_64-linux-gnu.tar.gz
-transcendence-${VERSION}-osx64.tar.gz
-transcendence-${VERSION}-osx.dmg
-transcendence-${VERSION}.tar.gz
-transcendence-${VERSION}-win32-setup.exe
-transcendence-${VERSION}-win32.zip
-transcendence-${VERSION}-win64-setup.exe
-transcendence-${VERSION}-win64.zip
+Parara-${VERSION}-aarch64-linux-gnu.tar.gz
+Parara-${VERSION}-arm-linux-gnueabihf.tar.gz
+Parara-${VERSION}-i686-pc-linux-gnu.tar.gz
+Parara-${VERSION}-x86_64-linux-gnu.tar.gz
+Parara-${VERSION}-osx64.tar.gz
+Parara-${VERSION}-osx.dmg
+Parara-${VERSION}.tar.gz
+Parara-${VERSION}-win32-setup.exe
+Parara-${VERSION}-win32.zip
+Parara-${VERSION}-win64-setup.exe
+Parara-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the transcendencecoin.com server*.
+space *do not upload these to the Pararacoin.com server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,10 +261,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/transcendence, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Parara, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Transcendence/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Parara/releases/new) with a link to the archived release notes.
 
   - Celebrate

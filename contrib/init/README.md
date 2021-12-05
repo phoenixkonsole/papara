@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: transcendenced.service
-Upstart: transcendenced.conf
-OpenRC:  transcendenced.openrc
-         transcendenced.openrcconf
-CentOS:  transcendenced.init
+SystemD: Pararad.service
+Upstart: Pararad.conf
+OpenRC:  Pararad.openrc
+         Pararad.openrcconf
+CentOS:  Pararad.init
 
 have been made available to assist packagers in creating node packages here.
 

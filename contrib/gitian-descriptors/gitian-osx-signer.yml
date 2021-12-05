@@ -1,5 +1,5 @@
 ---
-name: "transcendence-dmg-signer"
+name: "Parara-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/transcendenceproject/transcendence-detached-sigs.git"
+- "url": "https://github.com/Pararaproject/Parara-detached-sigs.git"
   "dir": "signature"
 files:
-- "transcendence-osx-unsigned.tar.gz"
+- "Parara-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,11 +27,11 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=transcendence-osx-unsigned.tar.gz
-  SIGNED=transcendence-osx-signed.dmg
+  UNSIGNED=Parara-osx-unsigned.tar.gz
+  SIGNED=Parara-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx
-  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Transcendence-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
+  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Parara-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
   ${WRAP_DIR}/dmg dmg uncompressed.dmg ${OUTDIR}/${SIGNED}

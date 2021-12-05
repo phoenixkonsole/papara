@@ -13,11 +13,11 @@
 #include "walletmodel.h"
 #include "smtputils.h"
 #include "tinyformat.h"
-#include "qt/transcendence/qtutils.h"
-#include "qt/transcendence/loadingdialog.h"
-#include "qt/transcendence/defaultdialog.h"
-#include "qt/transcendence/emailinputdialog.h"
-#include "qt/transcendence/transcendencegui.h"
+#include "qt/Parara/qtutils.h"
+#include "qt/Parara/loadingdialog.h"
+#include "qt/Parara/defaultdialog.h"
+#include "qt/Parara/emailinputdialog.h"
+#include "qt/Parara/Pararagui.h"
 #include <QDebug>
 
 #include <QKeyEvent>
@@ -328,7 +328,7 @@ void AskPassphraseDialog::warningMessage() {
     openStandardDialog(
             tr("Wallet encrypted"),
             "<qt>" +
-            tr("Transcendence will close now to finish the encryption process. "
+            tr("Parara will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
                "your TELOS from being stolen by malware infecting your computer.") +
             "<br><br><b>" +

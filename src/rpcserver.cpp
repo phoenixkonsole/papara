@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2018-2019 The Transcendence developers
+// Copyright (c) 2018-2019 The Parara developers
 // Copyright (c) 2015-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -267,11 +267,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Transcendence server.");
+            "\nStop Parara server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "Transcendence server stopping";
+    return "Parara server stopping";
 }
 
 
@@ -347,33 +347,33 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* transcendence features */
-        {"transcendence", "masternode", &masternode, true, true, false},
-        {"transcendence", "listmasternodes", &listmasternodes, true, true, false},
-        {"transcendence", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"transcendence", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"transcendence", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"transcendence", "masternodedebug", &masternodedebug, true, true, false},
-        {"transcendence", "startmasternode", &startmasternode, true, true, false},
-        {"transcendence", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"transcendence", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"transcendence", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"transcendence", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"transcendence", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"transcendence", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"transcendence", "preparebudget", &preparebudget, true, true, false},
-        {"transcendence", "submitbudget", &submitbudget, true, true, false},
-        {"transcendence", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"transcendence", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"transcendence", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"transcendence", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"transcendence", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"transcendence", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"transcendence", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"transcendence", "checkbudgets", &checkbudgets, true, true, false},
-        {"transcendence", "mnsync", &mnsync, true, true, false},
-        {"transcendence", "spork", &spork, true, true, false},
-        {"transcendence", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Parara features */
+        {"Parara", "masternode", &masternode, true, true, false},
+        {"Parara", "listmasternodes", &listmasternodes, true, true, false},
+        {"Parara", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"Parara", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"Parara", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"Parara", "masternodedebug", &masternodedebug, true, true, false},
+        {"Parara", "startmasternode", &startmasternode, true, true, false},
+        {"Parara", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"Parara", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"Parara", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"Parara", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"Parara", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"Parara", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"Parara", "preparebudget", &preparebudget, true, true, false},
+        {"Parara", "submitbudget", &submitbudget, true, true, false},
+        {"Parara", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"Parara", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"Parara", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"Parara", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"Parara", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"Parara", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"Parara", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"Parara", "checkbudgets", &checkbudgets, true, true, false},
+        {"Parara", "mnsync", &mnsync, true, true, false},
+        {"Parara", "spork", &spork, true, true, false},
+        {"Parara", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -600,7 +600,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> transcendence-cli " + methodname + " " + args + "\n";
+    return "> Parara-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

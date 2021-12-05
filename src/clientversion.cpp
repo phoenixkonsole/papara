@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both transcendenced and transcendence-qt, to make it harder for attackers to
+ * for both Pararad and Parara-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Transcendence Core");
+const std::string CLIENT_NAME("Parara Core");
 
 /**
  * Client version number
