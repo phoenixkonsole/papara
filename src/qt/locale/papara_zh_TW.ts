@@ -565,7 +565,7 @@
         <translation>送出錢幣到 para 地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
         <translation>請求付款 (會產生 QR Code跟 pivx 位址)</translation>
     </message>
     <message>
@@ -971,6 +971,6 @@
     <name>ZparaControlDialog</name>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     </context>
 </TS>

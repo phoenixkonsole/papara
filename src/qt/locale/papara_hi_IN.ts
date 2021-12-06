@@ -327,7 +327,7 @@
     <name>ZparaControlDialog</name>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Information</source>
         <translation>जानकारी</translation>

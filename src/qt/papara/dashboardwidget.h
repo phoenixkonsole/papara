@@ -5,11 +5,11 @@
 #ifndef DASHBOARDWIDGET_H
 #define DASHBOARDWIDGET_H
 
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/furabstractlistitemdelegate.h"
-#include "qt/Parara/furlistrow.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/furabstractlistitemdelegate.h"
+#include "qt/papara/furlistrow.h"
 #include "transactiontablemodel.h"
-#include "qt/Parara/txviewholder.h"
+#include "qt/papara/txviewholder.h"
 #include "transactionfilterproxy.h"
 
 #include <atomic>
@@ -19,7 +19,7 @@
 #include <QMap>
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Parara-config.h" /* for USE_QTCHARTS */
+#include "config/papara-config.h" /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS

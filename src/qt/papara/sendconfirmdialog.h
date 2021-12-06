@@ -7,7 +7,7 @@
 
 #include <QDialog>
 #include "walletmodeltransaction.h"
-#include "qt/Parara/snackbar.h"
+#include "qt/papara/snackbar.h"
 
 class WalletModelTransaction;
 class WalletModel;

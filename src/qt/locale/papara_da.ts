@@ -649,7 +649,7 @@
         <translation>Send mønter til en para adresse</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
         <translation>Anmod om betaling (genrerer QR kode og para URL)</translation>
     </message>
     <message>
@@ -2181,7 +2181,7 @@ For at aktivere AutoMint-ændring 'enablezeromint = 0' til 'enablezeromint = 1' 
         <translation>Ugyldig betalingsadresse: %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
+        <source>Cannot start papara: click-to-pay handler</source>
         <translation>Kan ikke starte para "klik for at betale" systemet</translation>
     </message>
     <message>
@@ -4653,7 +4653,7 @@ Vær tålmodig...</translation>
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = beholdtx metadata. For eksempel information om kontoejer og betalngsanmodninger, 2 = drop TX metadata)</translation>

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/coincontrolpivwidget.h"
-#include "qt/Parara/forms/ui_coincontrolpivwidget.h"
+#include "qt/papara/coincontrolpivwidget.h"
+#include "qt/papara/forms/ui_coincontrolpivwidget.h"
 
 CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
     QDialog(parent),

@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingssignmessagewidgets.h"
-#include "qt/Parara/settings/forms/ui_settingssignmessagewidgets.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/settings/settingssignmessagewidgets.h"
+#include "qt/papara/settings/forms/ui_settingssignmessagewidgets.h"
+#include "qt/papara/qtutils.h"
 #include "addressbookpage.h"
 #include "guiutil.h"
 #include "walletmodel.h"
@@ -39,7 +39,7 @@ SettingsSignMessageWidgets::SettingsSignMessageWidgets(paraGUI* _window, QWidget
     ui->labelSubtitle1->setProperty("cssClass", "text-subtitle");
 
     // Address
-    ui->labelSubtitleAddress->setText(tr("Enter a Parara address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("Enter a papara address or contact label"));
     ui->labelSubtitleAddress->setProperty("cssClass", "text-title");
 
     ui->addressIn_SM->setPlaceholderText(tr("Add address"));

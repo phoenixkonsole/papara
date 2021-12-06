@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.pivx.Parara-Qt";
+        return @"io.pivx.papara-Qt";
     } else {
         return [self __bundleIdentifier];
     }

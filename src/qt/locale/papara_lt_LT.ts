@@ -649,7 +649,7 @@
         <translation>Siųsti monetas į para adresą</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
         <translation>Prašyti mokėjimų (sugeneruoja QR kodus ir pivx URI)</translation>
     </message>
     <message>
@@ -2042,8 +2042,8 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
         <translation>Netinkamas mokėjimo adresas %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
-        <translation>Nepavyksta paleisti Parara: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
+        <source>Cannot start papara: click-to-pay handler</source>
+        <translation>Nepavyksta paleisti papara: apdorojimo "spustelėjimo ir apmokėjimo" funkcijos klaida</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -3309,7 +3309,7 @@ Nesubrendusios: patvirtintos, bet mažiau nei 1 konvertacijos to pačio nominalo
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(numatytas: %s)</translation>

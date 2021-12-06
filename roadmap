@@ -1,8 +1,8 @@
-Parara Roadmap
+papara Roadmap
 
 Phase 1 - Complete
 
-coin () is a Proof of Stake coin built on the Bitcoin UTXO model. As with other Bitcoin derivatives,  coins are distributed to persons augmenting the Parara network by running Masternodes.
+coin () is a Proof of Stake coin built on the Bitcoin UTXO model. As with other Bitcoin derivatives,  coins are distributed to persons augmenting the papara network by running Masternodes.
 
 unlimited coin distribution 
 10x faster blocks than Bitcoin (1 per minute)
@@ -14,11 +14,11 @@ Phase 2 - New Wallet (in progress)
 ASIC Resistance (No mining = 100 % No ASICS)
 
 Walletrewrite
-The current  Wallet is a fork of Bitcoincore (Dash-Pivx-Gossipcoin-coin). A new Wallet called Parara Dashboard is currently under development.
+The current  Wallet is a fork of Bitcoincore (Dash-Pivx-Gossipcoin-coin). A new Wallet called papara Dashboard is currently under development.
 This new Wallet will exist side by side with the current one but inclues closed source code and 3rd party services as well as the cappablity to swap  to other Coins like BTC, DASH and ZEC.
 The new Dashboard will also allow to access a Cloud service, Chat and Appstore. 
 
-As soon as the initial realease of the Parara Dashboard is ready, it is planned to keep also the opensource Wallet up2date.
+As soon as the initial realease of the papara Dashboard is ready, it is planned to keep also the opensource Wallet up2date.
 Both shall get aditional ProofOfStorage and ProofOfComputing capabilities. 
 
 The whole concept will lead to a decentral storage solution, a decentral supercomputing networks and self-regulating marketplace.
@@ -37,7 +37,7 @@ The 1800  must be payed by 10 individual Members of the Network. So 10 x 180.
 The voting creator can define multiple or a single answer. 
 
 Example for a single answer Voting:
-Member wants to collect  in order to pay participation on an Blockchain summit to show the Parara Project to the public.
+Member wants to collect  in order to pay participation on an Blockchain summit to show the papara Project to the public.
 The Single Vote would be equeal to a funding. 
 So the Member defines a target vote Number. Each Vote equals 180 . 
 
@@ -55,11 +55,11 @@ If someone is against the initiation of a Voting, it is possible to pay 2 x 180 
 
 Phase 4 - Messaging
 
-Messaging will be provided with indieCHAT which again will be included in the Parara Wallet. 
+Messaging will be provided with indieCHAT which again will be included in the papara Wallet. 
 
 Appendix
 
-Parara Blockchain is backed by multiple 3rd-parties Projects like indieGO Console , indieGO Marketplace , PeerToro and more.
+papara Blockchain is backed by multiple 3rd-parties Projects like indieGO Console , indieGO Marketplace , PeerToro and more.
 Each of them will at least accept  as payment. Some will be made opensource after a while so they can be integrated also in the bitcoin core based Wallet.
 
 Roadmaps for 3rd Party Blockchain related Services

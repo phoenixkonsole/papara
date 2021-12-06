@@ -2,44 +2,44 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-bin_PROGRAMS += qt/Parara-qt
+bin_PROGRAMS += qt/papara-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# Parara qt core #
+# papara qt core #
 QT_TS = \
-  qt/locale/Parara_bg.ts \
-  qt/locale/Parara_ca.ts \
-  qt/locale/Parara_cs.ts \
-  qt/locale/Parara_da.ts \
-  qt/locale/Parara_de.ts \
-  qt/locale/Parara_en.ts \
-  qt/locale/Parara_en_GB.ts \
-  qt/locale/Parara_en_US.ts \
-  qt/locale/Parara_eo.ts \
-  qt/locale/Parara_es.ts \
-  qt/locale/Parara_es_ES.ts \
-  qt/locale/Parara_fi.ts \
-  qt/locale/Parara_fr_FR.ts \
-  qt/locale/Parara_hi_IN.ts \
-  qt/locale/Parara_hr.ts \
-  qt/locale/Parara_hr_HR.ts \
-  qt/locale/Parara_it.ts \
-  qt/locale/Parara_ja.ts \
-  qt/locale/Parara_ko_KR.ts \
-  qt/locale/Parara_lt_LT.ts \
-  qt/locale/Parara_nl.ts \
-  qt/locale/Parara_pl.ts \
-  qt/locale/Parara_pt.ts \
-  qt/locale/Parara_pt_BR.ts \
-  qt/locale/Parara_ro_RO.ts \
-  qt/locale/Parara_ru.ts \
-  qt/locale/Parara_sk.ts \
-  qt/locale/Parara_sv.ts \
-  qt/locale/Parara_tr.ts \
-  qt/locale/Parara_uk.ts \
-  qt/locale/Parara_vi.ts \
-  qt/locale/Parara_zh_CN.ts \
-  qt/locale/Parara_zh_TW.ts
+  qt/locale/papara_bg.ts \
+  qt/locale/papara_ca.ts \
+  qt/locale/papara_cs.ts \
+  qt/locale/papara_da.ts \
+  qt/locale/papara_de.ts \
+  qt/locale/papara_en.ts \
+  qt/locale/papara_en_GB.ts \
+  qt/locale/papara_en_US.ts \
+  qt/locale/papara_eo.ts \
+  qt/locale/papara_es.ts \
+  qt/locale/papara_es_ES.ts \
+  qt/locale/papara_fi.ts \
+  qt/locale/papara_fr_FR.ts \
+  qt/locale/papara_hi_IN.ts \
+  qt/locale/papara_hr.ts \
+  qt/locale/papara_hr_HR.ts \
+  qt/locale/papara_it.ts \
+  qt/locale/papara_ja.ts \
+  qt/locale/papara_ko_KR.ts \
+  qt/locale/papara_lt_LT.ts \
+  qt/locale/papara_nl.ts \
+  qt/locale/papara_pl.ts \
+  qt/locale/papara_pt.ts \
+  qt/locale/papara_pt_BR.ts \
+  qt/locale/papara_ro_RO.ts \
+  qt/locale/papara_ru.ts \
+  qt/locale/papara_sk.ts \
+  qt/locale/papara_sv.ts \
+  qt/locale/papara_tr.ts \
+  qt/locale/papara_uk.ts \
+  qt/locale/papara_vi.ts \
+  qt/locale/papara_zh_CN.ts \
+  qt/locale/papara_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -64,58 +64,58 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/Parara/forms/loadingdialog.ui \
+  qt/papara/forms/loadingdialog.ui \
   qt/forms/zteloscontroldialog.ui \
-  qt/Parara/forms/snackbar.ui \
-  qt/Parara/forms/navmenuwidget.ui \
-  qt/Parara/forms/lockunlock.ui \
-  qt/Parara/forms/expandablebutton.ui \
-  qt/Parara/forms/receivedialog.ui \
-  qt/Parara/forms/walletpassworddialog.ui \
-  qt/Parara/forms/topbar.ui \
-  qt/Parara/forms/txrow.ui \
-  qt/Parara/forms/dashboardwidget.ui \
-  qt/Parara/forms/coincontrolpivwidget.ui \
-  qt/Parara/forms/addresslabelrow.ui \
-  qt/Parara/forms/contactdropdownrow.ui \
-  qt/Parara/forms/mninfodialog.ui \
-  qt/Parara/forms/optionbutton.ui \
-  qt/Parara/forms/masternodewizarddialog.ui \
-  qt/Parara/forms/mnrow.ui \
-  qt/Parara/forms/masternodeswidget.ui \
-  qt/Parara/forms/myaddressrow.ui \
-  qt/Parara/forms/sendchangeaddressdialog.ui \
-  qt/Parara/forms/sendconfirmdialog.ui \
-  qt/Parara/forms/sendcustomfeedialog.ui \
-  qt/Parara/forms/sendchangeaddressdialog.ui \
-  qt/Parara/forms/sendmultirow.ui \
-  qt/Parara/forms/send.ui \
-  qt/Parara/forms/addnewaddressdialog.ui \
-  qt/Parara/forms/addnewcontactdialog.ui \
-  qt/Parara/forms/requestdialog.ui \
-  qt/Parara/forms/receivewidget.ui \
-  qt/Parara/forms/tooltipmenu.ui \
-  qt/Parara/forms/addresseswidget.ui \
-  qt/Parara/forms/defaultdialog.ui \
-  qt/Parara/forms/emailinputdialog.ui \
-  qt/Parara/forms/denomgenerationdialog.ui \
-  qt/Parara/forms/linkswidget.ui \
-  qt/Parara/settings/forms/settingsbackupwallet.ui \
-  qt/Parara/settings/forms/settingsexportcsv.ui \
-  qt/Parara/settings/forms/settingsbittoolwidget.ui \
-  qt/Parara/settings/forms/settingsconsolewidget.ui \
-  qt/Parara/settings/forms/settingsdisplayoptionswidget.ui \
-  qt/Parara/settings/forms/settingsfaqwidget.ui \
-  qt/Parara/settings/forms/settingsinformationwidget.ui \
-  qt/Parara/settings/forms/settingsmainoptionswidget.ui \
-  qt/Parara/settings/forms/settingsmultisenddialog.ui \
-  qt/Parara/settings/forms/settingsmultisendwidget.ui \
-  qt/Parara/settings/forms/settingssignmessagewidgets.ui \
-  qt/Parara/settings/forms/settingswalletoptionswidget.ui \
-  qt/Parara/settings/forms/settingswalletrepairwidget.ui \
-  qt/Parara/settings/forms/settingswidget.ui \
-  qt/Parara/forms/welcomecontentwidget.ui \
-  qt/Parara/forms/splash.ui
+  qt/papara/forms/snackbar.ui \
+  qt/papara/forms/navmenuwidget.ui \
+  qt/papara/forms/lockunlock.ui \
+  qt/papara/forms/expandablebutton.ui \
+  qt/papara/forms/receivedialog.ui \
+  qt/papara/forms/walletpassworddialog.ui \
+  qt/papara/forms/topbar.ui \
+  qt/papara/forms/txrow.ui \
+  qt/papara/forms/dashboardwidget.ui \
+  qt/papara/forms/coincontrolpivwidget.ui \
+  qt/papara/forms/addresslabelrow.ui \
+  qt/papara/forms/contactdropdownrow.ui \
+  qt/papara/forms/mninfodialog.ui \
+  qt/papara/forms/optionbutton.ui \
+  qt/papara/forms/masternodewizarddialog.ui \
+  qt/papara/forms/mnrow.ui \
+  qt/papara/forms/masternodeswidget.ui \
+  qt/papara/forms/myaddressrow.ui \
+  qt/papara/forms/sendchangeaddressdialog.ui \
+  qt/papara/forms/sendconfirmdialog.ui \
+  qt/papara/forms/sendcustomfeedialog.ui \
+  qt/papara/forms/sendchangeaddressdialog.ui \
+  qt/papara/forms/sendmultirow.ui \
+  qt/papara/forms/send.ui \
+  qt/papara/forms/addnewaddressdialog.ui \
+  qt/papara/forms/addnewcontactdialog.ui \
+  qt/papara/forms/requestdialog.ui \
+  qt/papara/forms/receivewidget.ui \
+  qt/papara/forms/tooltipmenu.ui \
+  qt/papara/forms/addresseswidget.ui \
+  qt/papara/forms/defaultdialog.ui \
+  qt/papara/forms/emailinputdialog.ui \
+  qt/papara/forms/denomgenerationdialog.ui \
+  qt/papara/forms/linkswidget.ui \
+  qt/papara/settings/forms/settingsbackupwallet.ui \
+  qt/papara/settings/forms/settingsexportcsv.ui \
+  qt/papara/settings/forms/settingsbittoolwidget.ui \
+  qt/papara/settings/forms/settingsconsolewidget.ui \
+  qt/papara/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/papara/settings/forms/settingsfaqwidget.ui \
+  qt/papara/settings/forms/settingsinformationwidget.ui \
+  qt/papara/settings/forms/settingsmainoptionswidget.ui \
+  qt/papara/settings/forms/settingsmultisenddialog.ui \
+  qt/papara/settings/forms/settingsmultisendwidget.ui \
+  qt/papara/settings/forms/settingssignmessagewidgets.ui \
+  qt/papara/settings/forms/settingswalletoptionswidget.ui \
+  qt/papara/settings/forms/settingswalletrepairwidget.ui \
+  qt/papara/settings/forms/settingswidget.ui \
+  qt/papara/forms/welcomecontentwidget.ui \
+  qt/papara/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -126,7 +126,7 @@ QT_MOC_CPP = \
   qt/moc_bitcoinaddressvalidator.cpp \
   qt/moc_bitcoinamountfield.cpp \
   qt/moc_bitcoingui.cpp \
-  qt/Parara/moc_Pararagui.cpp \
+  qt/papara/moc_paparagui.cpp \
   qt/moc_bitcoinunits.cpp \
   qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
@@ -169,79 +169,79 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/Parara/moc_loadingdialog.cpp \
+  qt/papara/moc_loadingdialog.cpp \
   qt/moc_zteloscontroldialog.cpp \
-  qt/Parara/moc_pwidget.cpp \
-  qt/Parara/moc_snackbar.cpp \
-  qt/Parara/moc_navmenuwidget.cpp \
-  qt/Parara/moc_lockunlock.cpp \
-  qt/Parara/moc_expandablebutton.cpp \
-  qt/Parara/moc_furabstractlistitemdelegate.cpp \
-  qt/Parara/moc_receivedialog.cpp \
-  qt/Parara/moc_walletpassworddialog.cpp \
-  qt/Parara/moc_topbar.cpp \
-  qt/Parara/moc_txrow.cpp \
-  qt/Parara/moc_dashboardwidget.cpp \
-  qt/Parara/moc_coincontrolpivwidget.cpp \
-  qt/Parara/moc_addresslabelrow.cpp \
-  qt/Parara/moc_contactdropdownrow.cpp \
-  qt/Parara/moc_mninfodialog.cpp \
-  qt/Parara/moc_optionbutton.cpp \
-  qt/Parara/moc_mnmodel.cpp \
-  qt/Parara/moc_masternodewizarddialog.cpp \
-  qt/Parara/moc_mnrow.cpp \
-  qt/Parara/moc_masternodeswidget.cpp \
-  qt/Parara/moc_myaddressrow.cpp \
-  qt/Parara/moc_contactsdropdown.cpp \
-  qt/Parara/moc_sendchangeaddressdialog.cpp \
-  qt/Parara/moc_sendconfirmdialog.cpp \
-  qt/Parara/moc_sendcustomfeedialog.cpp \
-  qt/Parara/moc_sendchangeaddressdialog.cpp \
-  qt/Parara/moc_sendmultirow.cpp \
-  qt/Parara/moc_send.cpp \
-  qt/Parara/moc_addnewaddressdialog.cpp \
-  qt/Parara/moc_addnewcontactdialog.cpp \
-  qt/Parara/moc_requestdialog.cpp \
-  qt/Parara/moc_receivewidget.cpp \
-  qt/Parara/moc_tooltipmenu.cpp \
-  qt/Parara/moc_addresseswidget.cpp \
-  qt/Parara/moc_defaultdialog.cpp \
-  qt/Parara/moc_emailinputdialog.cpp \
-  qt/Parara/moc_denomgenerationdialog.cpp \
-  qt/Parara/moc_linkswidget.cpp \
-  qt/Parara/settings/moc_settingsbackupwallet.cpp \
-  qt/Parara/settings/moc_settingsexportcsv.cpp \
-  qt/Parara/settings/moc_settingsbittoolwidget.cpp \
-  qt/Parara/settings/moc_settingsconsolewidget.cpp \
-  qt/Parara/settings/moc_settingsdisplayoptionswidget.cpp \
-  qt/Parara/settings/moc_settingsfaqwidget.cpp \
-  qt/Parara/settings/moc_settingsinformationwidget.cpp \
-  qt/Parara/settings/moc_settingsmainoptionswidget.cpp \
-  qt/Parara/settings/moc_settingsmultisenddialog.cpp \
-  qt/Parara/settings/moc_settingsmultisendwidget.cpp \
-  qt/Parara/settings/moc_settingssignmessagewidgets.cpp \
-  qt/Parara/settings/moc_settingswalletoptionswidget.cpp \
-  qt/Parara/settings/moc_settingswalletrepairwidget.cpp \
-  qt/Parara/settings/moc_settingswidget.cpp \
-  qt/Parara/moc_welcomecontentwidget.cpp \
-  qt/Parara/moc_splash.cpp
+  qt/papara/moc_pwidget.cpp \
+  qt/papara/moc_snackbar.cpp \
+  qt/papara/moc_navmenuwidget.cpp \
+  qt/papara/moc_lockunlock.cpp \
+  qt/papara/moc_expandablebutton.cpp \
+  qt/papara/moc_furabstractlistitemdelegate.cpp \
+  qt/papara/moc_receivedialog.cpp \
+  qt/papara/moc_walletpassworddialog.cpp \
+  qt/papara/moc_topbar.cpp \
+  qt/papara/moc_txrow.cpp \
+  qt/papara/moc_dashboardwidget.cpp \
+  qt/papara/moc_coincontrolpivwidget.cpp \
+  qt/papara/moc_addresslabelrow.cpp \
+  qt/papara/moc_contactdropdownrow.cpp \
+  qt/papara/moc_mninfodialog.cpp \
+  qt/papara/moc_optionbutton.cpp \
+  qt/papara/moc_mnmodel.cpp \
+  qt/papara/moc_masternodewizarddialog.cpp \
+  qt/papara/moc_mnrow.cpp \
+  qt/papara/moc_masternodeswidget.cpp \
+  qt/papara/moc_myaddressrow.cpp \
+  qt/papara/moc_contactsdropdown.cpp \
+  qt/papara/moc_sendchangeaddressdialog.cpp \
+  qt/papara/moc_sendconfirmdialog.cpp \
+  qt/papara/moc_sendcustomfeedialog.cpp \
+  qt/papara/moc_sendchangeaddressdialog.cpp \
+  qt/papara/moc_sendmultirow.cpp \
+  qt/papara/moc_send.cpp \
+  qt/papara/moc_addnewaddressdialog.cpp \
+  qt/papara/moc_addnewcontactdialog.cpp \
+  qt/papara/moc_requestdialog.cpp \
+  qt/papara/moc_receivewidget.cpp \
+  qt/papara/moc_tooltipmenu.cpp \
+  qt/papara/moc_addresseswidget.cpp \
+  qt/papara/moc_defaultdialog.cpp \
+  qt/papara/moc_emailinputdialog.cpp \
+  qt/papara/moc_denomgenerationdialog.cpp \
+  qt/papara/moc_linkswidget.cpp \
+  qt/papara/settings/moc_settingsbackupwallet.cpp \
+  qt/papara/settings/moc_settingsexportcsv.cpp \
+  qt/papara/settings/moc_settingsbittoolwidget.cpp \
+  qt/papara/settings/moc_settingsconsolewidget.cpp \
+  qt/papara/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/papara/settings/moc_settingsfaqwidget.cpp \
+  qt/papara/settings/moc_settingsinformationwidget.cpp \
+  qt/papara/settings/moc_settingsmainoptionswidget.cpp \
+  qt/papara/settings/moc_settingsmultisenddialog.cpp \
+  qt/papara/settings/moc_settingsmultisendwidget.cpp \
+  qt/papara/settings/moc_settingssignmessagewidgets.cpp \
+  qt/papara/settings/moc_settingswalletoptionswidget.cpp \
+  qt/papara/settings/moc_settingswalletrepairwidget.cpp \
+  qt/papara/settings/moc_settingswidget.cpp \
+  qt/papara/moc_welcomecontentwidget.cpp \
+  qt/papara/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/Parara.moc \
+  qt/papara.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc \
-  qt/Parara/settings/moc_settingsconsolewidget.cpp
+  qt/papara/settings/moc_settingsconsolewidget.cpp
 
-QT_QRC_CPP = qt/qrc_Parara.cpp
-QT_QRC = qt/Parara.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_Parara_locale.cpp
-QT_QRC_LOCALE = qt/Parara_locale.qrc
+QT_QRC_CPP = qt/qrc_papara.cpp
+QT_QRC = qt/papara.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_papara_locale.cpp
+QT_QRC_LOCALE = qt/papara_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -256,7 +256,7 @@ BITCOIN_QT_H = \
   qt/bitcoinaddressvalidator.h \
   qt/bitcoinamountfield.h \
   qt/bitcoingui.h \
-  qt/Parara/Pararagui.h \
+  qt/papara/paparagui.h \
   qt/bitcoinunits.h \
   qt/blockexplorer.h \
   qt/clientmodel.h \
@@ -304,69 +304,69 @@ BITCOIN_QT_H = \
   qt/walletframe.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/Parara/prunnable.h \
-  qt/Parara/loadingdialog.h \
+  qt/papara/prunnable.h \
+  qt/papara/loadingdialog.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
   qt/zteloscontroldialog.h \
-  qt/Parara/pwidget.h \
-  qt/Parara/snackbar.h \
-  qt/Parara/navmenuwidget.h \
-  qt/Parara/lockunlock.h \
-  qt/Parara/receivedialog.h \
-  qt/Parara/furlistrow.h \
-  qt/Parara/furabstractlistitemdelegate.h \
-  qt/Parara/txviewholder.h \
-  qt/Parara/qtutils.h \
-  qt/Parara/expandablebutton.h \
-  qt/Parara/walletpassworddialog.h \
-  qt/Parara/topbar.h \
-  qt/Parara/txrow.h \
-  qt/Parara/addressfilterproxymodel.h \
-  qt/Parara/dashboardwidget.h \
-  qt/Parara/coincontrolpivwidget.h \
-  qt/Parara/addresslabelrow.h \
-  qt/Parara/contactdropdownrow.h \
-  qt/Parara/mninfodialog.h \
-  qt/Parara/optionbutton.h \
-  qt/Parara/mnmodel.h \
-  qt/Parara/masternodewizarddialog.h \
-  qt/Parara/mnrow.h \
-  qt/Parara/masternodeswidget.h \
-  qt/Parara/myaddressrow.h \
-  qt/Parara/contactsdropdown.h \
-  qt/Parara/sendchangeaddressdialog.h \
-  qt/Parara/sendconfirmdialog.h \
-  qt/Parara/sendcustomfeedialog.h \
-  qt/Parara/sendchangeaddressdialog.h \
-  qt/Parara/sendmultirow.h \
-  qt/Parara/send.h \
-  qt/Parara/addnewaddressdialog.h \
-  qt/Parara/addnewcontactdialog.h \
-  qt/Parara/requestdialog.h \
-  qt/Parara/receivewidget.h \
-  qt/Parara/tooltipmenu.h \
-  qt/Parara/addresseswidget.h \
-  qt/Parara/defaultdialog.h \
-  qt/Parara/emailinputdialog.h \
-  qt/Parara/denomgenerationdialog.h \
-  qt/Parara/linkswidget.h \
-  qt/Parara/settings/settingsbackupwallet.h \
-  qt/Parara/settings/settingsexportcsv.h \
-  qt/Parara/settings/settingsbittoolwidget.h \
-  qt/Parara/settings/settingsconsolewidget.h \
-  qt/Parara/settings/settingsdisplayoptionswidget.h \
-  qt/Parara/settings/settingsfaqwidget.h \
-  qt/Parara/settings/settingsinformationwidget.h \
-  qt/Parara/settings/settingsmainoptionswidget.h \
-  qt/Parara/settings/settingsmultisenddialog.h \
-  qt/Parara/settings/settingsmultisendwidget.h \
-  qt/Parara/settings/settingssignmessagewidgets.h \
-  qt/Parara/settings/settingswalletoptionswidget.h \
-  qt/Parara/settings/settingswalletrepairwidget.h \
-  qt/Parara/settings/settingswidget.h \
-  qt/Parara/welcomecontentwidget.h \
-  qt/Parara/splash.h
+  qt/papara/pwidget.h \
+  qt/papara/snackbar.h \
+  qt/papara/navmenuwidget.h \
+  qt/papara/lockunlock.h \
+  qt/papara/receivedialog.h \
+  qt/papara/furlistrow.h \
+  qt/papara/furabstractlistitemdelegate.h \
+  qt/papara/txviewholder.h \
+  qt/papara/qtutils.h \
+  qt/papara/expandablebutton.h \
+  qt/papara/walletpassworddialog.h \
+  qt/papara/topbar.h \
+  qt/papara/txrow.h \
+  qt/papara/addressfilterproxymodel.h \
+  qt/papara/dashboardwidget.h \
+  qt/papara/coincontrolpivwidget.h \
+  qt/papara/addresslabelrow.h \
+  qt/papara/contactdropdownrow.h \
+  qt/papara/mninfodialog.h \
+  qt/papara/optionbutton.h \
+  qt/papara/mnmodel.h \
+  qt/papara/masternodewizarddialog.h \
+  qt/papara/mnrow.h \
+  qt/papara/masternodeswidget.h \
+  qt/papara/myaddressrow.h \
+  qt/papara/contactsdropdown.h \
+  qt/papara/sendchangeaddressdialog.h \
+  qt/papara/sendconfirmdialog.h \
+  qt/papara/sendcustomfeedialog.h \
+  qt/papara/sendchangeaddressdialog.h \
+  qt/papara/sendmultirow.h \
+  qt/papara/send.h \
+  qt/papara/addnewaddressdialog.h \
+  qt/papara/addnewcontactdialog.h \
+  qt/papara/requestdialog.h \
+  qt/papara/receivewidget.h \
+  qt/papara/tooltipmenu.h \
+  qt/papara/addresseswidget.h \
+  qt/papara/defaultdialog.h \
+  qt/papara/emailinputdialog.h \
+  qt/papara/denomgenerationdialog.h \
+  qt/papara/linkswidget.h \
+  qt/papara/settings/settingsbackupwallet.h \
+  qt/papara/settings/settingsexportcsv.h \
+  qt/papara/settings/settingsbittoolwidget.h \
+  qt/papara/settings/settingsconsolewidget.h \
+  qt/papara/settings/settingsdisplayoptionswidget.h \
+  qt/papara/settings/settingsfaqwidget.h \
+  qt/papara/settings/settingsinformationwidget.h \
+  qt/papara/settings/settingsmainoptionswidget.h \
+  qt/papara/settings/settingsmultisenddialog.h \
+  qt/papara/settings/settingsmultisendwidget.h \
+  qt/papara/settings/settingssignmessagewidgets.h \
+  qt/papara/settings/settingswalletoptionswidget.h \
+  qt/papara/settings/settingswalletrepairwidget.h \
+  qt/papara/settings/settingswidget.h \
+  qt/papara/welcomecontentwidget.h \
+  qt/papara/splash.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -432,208 +432,208 @@ RES_ICONS = \
   qt/res/icons/ic-transaction-mint.svg \
   qt/res/icons/ic-transaction-sent.svg \
   qt/res/icons/ic-transaction-staked.svg \
-  qt/res/icons/unit_Parara.png \
-  qt/res/icons/unit_mParara.png \
-  qt/res/icons/unit_uParara.png \
-  qt/res/icons/unit_tParara.png \
-  qt/res/icons/unit_tmParara.png \
-  qt/res/icons/unit_tuParara.png \
+  qt/res/icons/unit_papara.png \
+  qt/res/icons/unit_mpapara.png \
+  qt/res/icons/unit_upapara.png \
+  qt/res/icons/unit_tpapara.png \
+  qt/res/icons/unit_tmpapara.png \
+  qt/res/icons/unit_tupapara.png \
   qt/res/icons/yesvote.png \
   qt/res/icons/novote.png \
   qt/res/icons/abstainvote.png \
-  qt/Parara/res/img/bg-dashboard-banner.png \
-  qt/Parara/res/img/bg-multi-number-dark.svg \
-  qt/Parara/res/img/ic-check-locked.svg \
-  qt/Parara/res/img/ic-nav-address.svg \
-  qt/Parara/res/img/ic-update.svg \
-  qt/Parara/res/img/bg-multi-number.svg \
-  qt/Parara/res/img/ic-check-mint-off.svg \
-  qt/Parara/res/img/ic-nav-dashboard-active.svg \
-  qt/Parara/res/img/ic-wallet-status-locked.svg \
-  qt/Parara/res/img/bg-splash.svg \
-  qt/Parara/res/img/bg-splash.png \
-  qt/Parara/res/img/ic-check-mint.svg \
-  qt/Parara/res/img/ic-nav-dashboard-hover.svg \
-  qt/Parara/res/img/ic-wallet-status-staking.svg \
-  qt/Parara/res/img/ic-check-peers-off.svg \
-  qt/Parara/res/img/ic-nav-dashboard.svg \
-  qt/Parara/res/img/ic-wallet-status-unlocked.svg \
-  qt/Parara/res/img/ic-check-peers.svg \
-  qt/Parara/res/img/ic-nav-master-active.svg \
-  qt/Parara/res/img/ic-watch-password-white.svg \
-  qt/Parara/res/img/bg-welcome-container.jpg \
-  qt/Parara/res/img/bg-welcome-container.png \
-  qt/Parara/res/img/bg-welcome-container.svg \
-  qt/Parara/res/img/bg-welcome-container@2x.png \
-  qt/Parara/res/img/bg-welcome-container@3x.png \
-  qt/Parara/res/img/ic-check-staking-off.svg \
-  qt/Parara/res/img/ic-nav-master-hover.svg \
-  qt/Parara/res/img/ic-watch-password.svg \
-  qt/Parara/res/img/bg-welcome.jpg \
-  qt/Parara/res/img/bg-welcome.svg \
-  qt/Parara/res/img/bg-welcome@2x.jpg \
-  qt/Parara/res/img/bg-welcome@3x.jpg \
-  qt/Parara/res/img/bg-welcome.png \
-  qt/Parara/res/img/ic-check-staking.svg \
-  qt/Parara/res/img/ic-nav-master.svg \
-  qt/Parara/res/img/img-dashboard-banner.jpg \
-  qt/Parara/res/img/btn-radio-active.svg \
-  qt/Parara/res/img/ic-check-sync-off.svg \
-  qt/Parara/res/img/ic-nav-privacy-active.svg \
-  qt/Parara/res/img/img-empty-contacts.svg \
-  qt/Parara/res/img/btn-radio-off.svg \
-  qt/Parara/res/img/ic-check-sync.png \
-  qt/Parara/res/img/ic-nav-privacy-hover.svg \
-  qt/Parara/res/img/img-empty-dark-contacts.svg \
-  qt/Parara/res/img/ic-contact-arrow-down.svg \
-  qt/Parara/res/img/ic-contact-arrow-down-white.svg \
-  qt/Parara/res/img/ic-check-sync.svg \
-  qt/Parara/res/img/ic-check-faq.svg \
-  qt/Parara/res/img/ic-nav-privacy.svg \
-  qt/Parara/res/img/img-empty-dark-error.svg \
-  qt/Parara/res/img/ic-add-label.svg \
-  qt/Parara/res/img/ic-pending.svg \
-  qt/Parara/res/img/ic-check-theme-dark.svg \
-  qt/Parara/res/img/ic-nav-receive-active.svg \
-  qt/Parara/res/img/img-empty-dark-masternode.svg \
-  qt/Parara/res/img/ic-add-liliac.svg \
-  qt/Parara/res/img/ic-check-theme-light.svg \
-  qt/Parara/res/img/ic-nav-receive-hover.svg \
-  qt/Parara/res/img/img-empty-dark-multisend.svg \
-  qt/Parara/res/img/ic-add-purple.svg \
-  qt/Parara/res/img/ic-check-white.svg \
-  qt/Parara/res/img/ic-nav-receive.svg \
-  qt/Parara/res/img/img-empty-dark-peers.svg \
-  qt/Parara/res/img/ic-add.svg \
-  qt/Parara/res/img/ic-check.svg \
-  qt/Parara/res/img/ic-nav-send-active.svg \
-  qt/Parara/res/img/img-empty-dark-staking-off.svg \
-  qt/Parara/res/img/img-empty-dark-staking-on.svg \
-  qt/Parara/res/img/ic-address-book-grey.svg \
-  qt/Parara/res/img/ic-chevron-left.svg \
-  qt/Parara/res/img/ic-nav-send-hover.svg \
-  qt/Parara/res/img/img-empty-dark-transactions.svg \
-  qt/Parara/res/img/ic-address-book-white.svg \
-  qt/Parara/res/img/ic-chevron-right.svg \
-  qt/Parara/res/img/ic-nav-send.svg \
-  qt/Parara/res/img/img-empty-error.svg \
-  qt/Parara/res/img/ic-address-book.svg \
-  qt/Parara/res/img/ic-clear-liliac.svg \
-  qt/Parara/res/img/ic-nav-settings-active.svg \
-  qt/Parara/res/img/img-empty-masternode.svg \
-  qt/Parara/res/img/ic-address-send-white.svg \
-  qt/Parara/res/img/ic-clear-purple.svg \
-  qt/Parara/res/img/ic-nav-settings-hover.svg \
-  qt/Parara/res/img/img-empty-multisend.svg \
-  qt/Parara/res/img/ic-address-send.svg \
-  qt/Parara/res/img/ic-close-white.svg \
-  qt/Parara/res/img/ic-nav-settings.svg \
-  qt/Parara/res/img/img-empty-peers.svg \
-  qt/Parara/res/img/img-empty-privacy.svg \
-  qt/Parara/res/img/img-empty-privacy-dark.svg \
-  qt/Parara/res/img/ic-arrow-drop-down-white.svg \
-  qt/Parara/res/img/ic-close.svg \
-  qt/Parara/res/img/ic-radio-liliac-on.svg \
-  qt/Parara/res/img/img-empty-staking-off.svg \
-  qt/Parara/res/img/ic-arrow-drop-down.svg \
-  qt/Parara/res/img/ic-coin-piv.svg \
-  qt/Parara/res/img/ic-receive-off.svg \
-  qt/Parara/res/img/img-empty-staking-on.svg \
-  qt/Parara/res/img/ic-arrow-drop-up-white.svg \
-  qt/Parara/res/img/ic-coin-ztelos.png \
-  qt/Parara/res/img/ic-receive-on.svg \
-  qt/Parara/res/img/img-empty-transactions.svg \
-  qt/Parara/res/img/ic-arrow-drop-up.svg \
-  qt/Parara/res/img/ic-coin-ztelos.svg \
-  qt/Parara/res/img/ic-received.svg \
-  qt/Parara/res/img/img-logo-Parara.png \
-  qt/Parara/res/img/ic-arrow-drop-white-down.svg \
-  qt/Parara/res/img/ic-combo-box.svg \
-  qt/Parara/res/img/ic-send.svg \
-  qt/Parara/res/img/img-logo-Parara@2x.png \
-  qt/Parara/res/img/ic-arrow-purple-down.svg \
-  qt/Parara/res/img/ic-connect.svg \
-  qt/Parara/res/img/ic-submenu-lock.svg \
-  qt/Parara/res/img/img-logo-Parara@3x.png \
-  qt/Parara/res/img/img-logo-Parara.svg \
-  qt/Parara/res/img/ic-arrow-right-white.svg \
-  qt/Parara/res/img/ic-arrow-left-white.svg \
-  qt/Parara/res/img/ic-arrow-left.svg \
-  qt/Parara/res/img/ic-copy-liliac.svg \
-  qt/Parara/res/img/ic-submenu-staking.svg \
-  qt/Parara/res/img/img-nav-logo-Parara.png \
-  qt/Parara/res/img/ic-arrow-right.svg \
-  qt/Parara/res/img/ic-copy.svg \
-  qt/Parara/res/img/ic-copy-big.svg \
-  qt/Parara/res/img/ic-copy-big-white.svg \
-  qt/Parara/res/img/ic-submenu-unlock.svg \
-  qt/Parara/res/img/img-nav-logo.png \
-  qt/Parara/res/img/ic-arrow-white-left.svg \
-  qt/Parara/res/img/ic-exit.svg \
-  qt/Parara/res/img/ic-switch-liliac-on.svg \
-  qt/Parara/res/img/img-nav-logo.svg \
-  qt/Parara/res/img/ic-arrow-white-right.svg \
-  qt/Parara/res/img/ic-expand.svg \
-  qt/Parara/res/img/ic-switch-off.svg \
-  qt/Parara/res/img/img-qr-test-big.png \
-  qt/Parara/res/img/ic-check-active.svg \
-  qt/Parara/res/img/ic-folder.svg \
-  qt/Parara/res/img/ic-switch-on.svg \
-  qt/Parara/res/img/img-qr-test.png \
-  qt/Parara/res/img/ic-check-box.svg \
-  qt/Parara/res/img/ic-check-box-dark-active.svg \
-  qt/Parara/res/img/ic-check-box-indeterminate.svg \
-  qt/Parara/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/Parara/res/img/ic-label-liliac.svg \
-  qt/Parara/res/img/ic-transaction-warning.svg \
-  qt/Parara/res/img/ic-transaction-mint.svg \
-  qt/Parara/res/img/ic-transaction-mint-inactive.svg \
-  qt/Parara/res/img/img-qr.svg \
-  qt/Parara/res/img/ic-check-connect-off.svg \
-  qt/Parara/res/img/ic-label.svg \
-  qt/Parara/res/img/ic-transaction-received.svg \
-  qt/Parara/res/img/dark/ic-transaction-received.svg \
-  qt/Parara/res/img/dark/ic-transaction-warning.svg \
-  qt/Parara/res/img/dark/ic-transaction-mint.svg \
-  qt/Parara/res/img/dark/ic-transaction-mint-inactive.svg \
-  qt/Parara/res/img/ic-transaction-received-inactive.svg \
-  qt/Parara/res/img/dark/ic-transaction-received-inactive.svg \
-  qt/Parara/res/img/img-welcome-step1.png \
-  qt/Parara/res/img/ic-check-connect.svg \
-  qt/Parara/res/img/ic-menu-hover.svg \
-  qt/Parara/res/img/ic-transaction-sent.svg \
-  qt/Parara/res/img/ic-transaction-sent-inactive.svg \
-  qt/Parara/res/img/dark/ic-transaction-sent.svg \
-  qt/Parara/res/img/dark/ic-transaction-sent-inactive.svg \
-  qt/Parara/res/img/img-welcome-step2.png \
-  qt/Parara/res/img/ic-check-dark.svg \
-  qt/Parara/res/img/ic-mint.svg \
-  qt/Parara/res/img/ic-transaction-staked.svg \
-  qt/Parara/res/img/ic-transaction-staked-inactive.svg \
-  qt/Parara/res/img/dark/ic-transaction-staked.svg \
-  qt/Parara/res/img/dark/ic-transaction-staked-inactive.svg \
-  qt/Parara/res/img/img-welcome-step3.png \
-  qt/Parara/res/img/ic-check-liliac-on.svg \
-  qt/Parara/res/img/ic-nav-address-active.svg \
-  qt/Parara/res/img/ic-unlock-staking.svg \
-  qt/Parara/res/img/img-welcome-step4.png \
-  qt/Parara/res/img/ic-check-locked-off.svg \
-  qt/Parara/res/img/ic-nav-address-hover.svg \
-  qt/Parara/res/img/ic-update-liliac.svg \
-  qt/Parara/res/img/ic-arrow-drop-down-purple.svg \
-  qt/Parara/res/img/ic-arrow-drop-up-purple.svg \
-  qt/Parara/res/img/ic-check-liliac-indeterminate.svg \
-  qt/Parara/res/img/ic-check-box-liliac-indeterminate.svg \
-  qt/Parara/res/img/ic-check-box-indeterminate.svg \
-  qt/Parara/res/img/ani-loading-dark.gif \
-  qt/Parara/res/img/ani-loading.gif
+  qt/papara/res/img/bg-dashboard-banner.png \
+  qt/papara/res/img/bg-multi-number-dark.svg \
+  qt/papara/res/img/ic-check-locked.svg \
+  qt/papara/res/img/ic-nav-address.svg \
+  qt/papara/res/img/ic-update.svg \
+  qt/papara/res/img/bg-multi-number.svg \
+  qt/papara/res/img/ic-check-mint-off.svg \
+  qt/papara/res/img/ic-nav-dashboard-active.svg \
+  qt/papara/res/img/ic-wallet-status-locked.svg \
+  qt/papara/res/img/bg-splash.svg \
+  qt/papara/res/img/bg-splash.png \
+  qt/papara/res/img/ic-check-mint.svg \
+  qt/papara/res/img/ic-nav-dashboard-hover.svg \
+  qt/papara/res/img/ic-wallet-status-staking.svg \
+  qt/papara/res/img/ic-check-peers-off.svg \
+  qt/papara/res/img/ic-nav-dashboard.svg \
+  qt/papara/res/img/ic-wallet-status-unlocked.svg \
+  qt/papara/res/img/ic-check-peers.svg \
+  qt/papara/res/img/ic-nav-master-active.svg \
+  qt/papara/res/img/ic-watch-password-white.svg \
+  qt/papara/res/img/bg-welcome-container.jpg \
+  qt/papara/res/img/bg-welcome-container.png \
+  qt/papara/res/img/bg-welcome-container.svg \
+  qt/papara/res/img/bg-welcome-container@2x.png \
+  qt/papara/res/img/bg-welcome-container@3x.png \
+  qt/papara/res/img/ic-check-staking-off.svg \
+  qt/papara/res/img/ic-nav-master-hover.svg \
+  qt/papara/res/img/ic-watch-password.svg \
+  qt/papara/res/img/bg-welcome.jpg \
+  qt/papara/res/img/bg-welcome.svg \
+  qt/papara/res/img/bg-welcome@2x.jpg \
+  qt/papara/res/img/bg-welcome@3x.jpg \
+  qt/papara/res/img/bg-welcome.png \
+  qt/papara/res/img/ic-check-staking.svg \
+  qt/papara/res/img/ic-nav-master.svg \
+  qt/papara/res/img/img-dashboard-banner.jpg \
+  qt/papara/res/img/btn-radio-active.svg \
+  qt/papara/res/img/ic-check-sync-off.svg \
+  qt/papara/res/img/ic-nav-privacy-active.svg \
+  qt/papara/res/img/img-empty-contacts.svg \
+  qt/papara/res/img/btn-radio-off.svg \
+  qt/papara/res/img/ic-check-sync.png \
+  qt/papara/res/img/ic-nav-privacy-hover.svg \
+  qt/papara/res/img/img-empty-dark-contacts.svg \
+  qt/papara/res/img/ic-contact-arrow-down.svg \
+  qt/papara/res/img/ic-contact-arrow-down-white.svg \
+  qt/papara/res/img/ic-check-sync.svg \
+  qt/papara/res/img/ic-check-faq.svg \
+  qt/papara/res/img/ic-nav-privacy.svg \
+  qt/papara/res/img/img-empty-dark-error.svg \
+  qt/papara/res/img/ic-add-label.svg \
+  qt/papara/res/img/ic-pending.svg \
+  qt/papara/res/img/ic-check-theme-dark.svg \
+  qt/papara/res/img/ic-nav-receive-active.svg \
+  qt/papara/res/img/img-empty-dark-masternode.svg \
+  qt/papara/res/img/ic-add-liliac.svg \
+  qt/papara/res/img/ic-check-theme-light.svg \
+  qt/papara/res/img/ic-nav-receive-hover.svg \
+  qt/papara/res/img/img-empty-dark-multisend.svg \
+  qt/papara/res/img/ic-add-purple.svg \
+  qt/papara/res/img/ic-check-white.svg \
+  qt/papara/res/img/ic-nav-receive.svg \
+  qt/papara/res/img/img-empty-dark-peers.svg \
+  qt/papara/res/img/ic-add.svg \
+  qt/papara/res/img/ic-check.svg \
+  qt/papara/res/img/ic-nav-send-active.svg \
+  qt/papara/res/img/img-empty-dark-staking-off.svg \
+  qt/papara/res/img/img-empty-dark-staking-on.svg \
+  qt/papara/res/img/ic-address-book-grey.svg \
+  qt/papara/res/img/ic-chevron-left.svg \
+  qt/papara/res/img/ic-nav-send-hover.svg \
+  qt/papara/res/img/img-empty-dark-transactions.svg \
+  qt/papara/res/img/ic-address-book-white.svg \
+  qt/papara/res/img/ic-chevron-right.svg \
+  qt/papara/res/img/ic-nav-send.svg \
+  qt/papara/res/img/img-empty-error.svg \
+  qt/papara/res/img/ic-address-book.svg \
+  qt/papara/res/img/ic-clear-liliac.svg \
+  qt/papara/res/img/ic-nav-settings-active.svg \
+  qt/papara/res/img/img-empty-masternode.svg \
+  qt/papara/res/img/ic-address-send-white.svg \
+  qt/papara/res/img/ic-clear-purple.svg \
+  qt/papara/res/img/ic-nav-settings-hover.svg \
+  qt/papara/res/img/img-empty-multisend.svg \
+  qt/papara/res/img/ic-address-send.svg \
+  qt/papara/res/img/ic-close-white.svg \
+  qt/papara/res/img/ic-nav-settings.svg \
+  qt/papara/res/img/img-empty-peers.svg \
+  qt/papara/res/img/img-empty-privacy.svg \
+  qt/papara/res/img/img-empty-privacy-dark.svg \
+  qt/papara/res/img/ic-arrow-drop-down-white.svg \
+  qt/papara/res/img/ic-close.svg \
+  qt/papara/res/img/ic-radio-liliac-on.svg \
+  qt/papara/res/img/img-empty-staking-off.svg \
+  qt/papara/res/img/ic-arrow-drop-down.svg \
+  qt/papara/res/img/ic-coin-piv.svg \
+  qt/papara/res/img/ic-receive-off.svg \
+  qt/papara/res/img/img-empty-staking-on.svg \
+  qt/papara/res/img/ic-arrow-drop-up-white.svg \
+  qt/papara/res/img/ic-coin-ztelos.png \
+  qt/papara/res/img/ic-receive-on.svg \
+  qt/papara/res/img/img-empty-transactions.svg \
+  qt/papara/res/img/ic-arrow-drop-up.svg \
+  qt/papara/res/img/ic-coin-ztelos.svg \
+  qt/papara/res/img/ic-received.svg \
+  qt/papara/res/img/img-logo-papara.png \
+  qt/papara/res/img/ic-arrow-drop-white-down.svg \
+  qt/papara/res/img/ic-combo-box.svg \
+  qt/papara/res/img/ic-send.svg \
+  qt/papara/res/img/img-logo-papara@2x.png \
+  qt/papara/res/img/ic-arrow-purple-down.svg \
+  qt/papara/res/img/ic-connect.svg \
+  qt/papara/res/img/ic-submenu-lock.svg \
+  qt/papara/res/img/img-logo-papara@3x.png \
+  qt/papara/res/img/img-logo-papara.svg \
+  qt/papara/res/img/ic-arrow-right-white.svg \
+  qt/papara/res/img/ic-arrow-left-white.svg \
+  qt/papara/res/img/ic-arrow-left.svg \
+  qt/papara/res/img/ic-copy-liliac.svg \
+  qt/papara/res/img/ic-submenu-staking.svg \
+  qt/papara/res/img/img-nav-logo-papara.png \
+  qt/papara/res/img/ic-arrow-right.svg \
+  qt/papara/res/img/ic-copy.svg \
+  qt/papara/res/img/ic-copy-big.svg \
+  qt/papara/res/img/ic-copy-big-white.svg \
+  qt/papara/res/img/ic-submenu-unlock.svg \
+  qt/papara/res/img/img-nav-logo.png \
+  qt/papara/res/img/ic-arrow-white-left.svg \
+  qt/papara/res/img/ic-exit.svg \
+  qt/papara/res/img/ic-switch-liliac-on.svg \
+  qt/papara/res/img/img-nav-logo.svg \
+  qt/papara/res/img/ic-arrow-white-right.svg \
+  qt/papara/res/img/ic-expand.svg \
+  qt/papara/res/img/ic-switch-off.svg \
+  qt/papara/res/img/img-qr-test-big.png \
+  qt/papara/res/img/ic-check-active.svg \
+  qt/papara/res/img/ic-folder.svg \
+  qt/papara/res/img/ic-switch-on.svg \
+  qt/papara/res/img/img-qr-test.png \
+  qt/papara/res/img/ic-check-box.svg \
+  qt/papara/res/img/ic-check-box-dark-active.svg \
+  qt/papara/res/img/ic-check-box-indeterminate.svg \
+  qt/papara/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/papara/res/img/ic-label-liliac.svg \
+  qt/papara/res/img/ic-transaction-warning.svg \
+  qt/papara/res/img/ic-transaction-mint.svg \
+  qt/papara/res/img/ic-transaction-mint-inactive.svg \
+  qt/papara/res/img/img-qr.svg \
+  qt/papara/res/img/ic-check-connect-off.svg \
+  qt/papara/res/img/ic-label.svg \
+  qt/papara/res/img/ic-transaction-received.svg \
+  qt/papara/res/img/dark/ic-transaction-received.svg \
+  qt/papara/res/img/dark/ic-transaction-warning.svg \
+  qt/papara/res/img/dark/ic-transaction-mint.svg \
+  qt/papara/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/papara/res/img/ic-transaction-received-inactive.svg \
+  qt/papara/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/papara/res/img/img-welcome-step1.png \
+  qt/papara/res/img/ic-check-connect.svg \
+  qt/papara/res/img/ic-menu-hover.svg \
+  qt/papara/res/img/ic-transaction-sent.svg \
+  qt/papara/res/img/ic-transaction-sent-inactive.svg \
+  qt/papara/res/img/dark/ic-transaction-sent.svg \
+  qt/papara/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/papara/res/img/img-welcome-step2.png \
+  qt/papara/res/img/ic-check-dark.svg \
+  qt/papara/res/img/ic-mint.svg \
+  qt/papara/res/img/ic-transaction-staked.svg \
+  qt/papara/res/img/ic-transaction-staked-inactive.svg \
+  qt/papara/res/img/dark/ic-transaction-staked.svg \
+  qt/papara/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/papara/res/img/img-welcome-step3.png \
+  qt/papara/res/img/ic-check-liliac-on.svg \
+  qt/papara/res/img/ic-nav-address-active.svg \
+  qt/papara/res/img/ic-unlock-staking.svg \
+  qt/papara/res/img/img-welcome-step4.png \
+  qt/papara/res/img/ic-check-locked-off.svg \
+  qt/papara/res/img/ic-nav-address-hover.svg \
+  qt/papara/res/img/ic-update-liliac.svg \
+  qt/papara/res/img/ic-arrow-drop-down-purple.svg \
+  qt/papara/res/img/ic-arrow-drop-up-purple.svg \
+  qt/papara/res/img/ic-check-liliac-indeterminate.svg \
+  qt/papara/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/papara/res/img/ic-check-box-indeterminate.svg \
+  qt/papara/res/img/ani-loading-dark.gif \
+  qt/papara/res/img/ani-loading.gif
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
   qt/bitcoinamountfield.cpp \
   qt/bitcoingui.cpp \
-  qt/Parara/Pararagui.cpp \
+  qt/papara/paparagui.cpp \
   qt/bitcoinunits.cpp \
   qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
@@ -689,65 +689,65 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/Parara/loadingdialog.cpp \
+  qt/papara/loadingdialog.cpp \
   qt/zteloscontroldialog.cpp \
-  qt/Parara/pwidget.cpp \
-  qt/Parara/snackbar.cpp \
-  qt/Parara/navmenuwidget.cpp \
-  qt/Parara/lockunlock.cpp \
-  qt/Parara/receivedialog.cpp \
-  qt/Parara/furabstractlistitemdelegate.cpp \
-  qt/Parara/txviewholder.cpp \
-  qt/Parara/qtutils.cpp \
-  qt/Parara/expandablebutton.cpp \
-  qt/Parara/walletpassworddialog.cpp \
-  qt/Parara/topbar.cpp \
-  qt/Parara/txrow.cpp \
-  qt/Parara/addressfilterproxymodel.cpp \
-  qt/Parara/dashboardwidget.cpp \
-  qt/Parara/coincontrolpivwidget.cpp \
-  qt/Parara/addresslabelrow.cpp \
-  qt/Parara/contactdropdownrow.cpp \
-  qt/Parara/contactsdropdown.cpp \
-  qt/Parara/optionbutton.cpp \
-  qt/Parara/mninfodialog.cpp \
-  qt/Parara/mnmodel.cpp \
-  qt/Parara/masternodewizarddialog.cpp \
-  qt/Parara/mnrow.cpp \
-  qt/Parara/masternodeswidget.cpp \
-  qt/Parara/myaddressrow.cpp \
-  qt/Parara/sendchangeaddressdialog.cpp \
-  qt/Parara/sendconfirmdialog.cpp \
-  qt/Parara/sendcustomfeedialog.cpp \
-  qt/Parara/sendchangeaddressdialog.cpp \
-  qt/Parara/sendmultirow.cpp \
-  qt/Parara/send.cpp \
-  qt/Parara/addnewaddressdialog.cpp \
-  qt/Parara/addnewcontactdialog.cpp \
-  qt/Parara/requestdialog.cpp \
-  qt/Parara/receivewidget.cpp \
-  qt/Parara/tooltipmenu.cpp \
-  qt/Parara/addresseswidget.cpp \
-  qt/Parara/defaultdialog.cpp \
-  qt/Parara/emailinputdialog.cpp \
-  qt/Parara/denomgenerationdialog.cpp \
-  qt/Parara/linkswidget.cpp \
-  qt/Parara/settings/settingsbackupwallet.cpp \
-  qt/Parara/settings/settingsexportcsv.cpp \
-  qt/Parara/settings/settingsbittoolwidget.cpp \
-  qt/Parara/settings/settingsconsolewidget.cpp \
-  qt/Parara/settings/settingsdisplayoptionswidget.cpp \
-  qt/Parara/settings/settingsfaqwidget.cpp \
-  qt/Parara/settings/settingsinformationwidget.cpp \
-  qt/Parara/settings/settingsmainoptionswidget.cpp \
-  qt/Parara/settings/settingsmultisenddialog.cpp \
-  qt/Parara/settings/settingsmultisendwidget.cpp \
-  qt/Parara/settings/settingssignmessagewidgets.cpp \
-  qt/Parara/settings/settingswalletoptionswidget.cpp \
-  qt/Parara/settings/settingswalletrepairwidget.cpp \
-  qt/Parara/settings/settingswidget.cpp \
-  qt/Parara/welcomecontentwidget.cpp \
-  qt/Parara/splash.cpp
+  qt/papara/pwidget.cpp \
+  qt/papara/snackbar.cpp \
+  qt/papara/navmenuwidget.cpp \
+  qt/papara/lockunlock.cpp \
+  qt/papara/receivedialog.cpp \
+  qt/papara/furabstractlistitemdelegate.cpp \
+  qt/papara/txviewholder.cpp \
+  qt/papara/qtutils.cpp \
+  qt/papara/expandablebutton.cpp \
+  qt/papara/walletpassworddialog.cpp \
+  qt/papara/topbar.cpp \
+  qt/papara/txrow.cpp \
+  qt/papara/addressfilterproxymodel.cpp \
+  qt/papara/dashboardwidget.cpp \
+  qt/papara/coincontrolpivwidget.cpp \
+  qt/papara/addresslabelrow.cpp \
+  qt/papara/contactdropdownrow.cpp \
+  qt/papara/contactsdropdown.cpp \
+  qt/papara/optionbutton.cpp \
+  qt/papara/mninfodialog.cpp \
+  qt/papara/mnmodel.cpp \
+  qt/papara/masternodewizarddialog.cpp \
+  qt/papara/mnrow.cpp \
+  qt/papara/masternodeswidget.cpp \
+  qt/papara/myaddressrow.cpp \
+  qt/papara/sendchangeaddressdialog.cpp \
+  qt/papara/sendconfirmdialog.cpp \
+  qt/papara/sendcustomfeedialog.cpp \
+  qt/papara/sendchangeaddressdialog.cpp \
+  qt/papara/sendmultirow.cpp \
+  qt/papara/send.cpp \
+  qt/papara/addnewaddressdialog.cpp \
+  qt/papara/addnewcontactdialog.cpp \
+  qt/papara/requestdialog.cpp \
+  qt/papara/receivewidget.cpp \
+  qt/papara/tooltipmenu.cpp \
+  qt/papara/addresseswidget.cpp \
+  qt/papara/defaultdialog.cpp \
+  qt/papara/emailinputdialog.cpp \
+  qt/papara/denomgenerationdialog.cpp \
+  qt/papara/linkswidget.cpp \
+  qt/papara/settings/settingsbackupwallet.cpp \
+  qt/papara/settings/settingsexportcsv.cpp \
+  qt/papara/settings/settingsbittoolwidget.cpp \
+  qt/papara/settings/settingsconsolewidget.cpp \
+  qt/papara/settings/settingsdisplayoptionswidget.cpp \
+  qt/papara/settings/settingsfaqwidget.cpp \
+  qt/papara/settings/settingsinformationwidget.cpp \
+  qt/papara/settings/settingsmainoptionswidget.cpp \
+  qt/papara/settings/settingsmultisenddialog.cpp \
+  qt/papara/settings/settingsmultisendwidget.cpp \
+  qt/papara/settings/settingssignmessagewidgets.cpp \
+  qt/papara/settings/settingswalletoptionswidget.cpp \
+  qt/papara/settings/settingswalletrepairwidget.cpp \
+  qt/papara/settings/settingswidget.cpp \
+  qt/papara/welcomecontentwidget.cpp \
+  qt/papara/splash.cpp
 
 
 BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
@@ -763,7 +763,7 @@ RES_IMAGES = \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
   qt/res/images/splash_regtest.png \
-  qt/res/images/Parara_logo_horizontal.png \
+  qt/res/images/papara_logo_horizontal.png \
   qt/res/images/downArrow_dark.png \
   qt/res/images/downArrow_small_dark.png \
   qt/res/images/downArrow_small.png \
@@ -775,12 +775,12 @@ RES_IMAGES = \
 
 RES_CSS = \
   qt/res/css/default.css \
-  qt/Parara/res/css/style_dark.css \
-  qt/Parara/res/css/style_light.css
+  qt/papara/res/css/style_dark.css \
+  qt/papara/res/css/style_light.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/Parara-qt-res.rc
+BITCOIN_RC = qt/res/papara-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -802,71 +802,71 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_Parara_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_papara_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# Parara-qt binary #
-qt_Parara_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# papara-qt binary #
+qt_papara_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
-qt_Parara_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_papara_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
-qt_Parara_qt_SOURCES = qt/Parara.cpp
+qt_papara_qt_SOURCES = qt/papara.cpp
 if TARGET_DARWIN
-  qt_Parara_qt_SOURCES += $(BITCOIN_MM)
+  qt_papara_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_Parara_qt_SOURCES += $(BITCOIN_RC)
+  qt_papara_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_Parara_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_papara_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_Parara_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+qt_papara_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_Parara_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_papara_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_Parara_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+qt_papara_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(UNBOUND_LIBS) $(CURL_LIBS)
-qt_Parara_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_Parara_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
+qt_papara_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_papara_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 SECONDARY: $(QT_QM)
 
-$(srcdir)/qt/Pararastrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
+$(srcdir)/qt/paparastrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: $(srcdir)/qt/Pararastrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/Parara.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/paparastrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/papara.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/Parara_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/papara_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@cp -f $< $(@D)/temp_$(<F)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name Parara_locale $(@D)/temp_$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name papara_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name Parara $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name papara $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_Parara_locale.qrc
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_papara_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
-Parara_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_Parara_qt_OBJECTS) qt/Parara-qt$(EXEEXT) $(LIBBITCOINQT)
+papara_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_papara_qt_OBJECTS) qt/papara-qt$(EXEEXT) $(LIBBITCOINQT)
 
-Parara_qt : qt/Parara-qt$(EXEEXT)
+papara_qt : qt/papara-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

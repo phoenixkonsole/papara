@@ -851,7 +851,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2951,7 +2951,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-104"/>
-        <source>Cannot start Parara: click-to-pay handler</source>
+        <source>Cannot start papara: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6359,7 +6359,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <location filename="../pivxstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>

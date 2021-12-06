@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsmultisendwidget.h"
-#include "qt/Parara/settings/forms/ui_settingsmultisendwidget.h"
-#include "qt/Parara/settings/settingsmultisenddialog.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/settings/settingsmultisendwidget.h"
+#include "qt/papara/settings/forms/ui_settingsmultisendwidget.h"
+#include "qt/papara/settings/settingsmultisenddialog.h"
+#include "qt/papara/qtutils.h"
 #include "addresstablemodel.h"
 #include "base58.h"
 #include "init.h"
@@ -153,7 +153,7 @@ SettingsMultisendWidget::SettingsMultisendWidget(PWidget *parent) :
     ui->labelTitle->setText("Multisend");
     setCssTitleScreen(ui->labelTitle);
 
-    ui->labelSubtitle1->setText(tr("MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Parara addresses after it matures."));
+    ui->labelSubtitle1->setText(tr("MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other papara addresses after it matures."));
     setCssSubtitleScreen(ui->labelSubtitle1);
 
     //Button Group

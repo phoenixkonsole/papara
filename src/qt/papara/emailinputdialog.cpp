@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/emailinputdialog.h"
-#include "qt/Parara/forms/ui_emailinputdialog.h"
+#include "qt/papara/emailinputdialog.h"
+#include "qt/papara/forms/ui_emailinputdialog.h"
 #include "guiutil.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 EmailInputDialog::EmailInputDialog(QWidget *parent) :
     QDialog(parent),

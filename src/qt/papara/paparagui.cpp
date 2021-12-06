@@ -2,7 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/Pararagui.h"
+#include "qt/papara/paparagui.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -14,9 +14,9 @@
 #include "networkstyle.h"
 #include "notificator.h"
 #include "guiinterface.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/defaultdialog.h"
-#include "qt/Parara/settings/settingsfaqwidget.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/defaultdialog.h"
+#include "qt/papara/settings/settingsfaqwidget.h"
 
 #include <QHBoxLayout>
 #include <QVBoxLayout>
@@ -39,7 +39,7 @@ paraGUI::paraGUI(const NetworkStyle* networkStyle, QWidget* parent) :
     this->setMinimumSize(1200, 740);
     GUIUtil::restoreWindowGeometry("nWindow", QSize(1200, 740), this);
 
-    QString windowTitle = tr("Parara Core") + " - ";
+    QString windowTitle = tr("papara Core") + " - ";
 #ifdef ENABLE_WALLET
     /* if compiled with wallet support, -disablewallet can still disable the wallet */
     enableWallet = !GetBoolArg("-disablewallet", false);
@@ -195,7 +195,7 @@ void paraGUI::connectActions() {
 void paraGUI::createTrayIcon(const NetworkStyle* networkStyle) {
 #ifndef Q_OS_MAC
     trayIcon = new QSystemTrayIcon(this);
-    QString toolTip = tr("Parara Core client") + " " + networkStyle->getTitleAddText();
+    QString toolTip = tr("papara Core client") + " " + networkStyle->getTitleAddText();
     trayIcon->setToolTip(toolTip);
     trayIcon->setIcon(networkStyle->getAppIcon());
     trayIcon->hide();
@@ -337,7 +337,7 @@ void paraGUI::messageInfo(const QString& text){
 
 
 void paraGUI::message(const QString& title, const QString& message, unsigned int style, bool* ret) {
-    QString strTitle =  tr("Parara Core"); // default title
+    QString strTitle =  tr("papara Core"); // default title
     // Default to information icon
     int nNotifyIcon = Notificator::Information;
 
@@ -387,7 +387,7 @@ void paraGUI::message(const QString& title, const QString& message, unsigned int
     } else if(style & CClientUIInterface::MSG_INFORMATION_SNACK){
         messageInfo(message);
     }else {
-        // Append title to "Parara - "
+        // Append title to "papara - "
         if (!msgType.isEmpty())
             strTitle += " - " + msgType;
         notificator->notify((Notificator::Class) nNotifyIcon, strTitle, message);
@@ -405,7 +405,7 @@ bool paraGUI::openStandardDialog(QString title, QString body, QString okBtn, QSt
     } else {
         dialog = new DefaultDialog();
         dialog->setText(title, body, okBtn);
-        dialog->setWindowTitle(tr("Parara Core"));
+        dialog->setWindowTitle(tr("papara Core"));
         dialog->adjustSize();
         dialog->raise();
         dialog->exec();

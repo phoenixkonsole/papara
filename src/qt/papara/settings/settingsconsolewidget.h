@@ -6,7 +6,7 @@
 #define SETTINGSCONSOLEWIDGET_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 #include "guiutil.h"
 #include "net.h"
 #include <QCompleter>

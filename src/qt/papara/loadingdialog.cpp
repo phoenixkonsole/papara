@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/loadingdialog.h"
-#include "qt/Parara/forms/ui_loadingdialog.h"
+#include "qt/papara/loadingdialog.h"
+#include "qt/papara/forms/ui_loadingdialog.h"
 #include <QMovie>
 
 void Worker::process(){

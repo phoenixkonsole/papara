@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/masternodewizarddialog.h"
-#include "qt/Parara/forms/ui_masternodewizarddialog.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/masternodewizarddialog.h"
+#include "qt/papara/forms/ui_masternodewizarddialog.h"
+#include "qt/papara/qtutils.h"
 #include "optionsmodel.h"
 #include "activemasternode.h"
 #include <QFile>

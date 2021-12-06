@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/mnrow.h"
-#include "qt/Parara/forms/ui_mnrow.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/mnrow.h"
+#include "qt/papara/forms/ui_mnrow.h"
+#include "qt/papara/qtutils.h"
 
 MNRow::MNRow(QWidget *parent) :
     QWidget(parent),

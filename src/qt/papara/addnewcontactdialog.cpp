@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/addnewcontactdialog.h"
-#include "qt/Parara/forms/ui_addnewcontactdialog.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/addnewcontactdialog.h"
+#include "qt/papara/forms/ui_addnewcontactdialog.h"
+#include "qt/papara/qtutils.h"
 
 AddNewContactDialog::AddNewContactDialog(QWidget *parent) :
     QDialog(parent),

@@ -2,15 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/sendconfirmdialog.h"
-#include "qt/Parara/forms/ui_sendconfirmdialog.h"
+#include "qt/papara/sendconfirmdialog.h"
+#include "qt/papara/forms/ui_sendconfirmdialog.h"
 #include "bitcoinunits.h"
 #include "walletmodel.h"
 #include "transactiontablemodel.h"
 #include "transactionrecord.h"
 #include "wallet/wallet.h"
 #include "guiutil.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include <QList>
 #include <QDateTime>
 

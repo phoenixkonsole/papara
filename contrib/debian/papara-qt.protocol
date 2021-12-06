@@ -1,6 +1,6 @@
 [Protocol]
-exec=Parara-qt '%u'
-protocol=Parara
+exec=papara-qt '%u'
+protocol=papara
 input=none
 output=none
 helper=true

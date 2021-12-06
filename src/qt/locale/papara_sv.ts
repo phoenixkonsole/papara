@@ -665,8 +665,8 @@
         <translation>Skicka mynt till en para adress</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Begär betalning (genererar QR kod och Parara: URls)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Begär betalning (genererar QR kod och papara: URls)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -2322,8 +2322,8 @@ För att aktivera AutoMint ändra 'enablezeromint=0' till 'enablezeromint=1' i p
         <translation>Ogiltig betalningsadress %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
-        <translation>Kan ej starta Parara: klicka-för-att-betala hanterare</translation>
+        <source>Cannot start papara: click-to-pay handler</source>
+        <translation>Kan ej starta papara: klicka-för-att-betala hanterare</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
@@ -4939,7 +4939,7 @@ Var tålmodig...</translation>
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behåll tx meta data t.ex. kontoägare och information om betalningsförfråga, 2 = släpp tx meta data)</translation>

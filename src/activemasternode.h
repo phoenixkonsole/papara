@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2019 The Parara developers
+// Copyright (c) 2017-2019 The papara developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +35,7 @@ private:
     /// Register any Masternode
     bool Register(CTxIn vin, unsigned int tier, CService service, CKey key, CPubKey pubKey, CKey keyMasternode, CPubKey pubKeyMasternode, std::string& errorMessage);
 
-    /// Get 10000 Parara input that can be used for the Masternode
+    /// Get 10000 papara input that can be used for the Masternode
     bool GetMasterNodeVin(CTxIn& vin, unsigned int& tier, CPubKey& pubkey, CKey& secretKey, std::string strTxHash, std::string strOutputIndex);
     bool GetVinFromOutput(COutput out, CTxIn& vin, unsigned int& tier, CPubKey& pubkey, CKey& secretKey);
 
@@ -64,7 +64,7 @@ public:
     /// Register remote Masternode
     bool Register(std::string strService, std::string strKey, std::string strTxHash, std::string strOutputIndex, std::string& errorMessage);
 
-    /// Get MASTERNODE_TIER_COINS[] Parara input that can be used for the Masternode
+    /// Get MASTERNODE_TIER_COINS[] papara input that can be used for the Masternode
     bool GetMasterNodeVin(CTxIn& vin, unsigned int& tier, CPubKey& pubkey, CKey& secretKey);
     vector<COutput> SelectCoinsMasternode();
 

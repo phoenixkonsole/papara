@@ -649,8 +649,8 @@
         <translation>Invia valuta all'indirizzo para</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e Parara: URIs)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e papara: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -2605,7 +2605,7 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

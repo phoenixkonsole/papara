@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/denomgenerationdialog.h"
-#include "qt/Parara/forms/ui_denomgenerationdialog.h"
+#include "qt/papara/denomgenerationdialog.h"
+#include "qt/papara/forms/ui_denomgenerationdialog.h"
 #include "QGraphicsDropShadowEffect"
 
 DenomGenerationDialog::DenomGenerationDialog(QWidget *parent) :

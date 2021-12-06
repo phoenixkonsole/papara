@@ -649,8 +649,8 @@
         <translation>Pošaljite kovanice na para adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Zahtjev za plaćanje (generira QR kodove i Parara: URI)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Zahtjev za plaćanje (generira QR kodove i papara: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -2167,8 +2167,8 @@ Da biste omogućili, promjenite postavke AutoMint 'enablezeromint=0' na 'enablez
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti Parara: clik-to-pay handler</translation>
+        <source>Cannot start papara: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti papara: clik-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
@@ -4638,7 +4638,7 @@ Please be patient...</source>
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zadržite metapodatke tx, npr. Vlasnika računa i podatke o zahtjevu za plaćanje, 2 = odbaci meta podataka tx)</translation>

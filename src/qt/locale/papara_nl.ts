@@ -661,7 +661,7 @@
         <translation>Verstuur munten naar een para adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
         <translation>Vraag betaling aan (genereert QR codes en para: URI's)</translation>
     </message>
     <message>
@@ -2282,7 +2282,7 @@ Om AutoMint in te schakelend verander je 'enablezeromint=0' naar 'enablezeromint
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
+        <source>Cannot start papara: click-to-pay handler</source>
         <translation>Kan pivx niet starten: click-to-pay handler</translation>
     </message>
     <message>
@@ -4834,7 +4834,7 @@ Wees alsjeblieft geduldig...</translation>
     </message>
 </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = houd tx meta data, bijvoorbeeld account eigenaar en betalingsverzoek informatie, 2 = drop tx meta data)</translation>

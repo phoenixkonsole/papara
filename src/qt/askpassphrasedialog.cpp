@@ -13,11 +13,11 @@
 #include "walletmodel.h"
 #include "smtputils.h"
 #include "tinyformat.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/loadingdialog.h"
-#include "qt/Parara/defaultdialog.h"
-#include "qt/Parara/emailinputdialog.h"
-#include "qt/Parara/Pararagui.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/loadingdialog.h"
+#include "qt/papara/defaultdialog.h"
+#include "qt/papara/emailinputdialog.h"
+#include "qt/papara/paparagui.h"
 #include <QDebug>
 
 #include <QKeyEvent>
@@ -328,7 +328,7 @@ void AskPassphraseDialog::warningMessage() {
     openStandardDialog(
             tr("Wallet encrypted"),
             "<qt>" +
-            tr("Parara will close now to finish the encryption process. "
+            tr("papara will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
                "your para from being stolen by malware infecting your computer.") +
             "<br><br><b>" +

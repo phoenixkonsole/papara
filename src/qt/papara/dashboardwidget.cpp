@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/dashboardwidget.h"
-#include "qt/Parara/forms/ui_dashboardwidget.h"
-#include "qt/Parara/sendconfirmdialog.h"
-#include "qt/Parara/txrow.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/dashboardwidget.h"
+#include "qt/papara/forms/ui_dashboardwidget.h"
+#include "qt/papara/sendconfirmdialog.h"
+#include "qt/papara/txrow.h"
+#include "qt/papara/qtutils.h"
 #include "guiutil.h"
 #include "walletmodel.h"
 #include "clientmodel.h"

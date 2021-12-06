@@ -1,8 +1,8 @@
 // Copyright (c) 2017 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef Parara_ACCUMULATORMAP_H
-#define Parara_ACCUMULATORMAP_H
+#ifndef papara_ACCUMULATORMAP_H
+#define papara_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -20,4 +20,4 @@ public:
     uint256 GetCheckpoint();
     void Reset();
 };
-#endif //Parara_ACCUMULATORMAP_H
+#endif //papara_ACCUMULATORMAP_H

@@ -2,19 +2,19 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsmainoptionswidget.h"
-#include "qt/Parara/settings/forms/ui_settingsmainoptionswidget.h"
+#include "qt/papara/settings/settingsmainoptionswidget.h"
+#include "qt/papara/settings/forms/ui_settingsmainoptionswidget.h"
 #include "QListView"
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Parara-config.h"
+#include "config/papara-config.h"
 #endif
 
 #include "bitcoinunits.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
 #include "clientmodel.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 #include "main.h" // for MAX_SCRIPTCHECK_THREADS
 #include "netbase.h"

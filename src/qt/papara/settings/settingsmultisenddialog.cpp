@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsmultisenddialog.h"
-#include "qt/Parara/settings/forms/ui_settingsmultisenddialog.h"
+#include "qt/papara/settings/settingsmultisenddialog.h"
+#include "qt/papara/settings/forms/ui_settingsmultisenddialog.h"
 #include <QListView>
 #include <QIntValidator>
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 SettingsMultisendDialog::SettingsMultisendDialog(QWidget *parent) :
     QDialog(parent),
@@ -32,7 +32,7 @@ SettingsMultisendDialog::SettingsMultisendDialog(QWidget *parent) :
     initCssEditLine(ui->lineEditLabel, true);
 
     // Address
-    ui->labelSubtitleAddress->setText("Enter a Parara address or contact label");
+    ui->labelSubtitleAddress->setText("Enter a papara address or contact label");
     setCssProperty(ui->labelSubtitleAddress, "text-title2-dialog");
     ui->lineEditAddress->setPlaceholderText("e.g D7VFR83SQbiezrW72hjc… ");
     initCssEditLine(ui->lineEditAddress, true);

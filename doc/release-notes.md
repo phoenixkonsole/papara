@@ -1,12 +1,12 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to release-notes at release time)
 
-Parara Core version *version* is now available from:
+papara Core version *version* is now available from:
 
-  <https://github.com/eastcoastcrypto/Parara/releases>
+  <https://github.com/eastcoastcrypto/papara/releases>
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/eastcoastcrypto/Pararaita/issues>
+  <https://github.com/eastcoastcrypto/paparaita/issues>
 
 Mandatory Update
 ==============
@@ -16,12 +16,12 @@ simul autem fortior nobis
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Parara-Qt (on Mac) or Pararad/Parara-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/papara-Qt (on Mac) or paparad/papara-qt (on Linux).
 
 Compatibility
 ==============
 
-Parara Core is extensively tested on multiple operating systems using
+papara Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later.
 
 Microsoft ended support for Windows XP on [April 8th, 2014](https://www.microsoft.com/en-us/WindowsForBusiness/end-of-xp-support),
@@ -29,7 +29,7 @@ No attempt is made to prevent installing or running the software on Windows XP, 
 can still do so at your own risk but be aware that there are known instabilities and issues.
 Please do not report issues about Windows XP to the issue tracker.
 
-Parara Core should also work on most other Unix-like systems but is not
+papara Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable Changes

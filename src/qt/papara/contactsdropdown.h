@@ -6,10 +6,10 @@
 #define CONTACTSDROPDOWN_H
 
 #include "addresstablemodel.h"
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/contactdropdownrow.h"
-#include "qt/Parara/furabstractlistitemdelegate.h"
-#include "qt/Parara/addressfilterproxymodel.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/contactdropdownrow.h"
+#include "qt/papara/furabstractlistitemdelegate.h"
+#include "qt/papara/addressfilterproxymodel.h"
 #include <QListView>
 #include <QObject>
 #include <QWidget>

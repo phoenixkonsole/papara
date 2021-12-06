@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/addnewaddressdialog.h"
-#include "qt/Parara/forms/ui_addnewaddressdialog.h"
+#include "qt/papara/addnewaddressdialog.h"
+#include "qt/papara/forms/ui_addnewaddressdialog.h"
 
 AddNewAddressDialog::AddNewAddressDialog(QWidget *parent) :
     QWidget(parent),

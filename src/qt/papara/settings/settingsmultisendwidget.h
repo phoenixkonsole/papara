@@ -7,8 +7,8 @@
 
 #include <QWidget>
 #include <QAbstractTableModel>
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/furabstractlistitemdelegate.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/furabstractlistitemdelegate.h"
 
 class paraGUI;
 

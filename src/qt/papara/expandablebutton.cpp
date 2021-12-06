@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/expandablebutton.h"
-#include "qt/Parara/forms/ui_expandablebutton.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/expandablebutton.h"
+#include "qt/papara/forms/ui_expandablebutton.h"
+#include "qt/papara/qtutils.h"
 #include <QParallelAnimationGroup>
 #include <QPropertyAnimation>
 #include <QStyle>

@@ -649,8 +649,8 @@
         <translation>Sendu mono al para addreso</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Peto pagojn (generas QR kodojn kaj Parara: URIs)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Peto pagojn (generas QR kodojn kaj papara: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -2557,7 +2557,7 @@ Nematura: konfirmita, sed malpli ol 1 minto el la samo nomado post ĝin estis mi
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Connect through SOCKS5 proxy</source>
         <translation>Konekti per SOCKS5 prokurilo</translation>

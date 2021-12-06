@@ -2,12 +2,12 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/requestdialog.h"
-#include "qt/Parara/forms/ui_requestdialog.h"
+#include "qt/papara/requestdialog.h"
+#include "qt/papara/forms/ui_requestdialog.h"
 #include <QListView>
 #include <QDoubleValidator>
 
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include "guiutil.h"
 #include "amount.h"
 #include "optionsmodel.h"
@@ -25,7 +25,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     ui->labelTitle->setText(tr("New Request Payment"));
     setCssProperty(ui->labelTitle, "text-title-dialog");
 
-    ui->labelMessage->setText(tr("Instead of share a Parara address, you can create a Payment Request message which bundles up more information than is contained in just a Parara address."));
+    ui->labelMessage->setText(tr("Instead of share a papara address, you can create a Payment Request message which bundles up more information than is contained in just a papara address."));
     setCssProperty(ui->labelMessage, "text-main-grey");
 
     // Combo Coins

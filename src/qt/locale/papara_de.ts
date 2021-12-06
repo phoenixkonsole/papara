@@ -653,8 +653,8 @@
         <translation>An eine para-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und Parara: URIs)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und papara: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -2163,7 +2163,7 @@ Um das automatische Prägen zu aktivieren ändere 'enablezeromint=0' zu 'enablez
         <translation>Ungültige Zahlungsaufforderungsadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
+        <source>Cannot start papara: click-to-pay handler</source>
         <translation>Kann para nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
@@ -4631,7 +4631,7 @@ Bitte haben Sie etwas Geduld...</translation>
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>

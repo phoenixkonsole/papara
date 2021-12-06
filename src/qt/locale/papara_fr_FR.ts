@@ -661,7 +661,7 @@
         <translation>Envoyer des pièces à une adresse para</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
         <translation>Requêtes de paiements (Génère des QR codes et des URIs para)</translation>
     </message>
     <message>
@@ -2298,8 +2298,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Adresse de paiement invalide %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
-        <translation>Impossible de démarrer Parara: gestionnaire click-to-pay</translation>
+        <source>Cannot start papara: click-to-pay handler</source>
+        <translation>Impossible de démarrer papara: gestionnaire click-to-pay</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
@@ -4913,7 +4913,7 @@ S'il vous plaît soyez patient ...</translation>
     </message>
 </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = conserve les métadonnées de transaction, par exemple le propriétaire du compte et les informations de demande de paiement, 2 = supprime les métadonnées)</translation>

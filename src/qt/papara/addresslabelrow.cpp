@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/addresslabelrow.h"
-#include "qt/Parara/forms/ui_addresslabelrow.h"
+#include "qt/papara/addresslabelrow.h"
+#include "qt/papara/forms/ui_addresslabelrow.h"
 
 AddressLabelRow::AddressLabelRow(QWidget *parent) :
     QWidget(parent),

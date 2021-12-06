@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: Pararad.service
-Upstart: Pararad.conf
-OpenRC:  Pararad.openrc
-         Pararad.openrcconf
-CentOS:  Pararad.init
+SystemD: paparad.service
+Upstart: paparad.conf
+OpenRC:  paparad.openrc
+         paparad.openrcconf
+CentOS:  paparad.init
 
 have been made available to assist packagers in creating node packages here.
 

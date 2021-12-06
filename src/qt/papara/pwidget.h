@@ -8,7 +8,7 @@
 #include <QObject>
 #include <QWidget>
 #include <QString>
-#include "qt/Parara/prunnable.h"
+#include "qt/papara/prunnable.h"
 
 class paraGUI;
 class ClientModel;

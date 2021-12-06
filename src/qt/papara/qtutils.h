@@ -17,7 +17,7 @@
 #include <QPixmap>
 #include <QStandardPaths>
 #include <initializer_list>
-#include "qt/Parara/Pararagui.h"
+#include "qt/papara/paparagui.h"
 
 static Qt::Modifier SHORT_KEY
 #ifdef Q_OS_MAC

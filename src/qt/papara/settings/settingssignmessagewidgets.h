@@ -6,8 +6,8 @@
 #define SETTINGSSIGNMESSAGEWIDGETS_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/contactsdropdown.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/contactsdropdown.h"
 
 namespace Ui {
 class SettingsSignMessageWidgets;

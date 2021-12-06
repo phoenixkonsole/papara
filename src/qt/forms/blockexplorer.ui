@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../Parara.qrc"/>
+  <include location="../papara.qrc"/>
  </resources>
  <connections/>
 </ui>

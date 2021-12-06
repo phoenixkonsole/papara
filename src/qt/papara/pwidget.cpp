@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/loadingdialog.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/loadingdialog.h"
 #include <QRunnable>
 #include <QThreadPool>
 

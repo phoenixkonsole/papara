@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/contactsdropdown.h"
+#include "qt/papara/contactsdropdown.h"
 
 #include <QPainter>
 #include <QSizePolicy>
-#include "qt/Parara/addresslabelrow.h"
-#include "qt/Parara/contactdropdownrow.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/furlistrow.h"
+#include "qt/papara/addresslabelrow.h"
+#include "qt/papara/contactdropdownrow.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/furlistrow.h"
 #include "walletmodel.h"
 #include "addresstablemodel.h"
 

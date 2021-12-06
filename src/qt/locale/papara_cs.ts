@@ -609,8 +609,8 @@
         <translation>Odeslat platbuna para adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a Parara: URIs)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a papara: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -2331,7 +2331,7 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

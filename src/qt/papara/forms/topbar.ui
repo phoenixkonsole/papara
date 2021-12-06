@@ -726,7 +726,7 @@ border:none;</string>
   <customwidget>
    <class>ExpandableButton</class>
    <extends>QWidget</extends>
-   <header>qt/Parara/expandablebutton.h</header>
+   <header>qt/papara/expandablebutton.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

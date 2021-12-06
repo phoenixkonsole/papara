@@ -425,7 +425,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../Parara.qrc">
+            <iconset resource="../papara.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -1639,7 +1639,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../Parara.qrc"/>
+  <include location="../papara.qrc"/>
  </resources>
  <connections/>
 </ui>

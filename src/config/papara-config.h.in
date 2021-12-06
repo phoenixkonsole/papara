@@ -1,8 +1,8 @@
-/* src/config/Parara-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/papara-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef Parara_CONFIG_H
+#ifndef papara_CONFIG_H
 
-#define Parara_CONFIG_H
+#define papara_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -342,4 +342,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //Parara_CONFIG_H
+#endif //papara_CONFIG_H

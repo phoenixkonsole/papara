@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/txrow.h"
-#include "qt/Parara/forms/ui_txrow.h"
+#include "qt/papara/txrow.h"
+#include "qt/papara/forms/ui_txrow.h"
 
 #include "guiutil.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 TxRow::TxRow(QWidget *parent) :
     QWidget(parent),

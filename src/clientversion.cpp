@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both Pararad and Parara-qt, to make it harder for attackers to
+ * for both paparad and papara-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Parara Core");
+const std::string CLIENT_NAME("papara Core");
 
 /**
  * Client version number

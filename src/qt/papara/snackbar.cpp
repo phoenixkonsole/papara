@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/snackbar.h"
-#include "qt/Parara/forms/ui_snackbar.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/snackbar.h"
+#include "qt/papara/forms/ui_snackbar.h"
+#include "qt/papara/qtutils.h"
 #include <QTimer>
 
 

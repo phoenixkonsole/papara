@@ -7,7 +7,7 @@
 
 #include <QDialog>
 #include "walletmodel.h"
-#include "qt/Parara/snackbar.h"
+#include "qt/papara/snackbar.h"
 #include "masternodeconfig.h"
 #include <QComboBox>
 #include "chainparams.h"

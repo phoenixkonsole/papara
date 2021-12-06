@@ -7,7 +7,7 @@
 
 #include "guiutil.h"
 #include "walletmodel.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 #include <QUrl>
 
@@ -16,7 +16,7 @@ OpenURIDialog::OpenURIDialog(QWidget* parent) : QDialog(parent, Qt::WindowSystem
 {
     ui->setupUi(this);
     this->setStyleSheet(parent->styleSheet());
-    ui->uriEdit->setPlaceholderText("Parara:");
+    ui->uriEdit->setPlaceholderText("papara:");
 
     ui->labelSubtitle->setText("URI");
     setCssProperty(ui->labelSubtitle, "text-title2-dialog");
@@ -64,5 +64,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if (filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("Parara:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("papara:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

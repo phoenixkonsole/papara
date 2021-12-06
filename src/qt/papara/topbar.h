@@ -6,8 +6,8 @@
 #define TOPBAR_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/lockunlock.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/lockunlock.h"
 #include "amount.h"
 #include <QTimer>
 #include <QProgressBar>

@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build Pararad (headless client) for OSX.
+This guide will show you how to build paparad (headless client) for OSX.
 
 Notes
 -----
@@ -43,12 +43,12 @@ Instructions: Homebrew
         brew install autoconf automake berkeley-db4 libtool boost@1.55 miniupnpc openssl@1.0 pkg-config protobuf qt5 zmq libevent librsvg 
         
 
-### Building `Pararad`
+### Building `paparad`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/phoenixkonsole/Parara
-        cd Parara
+        git clone https://github.com/phoenixkonsole/papara
+        cd papara
 
 2.  Link Boost 1.55 to be used for compiling instead of higher / current version - same for SSL
 
@@ -57,7 +57,7 @@ Instructions: Homebrew
         export CPPFLAGS="-I/usr/local/opt/openssl/include"
         
 
-3.  Build Pararad:
+3.  Build paparad:
 
         ./autogen.sh
         ./configure LDFLAGS='-L/usr/local/opt/openssl/lib' CPPFLAGS='-I/usr/local/opt/openssl/include' PKG_CONFIG_PATH='/usr/local/opt/openssl/lib/pkgconfig' --with-gui=qt5 --enable-test=no
@@ -67,7 +67,7 @@ Instructions: Homebrew
 
         make check
 
-5.  (Optional) You can also install Pararad to your path:
+5.  (Optional) You can also install paparad to your path:
 
         make install
 
@@ -79,7 +79,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "Parara-qt" as project name, enter src/qt as location
+4. Enter "papara-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -89,11 +89,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `Pararad` for your own use.
+You can ignore this section if you are building `paparad` for your own use.
 
-Pararad/Parara-cli binaries are not included in the Parara-Qt.app bundle.
+paparad/papara-cli binaries are not included in the papara-Qt.app bundle.
 
-If you are building `Pararad` or `Parara-qt` for others, your build machine should be set up
+If you are building `paparad` or `papara-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -102,30 +102,30 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the Parara-Qt.app
+Once dependencies are compiled, see release-process.md for how the papara-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./Pararad`, provided that you are still in the `src`
+It's now available at `./paparad`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./Pararad` to get the filename where it should be put, or just try these
+Run `./paparad` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=Parararpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Parara/Parara.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Parara/Parara.conf"
+    echo -e "rpcuser=papararpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/papara/papara.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/papara/papara.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Parara/debug.log
+    tail -f $HOME/Library/Application\ Support/papara/debug.log
 
 Other commands:
 -------
 
-    ./Pararad -daemon # to start the Parara daemon.
-    ./Parara-cli --help  # for a list of command-line options.
-    ./Parara-cli help    # When the daemon is running, to get a list of RPC commands
+    ./paparad -daemon # to start the papara daemon.
+    ./papara-cli --help  # for a list of command-line options.
+    ./papara-cli help    # When the daemon is running, to get a list of RPC commands

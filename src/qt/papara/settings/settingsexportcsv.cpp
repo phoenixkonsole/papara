@@ -2,13 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsexportcsv.h"
-#include "qt/Parara/settings/forms/ui_settingsexportcsv.h"
+#include "qt/papara/settings/settingsexportcsv.h"
+#include "qt/papara/settings/forms/ui_settingsexportcsv.h"
 #include <QFile>
 #include "csvmodelwriter.h"
 #include "guiutil.h"
 #include "optionsmodel.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include "guiinterface.h"
 
 SettingsExportCSV::SettingsExportCSV(paraGUI* _window, QWidget *parent) :

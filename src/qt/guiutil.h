@@ -40,7 +40,7 @@ namespace GUIUtil
 QString dateTimeStr(const QDateTime& datetime);
 QString dateTimeStr(qint64 nTime);
 
-// Render Parara addresses in monospace font
+// Render papara addresses in monospace font
 QFont bitcoinAddressFont();
 
 // Parse string into a CAmount value
@@ -56,7 +56,7 @@ bool requestUnlock(WalletModel* walletModel, AskPassphraseDialog::Context contex
 void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent);
 void setupAmountWidget(QLineEdit* widget, QWidget* parent);
 
-// Parse "Parara:" URI into recipient object, return true on successful parsing
+// Parse "papara:" URI into recipient object, return true on successful parsing
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out);
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out);
 QString formatBitcoinURI(const SendCoinsRecipient& info);

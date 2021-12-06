@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/txviewholder.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/txviewholder.h"
+#include "qt/papara/qtutils.h"
 #include "transactiontablemodel.h"
 #include <QModelIndex>
 

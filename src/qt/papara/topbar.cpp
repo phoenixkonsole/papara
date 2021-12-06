@@ -2,13 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/topbar.h"
-#include "qt/Parara/forms/ui_topbar.h"
+#include "qt/papara/topbar.h"
+#include "qt/papara/forms/ui_topbar.h"
 #include <QPixmap>
-#include "qt/Parara/lockunlock.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/receivedialog.h"
-#include "qt/Parara/defaultdialog.h"
+#include "qt/papara/lockunlock.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/receivedialog.h"
+#include "qt/papara/defaultdialog.h"
 #include "askpassphrasedialog.h"
 
 #include "bitcoinunits.h"
@@ -454,7 +454,7 @@ void TopBar::loadWalletModel(){
     connect(walletModel->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     connect(walletModel, &WalletModel::encryptionStatusChanged, this, &TopBar::refreshStatus);
 
-    // update the display unit, to not use the default ("Parara")
+    // update the display unit, to not use the default ("papara")
     updateDisplayUnit();
 
     refreshStatus();

@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/optionbutton.h"
-#include "qt/Parara/forms/ui_optionbutton.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/optionbutton.h"
+#include "qt/papara/forms/ui_optionbutton.h"
+#include "qt/papara/qtutils.h"
 #include <QMouseEvent>
 
 OptionButton::OptionButton(QWidget *parent) :

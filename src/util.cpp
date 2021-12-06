@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Parara-config.h"
+#include "config/papara-config.h"
 #endif
 
 #include "util.h"
@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// Parara only features
+// papara only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodeAccount = "";
@@ -122,7 +122,7 @@ int nZeromintPercentage = 0;
 int nPreferredDenom = 0;
 const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
-int nAnonymizePararaAmount = 1000;
+int nAnonymizepaparaAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -239,8 +239,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "Parara" is a composite category enabling all Parara-related debug output
-            if (ptrCategory->count(string("Parara"))) {
+            // "papara" is a composite category enabling all papara-related debug output
+            if (ptrCategory->count(string("papara"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
@@ -405,7 +405,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "Parara";
+    const char* pszModule = "papara";
 #endif
     if (pex)
         return strprintf(
@@ -426,13 +426,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Parara
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Parara
-// Mac: ~/Library/Application Support/Parara
-// Unix: ~/.Parara
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\papara
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\papara
+// Mac: ~/Library/Application Support/papara
+// Unix: ~/.papara
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Parara";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "papara";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -444,10 +444,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Parara";
+    return pathRet / "papara";
 #else
     // Unix
-    return pathRet / ".Parara";
+    return pathRet / ".papara";
 #endif
 #endif
 }
@@ -494,7 +494,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "Parara.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "papara.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -513,7 +513,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty Parara.conf if it does not exist
+        // Create empty papara.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -524,7 +524,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override Parara.conf
+        // Don't overwrite existing settings so command line settings override papara.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -539,7 +539,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "Pararad.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "paparad.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

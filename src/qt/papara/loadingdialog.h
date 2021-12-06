@@ -10,7 +10,7 @@
 #include <QPointer>
 #include <iostream>
 #include <QTimer>
-#include "qt/Parara/prunnable.h"
+#include "qt/papara/prunnable.h"
 
 namespace Ui {
 class LoadingDialog;

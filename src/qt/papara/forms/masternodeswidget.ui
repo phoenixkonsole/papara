@@ -457,7 +457,7 @@ margin:0px;</string>
   <customwidget>
    <class>OptionButton</class>
    <extends>QWidget</extends>
-   <header>qt/Parara/optionbutton.h</header>
+   <header>qt/papara/optionbutton.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

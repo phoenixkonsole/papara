@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between Parara-cli and Pararad)
- * of a given instance of the Parara system.
+ * CBaseChainParams defines the base parameters (shared between papara-cli and paparad)
+ * of a given instance of the papara system.
  */
 class CBaseChainParams
 {

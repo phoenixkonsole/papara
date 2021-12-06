@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsconsolewidget.h"
-#include "qt/Parara/settings/forms/ui_settingsconsolewidget.h"
+#include "qt/papara/settings/settingsconsolewidget.h"
+#include "qt/papara/settings/forms/ui_settingsconsolewidget.h"
 #include "QGraphicsDropShadowEffect"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 #include "clientmodel.h"
 #include "guiutil.h"
@@ -35,7 +35,7 @@
 #include <QTime>
 #include <QTimer>
 #include <QStringList>
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include "utilitydialog.h"
 
 const int CONSOLE_HISTORY = 50;
@@ -96,7 +96,7 @@ public:
     }
 };
 
-#include "qt/Parara/settings/moc_settingsconsolewidget.cpp"
+#include "qt/papara/settings/moc_settingsconsolewidget.cpp"
 
 /**
  * Split shell command line into a list of arguments. Aims to emulate \c bash and friends.
@@ -408,7 +408,7 @@ void SettingsConsoleWidget::clear(){
     QString clsKey = "Ctrl-L";
 #endif
 
-    message(CMD_REPLY, (tr("Welcome to the Parara RPC console.") + "<br>" +
+    message(CMD_REPLY, (tr("Welcome to the papara RPC console.") + "<br>" +
                         tr("Use up and down arrows to navigate history, and %1 to clear screen.").arg("<b>"+clsKey+"</b>") + "<br>" +
                         tr("Type <b>help</b> for an overview of available commands.") +
                         "<br><span class=\"secwarning\"><br>" +

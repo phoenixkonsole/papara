@@ -4,7 +4,7 @@ cd ~
 echo "****************************************************************************"
 echo "* Ubuntu 16.04 is the recommended opearting system for this install.       *"
 echo "*                                                                          *"
-echo "* This script will install and configure your Parara  masternodes.  *"
+echo "* This script will install and configure your papara  masternodes.  *"
 echo "****************************************************************************"
 echo && echo && echo
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -35,7 +35,7 @@ then
   sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
   cd
 
-  wget https://github.com/phoenixkonsole/Parara/releases/download/v1.1.0.0/Linux.zip
+  wget https://github.com/phoenixkonsole/papara/releases/download/v1.1.0.0/Linux.zip
   unzip Linux.zip
   chmod +x Linux/bin/*
   sudo mv  Linux/bin/* /usr/local/bin
@@ -82,37 +82,37 @@ for i in `seq 1 1 $MNCOUNT`; do
   echo "The RPC port is $RPCPORT"
 
   ALIAS=${ALIAS}
-  CONF_DIR=~/.Parara_$ALIAS
+  CONF_DIR=~/.papara_$ALIAS
 
   # Create scripts
-  echo '#!/bin/bash' > ~/bin/Pararad_$ALIAS.sh
-  echo "Pararad -daemon -conf=$CONF_DIR/Parara.conf -datadir=$CONF_DIR "'$*' >> ~/bin/Pararad_$ALIAS.sh
-  echo '#!/bin/bash' > ~/bin/Parara-cli_$ALIAS.sh
-  echo "Parara-cli -conf=$CONF_DIR/Parara.conf -datadir=$CONF_DIR "'$*' >> ~/bin/Parara-cli_$ALIAS.sh
-  echo '#!/bin/bash' > ~/bin/Parara-tx_$ALIAS.sh
-  echo "Parara-tx -conf=$CONF_DIR/Parara.conf -datadir=$CONF_DIR "'$*' >> ~/bin/Parara-tx_$ALIAS.sh 
-  chmod 755 ~/bin/Parara*.sh
+  echo '#!/bin/bash' > ~/bin/paparad_$ALIAS.sh
+  echo "paparad -daemon -conf=$CONF_DIR/papara.conf -datadir=$CONF_DIR "'$*' >> ~/bin/paparad_$ALIAS.sh
+  echo '#!/bin/bash' > ~/bin/papara-cli_$ALIAS.sh
+  echo "papara-cli -conf=$CONF_DIR/papara.conf -datadir=$CONF_DIR "'$*' >> ~/bin/papara-cli_$ALIAS.sh
+  echo '#!/bin/bash' > ~/bin/papara-tx_$ALIAS.sh
+  echo "papara-tx -conf=$CONF_DIR/papara.conf -datadir=$CONF_DIR "'$*' >> ~/bin/papara-tx_$ALIAS.sh 
+  chmod 755 ~/bin/papara*.sh
 
   mkdir -p $CONF_DIR
-  echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> Parara.conf_TEMP
-  echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> Parara.conf_TEMP
-  echo "rpcallowip=127.0.0.1" >> Parara.conf_TEMP
-  echo "rpcport=$RPCPORT" >> Parara.conf_TEMP
-  echo "listen=1" >> Parara.conf_TEMP
-  echo "server=1" >> Parara.conf_TEMP
-  echo "daemon=1" >> Parara.conf_TEMP
-  echo "logtimestamps=1" >> Parara.conf_TEMP
-  echo "maxconnections=256" >> Parara.conf_TEMP
-  echo "masternode=1" >> Parara.conf_TEMP
-  echo "" >> Parara.conf_TEMP
+  echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> papara.conf_TEMP
+  echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> papara.conf_TEMP
+  echo "rpcallowip=127.0.0.1" >> papara.conf_TEMP
+  echo "rpcport=$RPCPORT" >> papara.conf_TEMP
+  echo "listen=1" >> papara.conf_TEMP
+  echo "server=1" >> papara.conf_TEMP
+  echo "daemon=1" >> papara.conf_TEMP
+  echo "logtimestamps=1" >> papara.conf_TEMP
+  echo "maxconnections=256" >> papara.conf_TEMP
+  echo "masternode=1" >> papara.conf_TEMP
+  echo "" >> papara.conf_TEMP
 
-  echo "" >> Parara.conf_TEMP
-  echo "port=$PORT" >> Parara.conf_TEMP
-  echo "masternodeaddr=$IP:$PORT" >> Parara.conf_TEMP
-  echo "masternodeprivkey=$PRIVKEY" >> Parara.conf_TEMP
+  echo "" >> papara.conf_TEMP
+  echo "port=$PORT" >> papara.conf_TEMP
+  echo "masternodeaddr=$IP:$PORT" >> papara.conf_TEMP
+  echo "masternodeprivkey=$PRIVKEY" >> papara.conf_TEMP
   sudo ufw allow $PORT/tcp
 
-  mv Parara.conf_TEMP $CONF_DIR/Parara.conf
+  mv papara.conf_TEMP $CONF_DIR/papara.conf
   
-  sh ~/bin/Pararad_$ALIAS.sh
+  sh ~/bin/paparad_$ALIAS.sh
 done

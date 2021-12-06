@@ -22,7 +22,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string notr="true">Parara Core - Command-line options</string>
+   <string notr="true">papara Core - Command-line options</string>
   </property>
   <property name="styleSheet">
    <string notr="true">#HelpMessageDialog {

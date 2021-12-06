@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/contactdropdownrow.h"
-#include "qt/Parara/forms/ui_contactdropdownrow.h"
+#include "qt/papara/contactdropdownrow.h"
+#include "qt/papara/forms/ui_contactdropdownrow.h"
 
 ContactDropdownRow::ContactDropdownRow(QWidget *parent) :
     QWidget(parent),

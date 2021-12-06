@@ -780,7 +780,7 @@ bool MultisigDialog::createRedeemScript(int m, std::vector<std::string> vKeys, C
         for(std::vector<std::string>::iterator it = vKeys.begin(); it != vKeys.end(); ++it) {
             std::string keyString = *it;
 #ifdef ENABLE_WALLET
-            // Case 1: Parara address and we have full public key:
+            // Case 1: papara address and we have full public key:
             CBitcoinAddress address(keyString);
             if (pwalletMain && address.IsValid()) {
                 CKeyID keyID;

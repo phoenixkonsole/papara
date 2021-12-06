@@ -621,8 +621,8 @@
         <translation>Enviar moedas para um endereço para</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e Parara: URIs)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e papara: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -3534,7 +3534,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>

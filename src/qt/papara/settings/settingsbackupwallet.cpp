@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsbackupwallet.h"
-#include "qt/Parara/settings/forms/ui_settingsbackupwallet.h"
+#include "qt/papara/settings/settingsbackupwallet.h"
+#include "qt/papara/settings/forms/ui_settingsbackupwallet.h"
 #include <QFile>
 #include <QGraphicsDropShadowEffect>
 #include "guiutil.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include "guiinterface.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 SettingsBackupWallet::SettingsBackupWallet(paraGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBackupWallet)

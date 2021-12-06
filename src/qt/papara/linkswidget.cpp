@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/linkswidget.h"
-#include "qt/Parara/forms/ui_linkswidget.h"
+#include "qt/papara/linkswidget.h"
+#include "qt/papara/forms/ui_linkswidget.h"
 #include <QScrollBar>
 #include <QMetaObject>
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 LinksWidget::LinksWidget(QWidget *parent) :
     QDialog(parent),

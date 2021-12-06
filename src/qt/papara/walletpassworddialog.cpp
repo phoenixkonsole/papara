@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/walletpassworddialog.h"
-#include "qt/Parara/forms/ui_walletpassworddialog.h"
+#include "qt/papara/walletpassworddialog.h"
+#include "qt/papara/forms/ui_walletpassworddialog.h"
 #include <QGraphicsDropShadowEffect>
 
 WalletPasswordDialog::WalletPasswordDialog(QWidget *parent) :

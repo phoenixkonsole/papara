@@ -5,7 +5,7 @@
 #ifndef FURABSTRACTLISTITEMDELEGATE_H
 #define FURABSTRACTLISTITEMDELEGATE_H
 
-#include "qt/Parara/furlistrow.h"
+#include "qt/papara/furlistrow.h"
 
 #include <QAbstractItemDelegate>
 #include <QPainter>

@@ -5,7 +5,7 @@
 #ifndef TOOLTIPMENU_H
 #define TOOLTIPMENU_H
 
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 #include <QWidget>
 #include <QModelIndex>
 

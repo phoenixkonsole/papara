@@ -1911,7 +1911,7 @@
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Connection options:</source>
         <translation>Opcions de connexió:</translation>

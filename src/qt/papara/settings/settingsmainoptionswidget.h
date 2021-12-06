@@ -5,7 +5,7 @@
 #ifndef SETTINGSMAINOPTIONSWIDGET_H
 #define SETTINGSMAINOPTIONSWIDGET_H
 
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 
 #include <QWidget>
 

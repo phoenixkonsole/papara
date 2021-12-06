@@ -573,8 +573,8 @@
         <translation>Lähetä kolikkoja para osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja Parara: URIja)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja papara: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -2440,7 +2440,7 @@
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>

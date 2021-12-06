@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Parara"
-            VALUE "FileDescription",    "Parara-cli (OSS RPC client for Parara)"
+            VALUE "CompanyName",        "papara"
+            VALUE "FileDescription",    "papara-cli (OSS RPC client for papara)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "Parara-cli"
+            VALUE "InternalName",       "papara-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "Parara-cli.exe"
-            VALUE "ProductName",        "Parara-cli"
+            VALUE "OriginalFilename",   "papara-cli.exe"
+            VALUE "ProductName",        "papara-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

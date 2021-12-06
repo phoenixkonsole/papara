@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Parara"
-            VALUE "FileDescription",    "Parara Core (OSS GUI client for Parara)"
+            VALUE "CompanyName",        "papara"
+            VALUE "FileDescription",    "papara Core (OSS GUI client for papara)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "pivx-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "Parara-qt.exe"
-            VALUE "ProductName",        "Parara Core"
+            VALUE "OriginalFilename",   "papara-qt.exe"
+            VALUE "ProductName",        "papara Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

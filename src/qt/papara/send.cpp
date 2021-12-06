@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/send.h"
-#include "qt/Parara/forms/ui_send.h"
-#include "qt/Parara/addnewcontactdialog.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/sendchangeaddressdialog.h"
-#include "qt/Parara/optionbutton.h"
-#include "qt/Parara/sendconfirmdialog.h"
-#include "qt/Parara/myaddressrow.h"
+#include "qt/papara/send.h"
+#include "qt/papara/forms/ui_send.h"
+#include "qt/papara/addnewcontactdialog.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/sendchangeaddressdialog.h"
+#include "qt/papara/optionbutton.h"
+#include "qt/papara/sendconfirmdialog.h"
+#include "qt/papara/myaddressrow.h"
 #include "clientmodel.h"
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
@@ -59,7 +59,7 @@ SendWidget::SendWidget(paraGUI* parent) :
     setCssProperty(ui->labelSubtitle2, "text-subtitle");
 
     /* Address */
-    ui->labelSubtitleAddress->setText(tr("Enter a Parara address or contact label"));
+    ui->labelSubtitleAddress->setText(tr("Enter a papara address or contact label"));
     setCssProperty(ui->labelSubtitleAddress, "text-title");
 
 
@@ -446,7 +446,7 @@ bool SendWidget::sendZpara(QList<SendCoinsRecipient> recipients){
         return true;
     } else {
         QString body;
-        if (receipt.GetStatus() == ZParara_SPEND_V1_SEC_LEVEL) {
+        if (receipt.GetStatus() == Zpapara_SPEND_V1_SEC_LEVEL) {
             body = tr("Version 1 zpara require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction

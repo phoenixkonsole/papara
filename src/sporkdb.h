@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Parara_CSPORKDB_H
-#define Parara_CSPORKDB_H
+#ifndef papara_CSPORKDB_H
+#define papara_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //Parara_CSPORKDB_H
+#endif //papara_CSPORKDB_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/splash.h"
-#include "qt/Parara/forms/ui_splash.h"
+#include "qt/papara/splash.h"
+#include "qt/papara/forms/ui_splash.h"
 #include "QFile"
 
 #include "init.h"
@@ -27,7 +27,7 @@ Splash::Splash(QWidget *parent) :
     ui(new Ui::Splash)
 {
     ui->setupUi(this);
-    setWindowTitle("Parara Wallet");
+    setWindowTitle("papara Wallet");
 
     this->setStyleSheet(GUIUtil::loadStyleSheet());
     this->setAttribute( Qt::WA_TranslucentBackground, true );

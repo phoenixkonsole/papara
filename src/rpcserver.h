@@ -128,7 +128,7 @@ public:
 };
 
 /**
- * Parara RPC command dispatcher.
+ * papara RPC command dispatcher.
  */
 class CRPCTable
 {

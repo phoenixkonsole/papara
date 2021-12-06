@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsinformationwidget.h"
-#include "qt/Parara/settings/forms/ui_settingsinformationwidget.h"
+#include "qt/papara/settings/settingsinformationwidget.h"
+#include "qt/papara/settings/forms/ui_settingsinformationwidget.h"
 #include "clientmodel.h"
 #include "chainparams.h"
 #include "db.h"
 #include "util.h"
 #include "guiutil.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include <QDir>
 
 SettingsInformationWidget::SettingsInformationWidget(paraGUI* _window,QWidget *parent) :

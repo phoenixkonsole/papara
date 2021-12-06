@@ -6,7 +6,7 @@
 #define SETTINGSINFORMATIONWIDGET_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 #include "rpcconsole.h"
 
 namespace Ui {

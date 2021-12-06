@@ -8,14 +8,14 @@
 #include <QWidget>
 #include <QPushButton>
 
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/contactsdropdown.h"
-#include "qt/Parara/sendmultirow.h"
-#include "qt/Parara/sendcustomfeedialog.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/contactsdropdown.h"
+#include "qt/papara/sendmultirow.h"
+#include "qt/papara/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
 #include "zparacontroldialog.h"
-#include "qt/Parara/tooltipmenu.h"
+#include "qt/papara/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 

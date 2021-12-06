@@ -2,13 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/masternodeswidget.h"
-#include "qt/Parara/forms/ui_masternodeswidget.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/mnrow.h"
-#include "qt/Parara/mninfodialog.h"
+#include "qt/papara/masternodeswidget.h"
+#include "qt/papara/forms/ui_masternodeswidget.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/mnrow.h"
+#include "qt/papara/mninfodialog.h"
 
-#include "qt/Parara/masternodewizarddialog.h"
+#include "qt/papara/masternodewizarddialog.h"
 
 #include "activemasternode.h"
 #include "clientmodel.h"
@@ -22,7 +22,7 @@
 #include "walletmodel.h"
 #include "askpassphrasedialog.h"
 #include "util.h"
-#include "qt/Parara/optionbutton.h"
+#include "qt/papara/optionbutton.h"
 #include <boost/filesystem.hpp>
 #include <iostream>
 #include <fstream>

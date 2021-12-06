@@ -577,8 +577,8 @@
         <translation>Odoslať mince na adresu para</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a Parara: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a papara: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1287,7 +1287,7 @@ MultiSend: %1</translation>
     <name>ZparaControlDialog</name>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

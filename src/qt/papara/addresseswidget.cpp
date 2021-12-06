@@ -2,16 +2,16 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/addresseswidget.h"
-#include "qt/Parara/forms/ui_addresseswidget.h"
-#include "qt/Parara/addresslabelrow.h"
-#include "qt/Parara/addnewaddressdialog.h"
-#include "qt/Parara/tooltipmenu.h"
+#include "qt/papara/addresseswidget.h"
+#include "qt/papara/forms/ui_addresseswidget.h"
+#include "qt/papara/addresslabelrow.h"
+#include "qt/papara/addnewaddressdialog.h"
+#include "qt/papara/tooltipmenu.h"
 
-#include "qt/Parara/addnewcontactdialog.h"
-#include "qt/Parara/Pararagui.h"
+#include "qt/papara/addnewcontactdialog.h"
+#include "qt/papara/paparagui.h"
 #include "guiutil.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include "walletmodel.h"
 
 #include <QModelIndex>
@@ -112,7 +112,7 @@ AddressesWidget::AddressesWidget(paraGUI* parent) :
     setCssEditLine(ui->lineEditName, true);
 
     // Address
-    ui->labelAddress->setText(tr("Enter a Parara address"));
+    ui->labelAddress->setText(tr("Enter a papara address"));
     setCssProperty(ui->labelAddress, "text-title");
     ui->lineEditAddress->setPlaceholderText("e.g. D7VFR83SQbiezrW72hjc…");
     setCssEditLine(ui->lineEditAddress, true);

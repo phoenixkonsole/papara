@@ -2,15 +2,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/sendmultirow.h"
-#include "qt/Parara/forms/ui_sendmultirow.h"
+#include "qt/papara/sendmultirow.h"
+#include "qt/papara/forms/ui_sendmultirow.h"
 #include <QDoubleValidator>
 
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
 #include "guiutil.h"
 #include "bitcoinunits.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 SendMultiRow::SendMultiRow(PWidget *parent) :
     PWidget(parent),

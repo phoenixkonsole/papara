@@ -1,39 +1,39 @@
-Parara Core
+papara Core
 =====================
 
 Setup
 ---------------------
-[Parara Core](http://Pararacoin.com) is the original Parara client and it builds the backbone of the network. However, it downloads and stores the entire history of Parara transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[papara Core](http://paparacoin.com) is the original papara client and it builds the backbone of the network. However, it downloads and stores the entire history of papara transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Parara on your native platform.
+The following are some helpful notes on how to run papara on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/Parara-qt (GUI, 32-bit) or bin/32/Pararad (headless, 32-bit)
-- bin/64/Parara-qt (GUI, 64-bit) or bin/64/Pararad (headless, 64-bit)
+- bin/32/papara-qt (GUI, 32-bit) or bin/32/paparad (headless, 32-bit)
+- bin/64/papara-qt (GUI, 64-bit) or bin/64/paparad (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run Parara-qt.exe.
+Unpack the files into a directory, and then run papara-qt.exe.
 
 ### OSX
 
-Drag Parara-Qt to your applications folder, and then run Parara-Qt.
+Drag papara-Qt to your applications folder, and then run papara-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Parara Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [papara Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Parara Forum](http://Pararacoin.com/).
-* Join one of our Discord groups [Parara Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [papara Forum](http://paparacoin.com/).
+* Join one of our Discord groups [papara Discord Groups](https://discord.gg/YcnvMqt).
 
 Building
 ---------------------
-The following are developer notes on how to build Parara on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build papara on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Parara on your native platform
 
 Development
 ---------------------
-The Parara repo's [root README](https://github.com/eastcoastcrypto/Parara/blob/master/README.md) contains relevant information on the development process and automated testing.
+The papara repo's [root README](https://github.com/eastcoastcrypto/papara/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The Parara repo's [root README](https://github.com/eastcoastcrypto/Parara/blob/m
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [Parara-Dev] Discord groups [Parara Discord Groups](https://discord.gg/YcnvMqt).
+* Join the [papara-Dev] Discord groups [papara Discord Groups](https://discord.gg/YcnvMqt).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

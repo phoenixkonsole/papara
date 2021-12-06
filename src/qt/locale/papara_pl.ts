@@ -662,8 +662,8 @@ Użyj hasła składającego się z dziesięciu lub więcej losowych znaków lub 
         <translation>Wyślij monety do adresu para</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i Parara:URI)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i papara:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -2294,8 +2294,8 @@ Aby włączyć AutoMint zmień "enablezeromint = 0" na "enablezeromint = 1" w pl
         <translation>Nieprawidłowy adres płatności %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
-        <translation>Nie można uruchomić Parara: click-to-pay handler</translation>
+        <source>Cannot start papara: click-to-pay handler</source>
+        <translation>Nie można uruchomić papara: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
@@ -4909,7 +4909,7 @@ Proszę być cierpliwym...</translation>
     </message>
 </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = zachowaj tx meta dane np. Właściciel konta i informacje o żądaniu płatności, 2 = porzuć tx meta dane)</translation>

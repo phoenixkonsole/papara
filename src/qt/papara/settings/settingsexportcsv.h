@@ -6,7 +6,7 @@
 #define SETTINGSEXPORTCSV_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 #include "transactionfilterproxy.h"
 #include <QSortFilterProxyModel>
 

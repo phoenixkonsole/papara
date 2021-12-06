@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/sendchangeaddressdialog.h"
-#include "qt/Parara/forms/ui_sendchangeaddressdialog.h"
+#include "qt/papara/sendchangeaddressdialog.h"
+#include "qt/papara/forms/ui_sendchangeaddressdialog.h"
 #include "walletmodel.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 SendChangeAddressDialog::SendChangeAddressDialog(QWidget *parent) :
     QDialog(parent),
@@ -21,10 +21,10 @@ SendChangeAddressDialog::SendChangeAddressDialog(QWidget *parent) :
     ui->labelTitle->setText(tr("Custom Change Address"));
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
-    ui->labelMessage->setText(tr("The remainder of the value resultant from the inputs minus the outputs value goes to the \"change\" Parara address"));
+    ui->labelMessage->setText(tr("The remainder of the value resultant from the inputs minus the outputs value goes to the \"change\" papara address"));
     ui->labelMessage->setProperty("cssClass", "text-main-grey");
 
-    ui->lineEditAddress->setPlaceholderText("Enter a Parara  address (e.g D7VFR83SQbiezrW72hjc… ");
+    ui->lineEditAddress->setPlaceholderText("Enter a papara  address (e.g D7VFR83SQbiezrW72hjc… ");
     initCssEditLine(ui->lineEditAddress, true);
 
     // Buttons

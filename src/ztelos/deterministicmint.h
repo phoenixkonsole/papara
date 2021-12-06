@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Parara_DETERMINISTICMINT_H
-#define Parara_DETERMINISTICMINT_H
+#ifndef papara_DETERMINISTICMINT_H
+#define papara_DETERMINISTICMINT_H
 
 #include <libzerocoin/Denominations.h>
 #include <uint256.h>
@@ -64,4 +64,4 @@ public:
     };
 };
 
-#endif //Parara_DETERMINISTICMINT_H
+#endif //papara_DETERMINISTICMINT_H

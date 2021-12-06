@@ -66,15 +66,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += Pararad
+  bin_PROGRAMS += paparad
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += Parara-cli Parara-tx
+  bin_PROGRAMS += papara-cli papara-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# Parara core #
+# papara core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addrman.h \
@@ -183,7 +183,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between Pararad and Parara-qt
+# server: shared between paparad and papara-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -229,7 +229,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between Pararad and Parara-qt, but only linked
+# wallet: shared between paparad and papara-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -349,7 +349,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between Pararad, and Parara-qt and non-server tools
+# common: shared between paparad, and papara-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -411,7 +411,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between Parara-cli and Parara-qt
+# cli: shared between papara-cli and papara-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -421,16 +421,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# Pararad binary #
-Pararad_SOURCES = Pararad.cpp
-Pararad_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-Pararad_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-Pararad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# paparad binary #
+paparad_SOURCES = paparad.cpp
+paparad_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+paparad_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+paparad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Pararad_SOURCES += Pararad-res.rc
+paparad_SOURCES += paparad-res.rc
 endif
-Pararad_LDADD = \
+paparad_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -444,38 +444,38 @@ Pararad_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-Pararad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(UNBOUND_LIBS) $(CURL_LIBS) 
+paparad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(UNBOUND_LIBS) $(CURL_LIBS) 
 
-# Parara-cli binary #
-Parara_cli_SOURCES = Parara-cli.cpp
-Parara_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-Parara_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-Parara_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# papara-cli binary #
+papara_cli_SOURCES = papara-cli.cpp
+papara_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+papara_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+papara_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Parara_cli_SOURCES += Parara-cli-res.rc
+papara_cli_SOURCES += papara-cli-res.rc
 endif
 
-Parara_cli_LDADD = \
+papara_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-Parara_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(UNBOUND_LIBS) $(CURL_LIBS)
+papara_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(UNBOUND_LIBS) $(CURL_LIBS)
 #
 
-# Parara-tx binary #
-Parara_tx_SOURCES = Parara-tx.cpp
-Parara_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-Parara_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-Parara_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# papara-tx binary #
+papara_tx_SOURCES = papara-tx.cpp
+papara_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+papara_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+papara_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-Parara_tx_SOURCES += Parara-tx-res.rc
+papara_tx_SOURCES += papara-tx-res.rc
 endif
 
-Parara_tx_LDADD = \
+papara_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -483,7 +483,7 @@ Parara_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-Parara_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(UNBOUND_LIBS)
+papara_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(UNBOUND_LIBS)
 #
 
 # bitcoinconsensus library #
@@ -539,12 +539,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST =
 
 
-config/Parara-config.h: config/stamp-h1
+config/papara-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/Parara-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/papara-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/Parara-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/Parara-config.h.in
+$(top_srcdir)/$(subdir)/config/papara-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/papara-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean

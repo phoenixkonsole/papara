@@ -1,25 +1,25 @@
-# /etc/conf.d/Pararad: config file for /etc/init.d/Pararad
+# /etc/conf.d/paparad: config file for /etc/init.d/paparad
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/Parara/Parara.conf"
+#BITCOIND_CONFIGFILE="/etc/papara/papara.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/Pararad"
+#BITCOIND_PIDDIR="/var/run/paparad"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/Pararad.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/paparad.pid"
 
-# Where to write Pararad data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/Pararad"
+# Where to write paparad data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/paparad"
 
-# User and group to own Pararad process
-#BITCOIND_USER="Parara"
-#BITCOIND_GROUP="Parara"
+# User and group to own paparad process
+#BITCOIND_USER="papara"
+#BITCOIND_GROUP="papara"
 
-# Path to Pararad executable
-#BITCOIND_BIN="/usr/bin/Pararad"
+# Path to paparad executable
+#BITCOIND_BIN="/usr/bin/paparad"
 
-# Nice value to run Pararad under
+# Nice value to run paparad under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

@@ -6,7 +6,7 @@
 #define SETTINGSBACKUPWALLET_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 
 namespace Ui {
 class SettingsBackupWallet;

@@ -625,8 +625,8 @@
         <translation>Pošaljite kovanice na para adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Zahtjev za plaćanja (generira QR kodove i Parara: URI)</translation>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
+        <translation>Zahtjev za plaćanja (generira QR kodove i papara: URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -1567,7 +1567,7 @@
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

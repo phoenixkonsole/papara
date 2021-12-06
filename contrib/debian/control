@@ -1,4 +1,4 @@
-Source: Parara
+Source: papara
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -22,15 +22,15 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.Parara.org
-Vcs-Git: git://github.com/Pararaproject/Parara.git
-Vcs-Browser: http://github.com/Pararaproject/Parara
+Homepage: http://www.papara.org
+Vcs-Git: git://github.com/paparaproject/papara.git
+Vcs-Browser: http://github.com/paparaproject/papara
 
-Package: Pararad
+Package: paparad
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Parara is a free open source peer-to-peer electronic cash system that
+ papara is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -39,14 +39,14 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, Pararad, and the CLI tool
- Parara-cli to interact with the daemon.
+ This package provides the daemon, paparad, and the CLI tool
+ papara-cli to interact with the daemon.
 
-Package: Parara-qt
+Package: papara-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Parara is a free open source peer-to-peer electronic cash system that
+ papara is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -55,4 +55,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides Parara-Qt, a GUI for Parara based on Qt.
+ This package provides papara-Qt, a GUI for papara based on Qt.

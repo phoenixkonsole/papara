@@ -5,10 +5,10 @@
 #ifndef RECEIVEWIDGET_H
 #define RECEIVEWIDGET_H
 
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 #include "addresstablemodel.h"
-#include "qt/Parara/furabstractlistitemdelegate.h"
-#include "qt/Parara/addressfilterproxymodel.h"
+#include "qt/papara/furabstractlistitemdelegate.h"
+#include "qt/papara/addressfilterproxymodel.h"
 
 #include <QSpacerItem>
 #include <QWidget>

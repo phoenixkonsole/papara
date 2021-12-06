@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Parara"
-            VALUE "FileDescription",    "Parara-tx (CLI PIVX transaction editor utility)"
+            VALUE "CompanyName",        "papara"
+            VALUE "FileDescription",    "papara-tx (CLI PIVX transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "Parara-tx"
+            VALUE "InternalName",       "papara-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "Parara-tx.exe"
-            VALUE "ProductName",        "Parara-tx"
+            VALUE "OriginalFilename",   "papara-tx.exe"
+            VALUE "ProductName",        "papara-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

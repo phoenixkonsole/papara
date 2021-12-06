@@ -100,4 +100,4 @@ AlexMomo
 snogcel
 bertlebbert
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/Parara-project/Parara-project-translations).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/papara-project/papara-project-translations).

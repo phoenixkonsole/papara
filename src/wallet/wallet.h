@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2019 The Parara developers
+// Copyright (c) 2017-2019 The papara developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -83,30 +83,30 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 Parara at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 papara at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
 // Possible states for zpara send
 enum ZerocoinSpendStatus {
-    ZParara_SPEND_OKAY = 0,                            // No error
-    ZParara_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZParara_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZParara_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZParara_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZParara_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZParara_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZParara_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZParara_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZParara_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZParara_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZParara_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZParara_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZParara_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZParara_SPENT_USED_ZParara = 14,            // Coin has already been spend
-    ZParara_TX_TOO_LARGE = 15,                         // The transaction is larger than the max tx size
-    ZParara_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
+    Zpapara_SPEND_OKAY = 0,                            // No error
+    Zpapara_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    Zpapara_WALLET_LOCKED = 2,                         // Wallet was locked
+    Zpapara_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    Zpapara_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    Zpapara_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    Zpapara_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    Zpapara_TRX_CREATE = 7,                            // Everything related to create the transaction
+    Zpapara_TRX_CHANGE = 8,                            // Everything related to transaction change
+    Zpapara_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    Zpapara_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    Zpapara_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    Zpapara_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    Zpapara_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    Zpapara_SPENT_USED_Zpapara = 14,            // Coin has already been spend
+    Zpapara_TX_TOO_LARGE = 15,                         // The transaction is larger than the max tx size
+    Zpapara_SPEND_V1_SEC_LEVEL                         // Spend is V1 and security level is not set to 100
 
 };
 
@@ -214,7 +214,7 @@ public:
     std::string ResetMintZerocoin(bool fExtendedSearch = false);
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored);
-    void ZPararaBackupWallet();
+    void ZpaparaBackupWallet();
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
@@ -320,7 +320,7 @@ public:
         return fEnableZeromint;
     }
 
-    void setZPararaAutoBackups(bool fEnabled)
+    void setZpaparaAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }

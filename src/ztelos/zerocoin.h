@@ -1,11 +1,11 @@
-// Copyright (c) 2017-2019 The Parara developers
+// Copyright (c) 2017-2019 The papara developers
 // Copyright (c) 2017-2019 The PIVX developers
 
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef Parara_ZEROCOIN_H
-#define Parara_ZEROCOIN_H
+#ifndef papara_ZEROCOIN_H
+#define papara_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -261,4 +261,4 @@ int GetWrapppedSerialInflation(libzerocoin::CoinDenomination denom);
 
 int64_t GetWrapppedSerialInflationAmount();
 
-#endif //Parara_ZEROCOIN_H
+#endif //papara_ZEROCOIN_H

@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/tooltipmenu.h"
-#include "qt/Parara/forms/ui_tooltipmenu.h"
+#include "qt/papara/tooltipmenu.h"
+#include "qt/papara/forms/ui_tooltipmenu.h"
 
-#include "qt/Parara/Pararagui.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/paparagui.h"
+#include "qt/papara/qtutils.h"
 #include <QTimer>
 
 TooltipMenu::TooltipMenu(paraGUI *_window, QWidget *parent) :

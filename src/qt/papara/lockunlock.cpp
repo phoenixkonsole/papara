@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/lockunlock.h"
-#include "qt/Parara/forms/ui_lockunlock.h"
+#include "qt/papara/lockunlock.h"
+#include "qt/papara/forms/ui_lockunlock.h"
 
 LockUnlock::LockUnlock(QWidget *parent) :
     QWidget(parent),

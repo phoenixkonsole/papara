@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsfaqwidget.h"
-#include "qt/Parara/settings/forms/ui_settingsfaqwidget.h"
+#include "qt/papara/settings/settingsfaqwidget.h"
+#include "qt/papara/settings/forms/ui_settingsfaqwidget.h"
 #include <QScrollBar>
 #include <QMetaObject>
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     QDialog(parent),

@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  Pararad The Parara core server.
+#  paparad The papara core server.
 #
 #
 # chkconfig: 345 80 20
-# description: Pararad
-# processname: Pararad
+# description: paparad
+# processname: paparad
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/Pararad, see below
-if [ -f /etc/sysconfig/Pararad ]; then
-        . /etc/sysconfig/Pararad
+# you can override defaults in /etc/sysconfig/paparad, see below
+if [ -f /etc/sysconfig/paparad ]; then
+        . /etc/sysconfig/paparad
 fi
 
 RETVAL=0
 
-prog=Pararad
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/Pararad
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/Pararad}
+prog=paparad
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/paparad
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/paparad}
 
-# Pararad defaults to /usr/bin/Pararad, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/Pararad}
+# paparad defaults to /usr/bin/paparad, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/paparad}
 
-# Pararad opts default to -disablewallet, override with BITCOIND_OPTS
+# paparad opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

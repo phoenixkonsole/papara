@@ -10,7 +10,7 @@
 #include <QAction>
 #include "walletmodel.h"
 #include "amount.h"
-#include "qt/Parara/pwidget.h"
+#include "qt/papara/pwidget.h"
 
 class WalletModel;
 class SendCoinsRecipient;

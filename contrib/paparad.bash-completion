@@ -1,12 +1,12 @@
-# bash programmable completion for Pararad(1) and Parara-cli(1)
+# bash programmable completion for paparad(1) and papara-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have Pararad && {
+have paparad && {
 
-# call $Pararad for RPC
-_Parara_rpc() {
+# call $paparad for RPC
+_papara_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _Parara_rpc() {
                 ;;
         esac
     done
-    $Pararad "${rpcargs[@]}" "$@"
+    $paparad "${rpcargs[@]}" "$@"
 }
 
-# Add Parara accounts to COMPREPLY
-_Parara_accounts() {
+# Add papara accounts to COMPREPLY
+_papara_accounts() {
     local accounts
-    accounts=$(_Parara_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_papara_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_Pararad() {
+_paparad() {
     local cur prev words=() cword
-    local Pararad
+    local paparad
 
-    # save and use original argument to invoke Pararad
-    # Pararad might not be in $PATH
-    Pararad="$1"
+    # save and use original argument to invoke paparad
+    # paparad might not be in $PATH
+    paparad="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -53,7 +53,7 @@ _Pararad() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _Parara_accounts
+                _papara_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _Pararad() {
                 return 0
                 ;;
             move|setaccount)
-                _Parara_accounts
+                _papara_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _Pararad() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _Parara_accounts
+            _papara_accounts
             return 0
             ;;
     esac
@@ -114,12 +114,12 @@ _Pararad() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($Pararad --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($paparad --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_Parara_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_papara_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -133,7 +133,7 @@ _Pararad() {
     esac
 }
 
-complete -F _Pararad Pararad Parara-cli
+complete -F _paparad paparad papara-cli
 }
 
 # Local variables:

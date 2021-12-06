@@ -6,18 +6,18 @@
 #define SETTINGSWIDGET_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/settings/settingsbackupwallet.h"
-#include "qt/Parara/settings/settingsexportcsv.h"
-#include "qt/Parara/settings/settingsbittoolwidget.h"
-#include "qt/Parara/settings/settingssignmessagewidgets.h"
-#include "qt/Parara/settings/settingswalletrepairwidget.h"
-#include "qt/Parara/settings/settingswalletoptionswidget.h"
-#include "qt/Parara/settings/settingsmainoptionswidget.h"
-#include "qt/Parara/settings/settingsdisplayoptionswidget.h"
-#include "qt/Parara/settings/settingsmultisendwidget.h"
-#include "qt/Parara/settings/settingsinformationwidget.h"
-#include "qt/Parara/settings/settingsconsolewidget.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/settings/settingsbackupwallet.h"
+#include "qt/papara/settings/settingsexportcsv.h"
+#include "qt/papara/settings/settingsbittoolwidget.h"
+#include "qt/papara/settings/settingssignmessagewidgets.h"
+#include "qt/papara/settings/settingswalletrepairwidget.h"
+#include "qt/papara/settings/settingswalletoptionswidget.h"
+#include "qt/papara/settings/settingsmainoptionswidget.h"
+#include "qt/papara/settings/settingsdisplayoptionswidget.h"
+#include "qt/papara/settings/settingsmultisendwidget.h"
+#include "qt/papara/settings/settingsinformationwidget.h"
+#include "qt/papara/settings/settingsconsolewidget.h"
 
 class paraGUI;
 

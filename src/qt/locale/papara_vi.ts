@@ -215,6 +215,6 @@
     <name>ZparaControlDialog</name>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     </context>
 </TS>

@@ -54,7 +54,7 @@ private:
     Qt::SortOrder order;
 };
 
-/** Model for list of recently generated payment requests / Parara: URIs.
+/** Model for list of recently generated payment requests / papara: URIs.
  * Part of wallet model.
  */
 class RecentRequestsTableModel : public QAbstractTableModel

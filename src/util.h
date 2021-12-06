@@ -13,7 +13,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Parara-config.h"
+#include "config/papara-config.h"
 #endif
 
 #include "compat.h"
@@ -29,7 +29,7 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/thread/exceptions.hpp>
 
-//Parara only features
+//papara only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;
@@ -38,7 +38,7 @@ extern int nSwiftTXDepth;
 extern int nZeromintPercentage;
 extern const int64_t AUTOMINT_DELAY;
 extern int nPreferredDenom;
-extern int nAnonymizePararaAmount;
+extern int nAnonymizepaparaAmount;
 extern int nLiquidityProvider;
 extern bool fEnableZeromint;
 extern bool fEnableAutoConvert;
@@ -217,7 +217,7 @@ void RenameThread(const char* name);
 template <typename Callable>
 void LoopForever(const char* name, Callable func, int64_t msecs)
 {
-    std::string s = strprintf("Parara-%s", name);
+    std::string s = strprintf("papara-%s", name);
     RenameThread(s.c_str());
     LogPrintf("%s thread start\n", name);
     try {
@@ -243,7 +243,7 @@ void LoopForever(const char* name, Callable func, int64_t msecs)
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("Parara-%s", name);
+    std::string s = strprintf("papara-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/Parara/.Parara" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/Parara/.Parara"
+if [ -d "/var/lib/papara/.papara" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/papara/.papara"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/Pararad"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/paparad"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/Parara/Parara.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/Pararad}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/Pararad.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/papara/papara.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/paparad}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/paparad.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-Parara}
-BITCOIND_GROUP=${BITCOIND_GROUP:-Parara}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/Pararad}
+BITCOIND_USER=${BITCOIND_USER:-papara}
+BITCOIND_GROUP=${BITCOIND_GROUP:-papara}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/paparad}
 
-name="Parara Core Daemon"
-description="Parara crypto-currency p2p network daemon"
+name="papara Core Daemon"
+description="papara crypto-currency p2p network daemon"
 
-command="/usr/bin/Pararad"
+command="/usr/bin/paparad"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run Pararad."
+		eerror "ERROR: You must set a secure rpcpassword to run paparad."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Parara Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"papara Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

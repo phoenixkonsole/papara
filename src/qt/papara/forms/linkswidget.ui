@@ -674,7 +674,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent2">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can vote about any para related topic and suggest your own Votings or do a Bounty funding inside the Parara Dashboard &lt;a style='color: #CEB247' href=&quot;https://governance.rocks&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://governance.rocks&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can vote about any para related topic and suggest your own Votings or do a Bounty funding inside the papara Dashboard &lt;a style='color: #CEB247' href=&quot;https://governance.rocks&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://governance.rocks&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1307,7 +1307,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent9">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Yes, it is available in the &lt;a style='color: #CEB247' href=&quot;https://play.google.com/store/apps/details?id=Parara.tech.akshaynexus&amp;amp;hl=gsw&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;PlayStore&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Yes, it is available in the &lt;a style='color: #CEB247' href=&quot;https://play.google.com/store/apps/details?id=papara.tech.akshaynexus&amp;amp;hl=gsw&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;PlayStore&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

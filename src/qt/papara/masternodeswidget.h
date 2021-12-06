@@ -6,16 +6,16 @@
 #define MASTERNODESWIDGET_H
 
 #include <QWidget>
-#include "qt/Parara/pwidget.h"
-#include "qt/Parara/furabstractlistitemdelegate.h"
-#include "qt/Parara/mnmodel.h"
-#include "qt/Parara/tooltipmenu.h"
+#include "qt/papara/pwidget.h"
+#include "qt/papara/furabstractlistitemdelegate.h"
+#include "qt/papara/mnmodel.h"
+#include "qt/papara/tooltipmenu.h"
 #include <QTimer>
 #include "masternodeman.h"
 #include "main.h"
 class paraGUI;
 #if defined(HAVE_CONFIG_H)
-#include "config/Parara-config.h" /* for USE_QTCHARTS */
+#include "config/papara-config.h" /* for USE_QTCHARTS */
 #endif
 
 #ifdef USE_QTCHARTS

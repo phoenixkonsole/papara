@@ -653,7 +653,7 @@
         <translation>Отправить монеты на para адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and Parara: URIs)</source>
+        <source>Request payments (generates QR codes and papara: URIs)</source>
         <translation>Запросить платежи (генерирует QR-код и para: URI)</translation>
     </message>
     <message>
@@ -2167,8 +2167,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start Parara: click-to-pay handler</source>
-        <translation>Не удалось запустить Parara: обработчик click-to-pay </translation>
+        <source>Cannot start papara: click-to-pay handler</source>
+        <translation>Не удалось запустить papara: обработчик click-to-pay </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
@@ -4635,7 +4635,7 @@ Please be patient...</source>
     </message>
     </context>
 <context>
-    <name>Parara-core</name>
+    <name>papara-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = сохранить tx метаданные, например, владельца учетной записи и информацию о запросе платежа, 2 = удалить tx метаданные)</translation>

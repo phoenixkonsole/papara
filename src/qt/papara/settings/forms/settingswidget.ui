@@ -814,7 +814,7 @@
                          </size>
                         </property>
                         <property name="text">
-                         <string>About Parara</string>
+                         <string>About papara</string>
                         </property>
                         <property name="checkable">
                          <bool>false</bool>

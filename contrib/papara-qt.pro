@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/Parara-config.h \
+           src/papara-config.h \
            src/wallet/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -133,7 +133,7 @@ HEADERS += src/activemasternode.h \
            src/wallet/walletdb.h \
            ztelos/deterministicmint.h \
            src/compat/sanity.h \
-           src/config/Parara-config.h \
+           src/config/papara-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -335,7 +335,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/Parara.moc \
+           src/qt/papara.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -376,9 +376,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/Parara-cli.cpp \
-           src/Parara-tx.cpp \
-           src/Parara.cpp \
+           src/papara-cli.cpp \
+           src/papara-tx.cpp \
+           src/papara.cpp \
            src/wallet/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -474,8 +474,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/Parara.cpp \
-           src/qt/Pararastrings.cpp \
+           src/qt/papara.cpp \
+           src/qt/paparastrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -553,7 +553,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_Parara.cpp \
+           src/test/test_papara.cpp \
            src/test/tier_tests.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
@@ -645,21 +645,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/Parara.qrc src/qt/Parara_locale.qrc
+RESOURCES += src/qt/papara.qrc src/qt/papara_locale.qrc
 
-TRANSLATIONS += src/qt/locale/Parara_bg.ts \
-                src/qt/locale/Parara_de.ts \
-                src/qt/locale/Parara_en.ts \
-                src/qt/locale/Parara_es.ts \
-                src/qt/locale/Parara_fi.ts \
-                src/qt/locale/Parara_fr.ts \
-                src/qt/locale/Parara_it.ts \
-                src/qt/locale/Parara_ja.ts \
-                src/qt/locale/Parara_pl.ts \
-                src/qt/locale/Parara_pt.ts \
-                src/qt/locale/Parara_ru.ts \
-                src/qt/locale/Parara_sk.ts \
-                src/qt/locale/Parara_sv.ts \
-                src/qt/locale/Parara_vi.ts \
-                src/qt/locale/Parara_zh_CN.ts \
-                src/qt/locale/Parara_zh_TW.ts
+TRANSLATIONS += src/qt/locale/papara_bg.ts \
+                src/qt/locale/papara_de.ts \
+                src/qt/locale/papara_en.ts \
+                src/qt/locale/papara_es.ts \
+                src/qt/locale/papara_fi.ts \
+                src/qt/locale/papara_fr.ts \
+                src/qt/locale/papara_it.ts \
+                src/qt/locale/papara_ja.ts \
+                src/qt/locale/papara_pl.ts \
+                src/qt/locale/papara_pt.ts \
+                src/qt/locale/papara_ru.ts \
+                src/qt/locale/papara_sk.ts \
+                src/qt/locale/papara_sv.ts \
+                src/qt/locale/papara_vi.ts \
+                src/qt/locale/papara_zh_CN.ts \
+                src/qt/locale/papara_zh_TW.ts

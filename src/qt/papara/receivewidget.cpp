@@ -2,13 +2,13 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/receivewidget.h"
-#include "qt/Parara/forms/ui_receivewidget.h"
-#include "qt/Parara/requestdialog.h"
-#include "qt/Parara/addnewcontactdialog.h"
-#include "qt/Parara/qtutils.h"
-#include "qt/Parara/myaddressrow.h"
-#include "qt/Parara/furlistrow.h"
+#include "qt/papara/receivewidget.h"
+#include "qt/papara/forms/ui_receivewidget.h"
+#include "qt/papara/requestdialog.h"
+#include "qt/papara/addnewcontactdialog.h"
+#include "qt/papara/qtutils.h"
+#include "qt/papara/myaddressrow.h"
+#include "qt/papara/furlistrow.h"
 #include "walletmodel.h"
 #include "guiutil.h"
 

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsdisplayoptionswidget.h"
-#include "qt/Parara/settings/forms/ui_settingsdisplayoptionswidget.h"
+#include "qt/papara/settings/settingsdisplayoptionswidget.h"
+#include "qt/papara/settings/forms/ui_settingsdisplayoptionswidget.h"
 #include <QListView>
 #include <QSettings>
 #include <QDir>
@@ -11,7 +11,7 @@
 #include "clientmodel.h"
 #include "optionsmodel.h"
 #include "bitcoinunits.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 
 SettingsDisplayOptionsWidget::SettingsDisplayOptionsWidget(paraGUI* _window, QWidget *parent) :
     PWidget(_window,parent),

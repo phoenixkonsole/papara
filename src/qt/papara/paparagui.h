@@ -6,7 +6,7 @@
 #define PIVX_CORE_NEW_GUI_paraGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/Parara-config.h"
+#include "config/papara-config.h"
 #endif
 
 #include <QMainWindow>
@@ -14,16 +14,16 @@
 #include <QSystemTrayIcon>
 #include <QLabel>
 
-#include "qt/Parara/navmenuwidget.h"
-#include "qt/Parara/topbar.h"
-#include "qt/Parara/dashboardwidget.h"
-#include "qt/Parara/send.h"
-#include "qt/Parara/receivewidget.h"
-#include "qt/Parara/addresseswidget.h"
-#include "qt/Parara/linkswidget.h"
-#include "qt/Parara/masternodeswidget.h"
-#include "qt/Parara/snackbar.h"
-#include "qt/Parara/settings/settingswidget.h"
+#include "qt/papara/navmenuwidget.h"
+#include "qt/papara/topbar.h"
+#include "qt/papara/dashboardwidget.h"
+#include "qt/papara/send.h"
+#include "qt/papara/receivewidget.h"
+#include "qt/papara/addresseswidget.h"
+#include "qt/papara/linkswidget.h"
+#include "qt/papara/masternodeswidget.h"
+#include "qt/papara/snackbar.h"
+#include "qt/papara/settings/settingswidget.h"
 #include "qt/rpcconsole.h"
 
 

@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/settings/settingsbittoolwidget.h"
-#include "qt/Parara/settings/forms/ui_settingsbittoolwidget.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/settings/settingsbittoolwidget.h"
+#include "qt/papara/settings/forms/ui_settingsbittoolwidget.h"
+#include "qt/papara/qtutils.h"
 
 #include "guiutil.h"
 #include "walletmodel.h"
@@ -43,7 +43,7 @@ SettingsBitToolWidget::SettingsBitToolWidget(paraGUI* _window, QWidget *parent) 
     ui->pushLeft->setChecked(true);
 
     // Subtitle
-    ui->labelSubtitle1->setText("Encrypt your Parara addresses (key pair actually) using BIP38 encryption.\nUsing this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely.");
+    ui->labelSubtitle1->setText("Encrypt your papara addresses (key pair actually) using BIP38 encryption.\nUsing this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely.");
     setCssSubtitleScreen(ui->labelSubtitle1);
 
     // Key
@@ -81,7 +81,7 @@ SettingsBitToolWidget::SettingsBitToolWidget(paraGUI* _window, QWidget *parent) 
     // Encrypt
 
     // Address
-    ui->labelSubtitleAddress->setText(tr("Enter a Parara address"));
+    ui->labelSubtitleAddress->setText(tr("Enter a papara address"));
     setCssProperty(ui->labelSubtitleAddress, "text-title");
 
     ui->addressIn_ENC->setPlaceholderText(tr("Add address"));

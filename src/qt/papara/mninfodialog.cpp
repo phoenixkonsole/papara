@@ -2,12 +2,12 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "qt/Parara/mninfodialog.h"
-#include "qt/Parara/forms/ui_mninfodialog.h"
+#include "qt/papara/mninfodialog.h"
+#include "qt/papara/forms/ui_mninfodialog.h"
 #include "walletmodel.h"
 #include "wallet/wallet.h"
 #include "guiutil.h"
-#include "qt/Parara/qtutils.h"
+#include "qt/papara/qtutils.h"
 #include <QDateTime>
 
 MnInfoDialog::MnInfoDialog(QWidget *parent) :
