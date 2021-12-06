@@ -60,12 +60,12 @@ QT_TRANSLATE_NOOP("Parara-core", ""
 QT_TRANSLATE_NOOP("Parara-core", ""
 "Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("Parara-core", ""
-"Enable automatic wallet backups triggered after each zTELOS minting (0-1, "
+"Enable automatic wallet backups triggered after each zpara minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("Parara-core", ""
-"Enable or disable staking functionality for TELOS inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for para inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("Parara-core", ""
-"Enable or disable staking functionality for zTELOS inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for zpara inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("Parara-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("Parara-core", ""
@@ -102,10 +102,10 @@ QT_TRANSLATE_NOOP("Parara-core", ""
 QT_TRANSLATE_NOOP("Parara-core", ""
 "Failed to find coin set amongst held coins with less than maxNumber of Spends"),
 QT_TRANSLATE_NOOP("Parara-core", ""
-"Fees (in TELOS/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in para/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("Parara-core", ""
-"Fees (in TELOS/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in para/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("Parara-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -178,7 +178,7 @@ QT_TRANSLATE_NOOP("Parara-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("Parara-core", ""
-"Specify custom backup path to add a copy of any automatic zTELOS backup. If "
+"Specify custom backup path to add a copy of any automatic zpara backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -212,10 +212,10 @@ QT_TRANSLATE_NOOP("Parara-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("Parara-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 TELOS."),
+"transaction that are not equal 10000 para."),
 QT_TRANSLATE_NOOP("Parara-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"TELOS."),
+"para."),
 QT_TRANSLATE_NOOP("Parara-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -297,7 +297,7 @@ QT_TRANSLATE_NOOP("Parara-core", "Do not load the wallet and disable wallet RPC 
 QT_TRANSLATE_NOOP("Parara-core", "Do you want to rebuild the block database now?"),
 QT_TRANSLATE_NOOP("Parara-core", "Done loading"),
 QT_TRANSLATE_NOOP("Parara-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("Parara-core", "Enable precomputation of zTELOS spends and stakes (0-1, default %u)"),
+QT_TRANSLATE_NOOP("Parara-core", "Enable precomputation of zpara spends and stakes (0-1, default %u)"),
 QT_TRANSLATE_NOOP("Parara-core", "Enable publish hash block in <address>"),
 QT_TRANSLATE_NOOP("Parara-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("Parara-core", "Enable publish hash transaction in <address>"),
@@ -333,7 +333,7 @@ QT_TRANSLATE_NOOP("Parara-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("Parara-core", "Failed to select a zerocoin"),
 QT_TRANSLATE_NOOP("Parara-core", "Failed to wipe zerocoinDB"),
 QT_TRANSLATE_NOOP("Parara-core", "Failed to write coin serial number into wallet"),
-QT_TRANSLATE_NOOP("Parara-core", "Fee (in TELOS/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("Parara-core", "Fee (in para/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("Parara-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("Parara-core", "Generate coins (default: %u)"),
 QT_TRANSLATE_NOOP("Parara-core", "How many blocks to check at startup (default: %u, 0 = all)"),
@@ -398,11 +398,11 @@ QT_TRANSLATE_NOOP("Parara-core", "RPC server options:"),
 QT_TRANSLATE_NOOP("Parara-core", "Randomly drop 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("Parara-core", "Randomly fuzz 1 of every <n> network messages"),
 QT_TRANSLATE_NOOP("Parara-core", "Rebuild block chain index from current blk000??.dat files"),
-QT_TRANSLATE_NOOP("Parara-core", "Recalculating TELOS supply..."),
-QT_TRANSLATE_NOOP("Parara-core", "Recalculating minted ZTELOS..."),
-QT_TRANSLATE_NOOP("Parara-core", "Recalculating spent ZTELOS..."),
+QT_TRANSLATE_NOOP("Parara-core", "Recalculating para supply..."),
+QT_TRANSLATE_NOOP("Parara-core", "Recalculating minted Zpara..."),
+QT_TRANSLATE_NOOP("Parara-core", "Recalculating spent Zpara..."),
 QT_TRANSLATE_NOOP("Parara-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("Parara-core", "Reindex the TELOS and zTELOS money supply statistics"),
+QT_TRANSLATE_NOOP("Parara-core", "Reindex the para and zpara money supply statistics"),
 QT_TRANSLATE_NOOP("Parara-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("Parara-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("Parara-core", "Reindexing zerocoin failed"),
@@ -451,7 +451,7 @@ QT_TRANSLATE_NOOP("Parara-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("Parara-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("Parara-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("Parara-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("Parara-core", "Syncing zTELOS wallet..."),
+QT_TRANSLATE_NOOP("Parara-core", "Syncing zpara wallet..."),
 QT_TRANSLATE_NOOP("Parara-core", "The coin spend has been used"),
 QT_TRANSLATE_NOOP("Parara-core", "The transaction did not verify"),
 QT_TRANSLATE_NOOP("Parara-core", "This help message"),
@@ -482,7 +482,7 @@ QT_TRANSLATE_NOOP("Parara-core", "Use block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("Parara-core", "Use the test network"),
 QT_TRANSLATE_NOOP("Parara-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("Parara-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("Parara-core", "Value is below the smallest available denomination (= 1) of zTELOS"),
+QT_TRANSLATE_NOOP("Parara-core", "Value is below the smallest available denomination (= 1) of zpara"),
 QT_TRANSLATE_NOOP("Parara-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("Parara-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("Parara-core", "Wallet %s resides outside data directory %s"),

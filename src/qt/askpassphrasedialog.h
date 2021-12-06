@@ -12,7 +12,7 @@
 #include <QCheckBox>
 
 class WalletModel;
-class TELOSGUI;
+class paraGUI;
 
 namespace Ui
 {
@@ -43,9 +43,9 @@ public:
         Encrypt,        /** Encrypt unencrypted wallet */
         ToggleLock,     /** Toggle wallet lock state */
         ChangePass,     /** Change passphrase */
-        Send_PIV,       /** Send TELOS */
-        Send_zTELOS,      /** Send zTELOS */
-        Mint_zTELOS,      /** Mint zTELOS */
+        Send_PIV,       /** Send para */
+        Send_zpara,      /** Send zpara */
+        Mint_zpara,      /** Mint zpara */
         BIP_38,         /** BIP38 menu */
         Multi_Sig,      /** Multi-Signature dialog */
         Sign_Message,   /** Sign/verify message dialog */

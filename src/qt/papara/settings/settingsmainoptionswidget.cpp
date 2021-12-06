@@ -32,7 +32,7 @@
 #include <QTimer>
 
 
-SettingsMainOptionsWidget::SettingsMainOptionsWidget(TELOSGUI* _window, QWidget *parent) :
+SettingsMainOptionsWidget::SettingsMainOptionsWidget(paraGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsMainOptionsWidget)
 {
@@ -61,7 +61,7 @@ SettingsMainOptionsWidget::SettingsMainOptionsWidget(TELOSGUI* _window, QWidget 
     ui->labelTitleThreads->setProperty("cssClass", "text-main-settings");
 
     // Switch
-    ui->pushSwitchStart->setText(tr("Start TELOS on system login"));
+    ui->pushSwitchStart->setText(tr("Start para on system login"));
     ui->pushSwitchStart->setProperty("cssClass", "btn-switch");
 
     // Combobox

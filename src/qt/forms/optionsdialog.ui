@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start TELOS after logging in to the system.</string>
+          <string>Automatically start para after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start TELOS on system login</string>
+          <string>&amp;Start para on system login</string>
          </property>
         </widget>
        </item>
@@ -131,8 +131,8 @@
         </spacer>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZTelosOptionsWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZTelosOptionsLayout">
+        <widget class="QWidget" name="verticalZparaOptionsWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZparaOptionsLayout">
           <property name="margin">
            <number>0</number>
           </property>
@@ -141,20 +141,20 @@
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintEnable">
               <property name="toolTip">
-               <string>Enable automatic minting of TELOS units to zTELOS</string>
+               <string>Enable automatic minting of para units to zpara</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Enable zTELOS Automint</string>
+               <string>Enable zpara Automint</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QCheckBox" name="checkBoxZeromintAddresses">
               <property name="toolTip">
-               <string>Enable automatic zTELOS minting from specific addresses</string>
+               <string>Enable automatic zpara minting from specific addresses</string>
               </property>
               <property name="layoutDirection">
                <enum>Qt::LeftToRight</enum>
@@ -171,10 +171,10 @@
             <item>
              <widget class="QLabel" name="percentage_label">
               <property name="toolTip">
-               <string>Percentage of incoming TELOS which get automatically converted to zTELOS via Zerocoin Protocol (min: 10%)</string>
+               <string>Percentage of incoming para which get automatically converted to zpara via Zerocoin Protocol (min: 10%)</string>
               </property>
               <property name="text">
-               <string>Percentage of autominted zTELOS</string>
+               <string>Percentage of autominted zpara</string>
               </property>
              </widget>
             </item>
@@ -204,10 +204,10 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough TELOS for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough para for this denomination is available</string>
               </property>
               <property name="text">
-               <string>Preferred Automint zTELOS Denomination</string>
+               <string>Preferred Automint zpara Denomination</string>
               </property>
              </widget>
             </item>
@@ -220,7 +220,7 @@
                </size>
               </property>
               <property name="toolTip">
-               <string>Wait with automatic conversion to Zerocoin until enough TELOS for this denomination is available</string>
+               <string>Wait with automatic conversion to Zerocoin until enough para for this denomination is available</string>
               </property>
               <property name="maxVisibleItems">
                <number>9</number>
@@ -325,7 +325,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the TELOS client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the para client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -345,7 +345,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the TELOS network through a SOCKS5 proxy.</string>
+          <string>Connect to the para network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -511,7 +511,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting TELOS.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting para.</string>
            </property>
           </widget>
          </item>
@@ -533,7 +533,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.telosgreen.org</string>
+https://www.paragreen.org</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
@@ -561,8 +561,8 @@ https://www.telosgreen.org</string>
         </layout>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZTelosDisplayWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZTelosDisplayLayout">
+        <widget class="QWidget" name="verticalZparaDisplayWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZparaDisplayLayout">
           <property name="margin">
            <number>0</number>
           </property>

@@ -8,7 +8,7 @@
 #include <QTimer>
 
 
-SnackBar::SnackBar(TELOSGUI* _window, QWidget *parent) :
+SnackBar::SnackBar(paraGUI* _window, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SnackBar),
     window(_window)

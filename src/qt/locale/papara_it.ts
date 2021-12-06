@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi TELOS per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your para addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi para per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi TELOS per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your para addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi para per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>TELOS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TELOS from being stolen by malware infecting your computer.</source>
-        <translation>TELOS verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi TELOS dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>para will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your para from being stolen by malware infecting your computer.</source>
+        <translation>para verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi para dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TELOS&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI TELOS&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR para&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI para&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>Enter a TELOS Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserire un indirizzo TELOS da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
+        <source>Enter a para Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserire un indirizzo para da crittografare utilizzando BIP 38. Inserire una password nel campo centrale. Cliccare su "cripta" per generare la chiave privata crittografata.</translation>
     </message>
     <message>
-        <source>The TELOS address to encrypt</source>
-        <translation>Indirizzo TELOS da crittografare</translation>
+        <source>The para address to encrypt</source>
+        <translation>Indirizzo para da crittografare</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this TELOS address</source>
-        <translation>Crittografa la chiave privata per questo indirizzo TELOS</translation>
+        <source>Encrypt the private key for this para address</source>
+        <translation>Crittografa la chiave privata per questo indirizzo para</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Espora la cronologia delle transazioni</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTELOS</source>
-        <translation>Operazioni di privacy per zTELOS</translation>
+        <source>Privacy Actions for zpara</source>
+        <translation>Operazioni di privacy per zpara</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -641,12 +641,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
-        <source>Send coins to a TELOS address</source>
-        <translation>Invia valuta all'indirizzo TELOS</translation>
+        <source>Send coins to a para address</source>
+        <translation>Invia valuta all'indirizzo para</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and Parara: URIs)</source>
@@ -665,24 +665,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TELOS Core</source>
-        <translation>&amp;Informazioni TELOS Core</translation>
+        <source>&amp;About para Core</source>
+        <translation>&amp;Informazioni para Core</translation>
     </message>
     <message>
-        <source>Show information about TELOS Core</source>
-        <translation>Visualizza informazioni su TELOS Core</translation>
+        <source>Show information about para Core</source>
+        <translation>Visualizza informazioni su para Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for TELOS</source>
-        <translation>Modifica le opzioni di configurazione per TELOS</translation>
+        <source>Modify configuration options for para</source>
+        <translation>Modifica le opzioni di configurazione per para</translation>
     </message>
     <message>
-        <source>Sign messages with your TELOS addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi TELOS per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your para addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi para per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TELOS addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi TELOS specifici</translation>
+        <source>Verify messages to ensure they were signed with specified para addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi para specifici</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -713,8 +713,8 @@
         <translation>Apri file di configurazione del Masternodo</translation>
     </message>
     <message>
-        <source>Open a TELOS: URI or payment request</source>
-        <translation>Apri un TELOS: URI o richiesta di pagamento</translation>
+        <source>Open a para: URI or payment request</source>
+        <translation>Apri un para: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -725,12 +725,12 @@
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the TELOS Core help message to get a list with possible TELOS command-line options</source>
-        <translation>Mostra il messaggio di aiuto TELOS Core per ottenere un elenco con le possibili opzioni di riga di comando TELOS</translation>
+        <source>Show the para Core help message to get a list with possible para command-line options</source>
+        <translation>Mostra il messaggio di aiuto para Core per ottenere un elenco con le possibili opzioni di riga di comando para</translation>
     </message>
     <message>
-        <source>TELOS Core client</source>
-        <translation>TELOS Core</translation>
+        <source>para Core client</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1103,7 +1103,7 @@ MultiSend: %1</translation>
     </message>
     <message>
         <source>Can vary +/- %1 upiv per input.</source>
-        <translation>Può variare di +/- %1 uTELOS per input.</translation>
+        <translation>Può variare di +/- %1 upara per input.</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1149,8 +1149,8 @@ MultiSend: %1</translation>
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TELOS address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo TELOS valido.</translation>
+        <source>The entered address "%1" is not a valid para address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo para valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1206,16 +1206,16 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TELOS Core</source>
-        <translation>Informazioni su TELOS Core</translation>
+        <source>About para Core</source>
+        <translation>Informazioni su para Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1261,16 +1261,16 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to TELOS Core.</source>
+        <source>Welcome to para Core.</source>
         <translation>Benvenuto in PIVIX Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TELOS Core will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove TELOS Core salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where para Core will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove para Core salverà i propri dati.</translation>
     </message>
     <message>
-        <source>TELOS Core will download and store a copy of the TELOS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>TELOS Core scaricherà e salverà una copia della blockchain TELOS. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>para Core will download and store a copy of the para block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>para Core scaricherà e salverà una copia della blockchain para. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1281,8 +1281,8 @@ MultiSend: %1</translation>
         <translation>Utilizza una cartella dati personalizzata:</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1423,12 +1423,12 @@ MultiSend: %1</translation>
         <translation>Inserire indirizzo destinatario</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other TELOS addresses after it matures.
-To Add: enter percentage to give and TELOS address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other para addresses after it matures.
+To Add: enter percentage to give and para address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi TELOS fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
-Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo TELOS da aggiungere al vettore MultiSend.
+        <translation>MultiSend ti permette di inviare automaticamente ad una lista di indirizzi para fino al 100% delle ricompense di stake o masternodi, dopo che queste sono mature.
+Per Aggiunger: inserisci la percentuale da inviare e l'indirizzo para da aggiungere al vettore MultiSend.
 Per Eliminare: Inserisci l'indirizzo da eliminare e premi elimina.
 MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
     </message>
@@ -1638,24 +1638,24 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TELOS units to zTELOS</source>
-        <translation>Attiva il conio automatico di unità TELOS in zTELOS</translation>
+        <source>Enable automatic minting of para units to zpara</source>
+        <translation>Attiva il conio automatico di unità para in zpara</translation>
     </message>
     <message>
-        <source>Enable zTELOS Automint</source>
-        <translation>Attiva Conio automatico zTELOS</translation>
+        <source>Enable zpara Automint</source>
+        <translation>Attiva Conio automatico zpara</translation>
     </message>
     <message>
-        <source>Percentage of incoming TELOS which get automatically converted to zTELOS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di TELOS in entrata che viene automaticamente convertita in zTELOS attraverso il protocollo Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming para which get automatically converted to zpara via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentuale di para in entrata che viene automaticamente convertita in zpara attraverso il protocollo Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTELOS</source>
-        <translation>Percentuale di zTELOS Percentuale di zTELOS da coniare automaticamente</translation>
+        <source>Percentage of autominted zpara</source>
+        <translation>Percentuale di zpara Percentuale di zpara da coniare automaticamente</translation>
     </message>
     <message>
-        <source>Preferred Automint zTELOS Denomination</source>
-        <translation>Denominazione preferita conio automatico zTELOS</translation>
+        <source>Preferred Automint zpara Denomination</source>
+        <translation>Denominazione preferita conio automatico zpara</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1717,8 +1717,8 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Saldo totale, inclusi tutte le monete non disponibili.</translation>
     </message>
     <message>
-        <source>TELOS Balance</source>
-        <translation>Bilancio TELOS</translation>
+        <source>para Balance</source>
+        <translation>Bilancio para</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -1729,18 +1729,18 @@ MultiSend non verrà attivato a meno che tu non prema su Attiva</translation>
         <translation>Saldo corrente bloccato in indirizzi sola-lettura.</translation>
     </message>
     <message>
-        <source>Your current TELOS balance, unconfirmed and immature transactions included</source>
-        <translation>Il tuo saldo TELOS corrente, incluse le transazioni non confermate e non mature</translation>
+        <source>Your current para balance, unconfirmed and immature transactions included</source>
+        <translation>Il tuo saldo para corrente, incluse le transazioni non confermate e non mature</translation>
     </message>
     <message>
-        <source>zTELOS Balance</source>
-        <translation>Bilancio zTELOS</translation>
+        <source>zpara Balance</source>
+        <translation>Bilancio zpara</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTELOS are spendable.</source>
+These zpara are spendable.</source>
         <translation>Maturi: più di 20 conferme e più di 1 conio della stessa denominazione dopo il conio.
-Questi zTELOS sono spendibili.</translation>
+Questi zpara sono spendibili.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -1771,8 +1771,8 @@ Questi zTELOS sono spendibili.</translation>
         <translation>Spendibili:</translation>
     </message>
     <message>
-        <source>Locked TELOS or Masternode collaterals. These are excluded from zTELOS minting.</source>
-        <translation>TELOS bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zTELOS.</translation>
+        <source>Locked para or Masternode collaterals. These are excluded from zpara minting.</source>
+        <translation>para bloccati o collaterali Masternodo. Questi sono esclusi dal conio di zpara.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -1783,18 +1783,18 @@ Questi zTELOS sono spendibili.</translation>
         <translation>Non confermati:</translation>
     </message>
     <message>
-        <source>Your current zTELOS balance, unconfirmed and immature zTELOS included.</source>
-        <translation>Il tuo saldo zTELOS corrente, inclusi zTELOS non confermati e non maturi</translation>
+        <source>Your current zpara balance, unconfirmed and immature zpara included.</source>
+        <translation>Il tuo saldo zpara corrente, inclusi zpara non confermati e non maturi</translation>
     </message>
     <message>
         <source>Recent transactions</source>
         <translation>Transazioni recenti</translation>
     </message>
     <message>
-        <source>Current percentage of zTELOS.
+        <source>Current percentage of zpara.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Percentuale corrente di zTELOS.
+        <translation>Percentuale corrente di zpara.
 Se il conio automatico è attivato questa percentuale si stabilizzerà all'incirca sulla percentuale stabilita per il conio automatico (percentuale prestabilita = 10%).
 </translation>
     </message>
@@ -1858,8 +1858,8 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1870,12 +1870,12 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>LINKS</translation>
     </message>
     <message>
-        <source>zTELOS Control</source>
-        <translation>Controllo zTELOS</translation>
+        <source>zpara Control</source>
+        <translation>Controllo zpara</translation>
     </message>
     <message>
-        <source>zTELOS Selected:</source>
-        <translation>zTELOS selezionati:</translation>
+        <source>zpara Selected:</source>
+        <translation>zpara selezionati:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -1886,23 +1886,23 @@ Per attivare il Conio automatico cambiare 'enablezeromint=0' in 'enablezeromint=
         <translation>Spendi Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTELOS for spending</source>
-        <translation>zTELOS disponibili disponibili per essere spesi (maturi e spendibili)</translation>
+        <source>Available (mature and spendable) zpara for spending</source>
+        <translation>zpara disponibili disponibili per essere spesi (maturi e spendibili)</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Bilancio Disponibile:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTELOS for spending
+        <source>Available (mature and spendable) zpara for spending
 
-zTELOS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zTELOS disponibili disponibili per essere spesi (maturi e spendibili)
-Gli zTELOS sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
+zpara are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zpara disponibili disponibili per essere spesi (maturi e spendibili)
+Gli zpara sono maturi quando hanno più di 20 conferme E più di 2 conii della stessa denominazione dopo che sono stati coniati</translation>
     </message>
     <message>
-        <source>0 zTELOS</source>
-        <translation>0 zTELOS</translation>
+        <source>0 zpara</source>
+        <translation>0 zpara</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1945,31 +1945,31 @@ Gli zTELOS sono maturi quando hanno più di 20 conferme E più di 2 conii della 
         <translation>Statistiche Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTELOS</source>
-        <translation>Saldo totale inclusi zTELOS non confermati e non maturi</translation>
+        <source>Total Balance including unconfirmed and immature zpara</source>
+        <translation>Saldo totale inclusi zpara non confermati e non maturi</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
         <translation>Saldo totale Zerocoin:</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTELOS minting.
+        <source>Show the current status of automatic zpara minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTELOS
+- menu Settings-&gt;Options-&gt;Percentage of autominted zpara
 
 </source>
-        <translation>Mostra lo stato corrente del conio automatico zTELOS.
+        <translation>Mostra lo stato corrente del conio automatico zpara.
 Per cambiare lo stato (riavvio necessario):
 - attivato: aggiungi 'enablezeromint=1' a pivx.conf
 - disattivato: aggiungi 'enablezeromint=0' a pivx.conf
 
 Per cambiare la percentuale (riavvio non necessario):
-- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zTELOS da coniare automaticamente
+- menu Impostazioni-&gt;Opzioni-&gt;Percentuale di zpara da coniare automaticamente
 
 </translation>
     </message>
@@ -2110,8 +2110,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Differenza:</translation>
     </message>
     <message>
-        <source>zTELOS Mint</source>
-        <translation>Conio zTELOS</translation>
+        <source>zpara Mint</source>
+        <translation>Conio zpara</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2148,8 +2148,8 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Ammontare</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     </context>
 <context>
@@ -2411,8 +2411,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The TELOS address to sign the message with</source>
-        <translation>L'indirizzo TELOS per firmare il messaggio con</translation>
+        <source>The para address to sign the message with</source>
+        <translation>L'indirizzo para per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2435,16 +2435,16 @@ Per cambiare la percentuale (riavvio non necessario):
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TELOS address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo TELOS</translation>
+        <source>Sign the message to prove you own this para address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo para</translation>
     </message>
     <message>
-        <source>The TELOS address the message was signed with</source>
-        <translation>L'indirizzo TELOS con cui è stato firmato il messaggio</translation>
+        <source>The para address the message was signed with</source>
+        <translation>L'indirizzo para con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TELOS address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo TELOS specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified para address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo para specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -2482,8 +2482,8 @@ Per cambiare la percentuale (riavvio non necessario):
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     </context>
 <context>
@@ -2594,14 +2594,14 @@ Per cambiare la percentuale (riavvio non necessario):
     </message>
     </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     </context>
 <context>

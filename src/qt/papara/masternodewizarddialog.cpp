@@ -179,7 +179,7 @@ void MasterNodeWizardDialog::onNextClicked(){
 }
 void MasterNodeWizardDialog::onTierSelected(){
 QString cb = ui->comboTierSelect->currentText();
-ui->labelMessage3->setText(QString("A transaction of %1 TELOS will be made to a new empty address in your wallet.\nThe Address is labeled under the masternode's name.").arg(cb));
+ui->labelMessage3->setText(QString("A transaction of %1 para will be made to a new empty address in your wallet.\nThe Address is labeled under the masternode's name.").arg(cb));
 }
 
 bool MasterNodeWizardDialog::createMN(){

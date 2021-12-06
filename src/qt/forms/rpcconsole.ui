@@ -356,7 +356,7 @@
        <item row="17" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the TELOS debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the para debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -1328,17 +1328,17 @@
         </widget>
        </item>
        <item row="4" column="0">
-        <widget class="QLabel" name="wallet_customztelosbackuppath_label">
+        <widget class="QLabel" name="wallet_customzparabackuppath_label">
          <property name="visible">
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>Custom zTELOS Backup Path:</string>
+          <string>Custom zpara Backup Path:</string>
          </property>
         </widget>
        </item>
        <item row="4" column="1" colspan="3">
-        <widget class="QLabel" name="wallet_customztelosbackuppath">
+        <widget class="QLabel" name="wallet_customzparabackuppath">
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
          </property>

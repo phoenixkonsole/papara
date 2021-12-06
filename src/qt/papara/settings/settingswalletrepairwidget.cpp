@@ -15,7 +15,7 @@ const QString UPGRADEWALLET("-upgradewallet");
 const QString REINDEX("-reindex");
 const QString RESYNC("-resync");
 
-SettingsWalletRepairWidget::SettingsWalletRepairWidget(TELOSGUI* _window, QWidget *parent) :
+SettingsWalletRepairWidget::SettingsWalletRepairWidget(paraGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsWalletRepairWidget)
 {
@@ -165,7 +165,7 @@ void SettingsWalletRepairWidget::buildParameterlist(QString arg)
     // Append repair parameter to command line.
     args.append(arg);
 
-    // Send command-line arguments to TELOSGUI::handleRestart()
+    // Send command-line arguments to paraGUI::handleRestart()
     emit handleRestart(args);
 }
 

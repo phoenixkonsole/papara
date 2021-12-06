@@ -181,7 +181,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>2) Where can I vote on Telos Topics?</string>
+                      <string>2) Where can I vote on para Topics?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -206,7 +206,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>3) Are there Marketplaces accepting TELOS?</string>
+                      <string>3) Are there Marketplaces accepting para?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -250,7 +250,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>5) Where can I exchange TELOS to Crypto and FIAT?</string>
+                      <string>5) Where can I exchange para to Crypto and FIAT?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -269,7 +269,7 @@
                       </size>
                      </property>
                      <property name="text">
-                      <string>6) Where to find Crypto or Telos related videos?</string>
+                      <string>6) Where to find Crypto or para related videos?</string>
                      </property>
                      <property name="checkable">
                       <bool>true</bool>
@@ -581,7 +581,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent1">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can easily deposit TELOS to a shared Pool at &lt;a style='color: #CEB247' href=&quot;https://bitdorado.biz.tr&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://bitdorado.biz.tr &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;If you'd like your own hosting service to be linked here, consider becoming a Developement-Sponsor and contact us under info@teloscoin.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can easily deposit para to a shared Pool at &lt;a style='color: #CEB247' href=&quot;https://bitdorado.biz.tr&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://bitdorado.biz.tr &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;If you'd like your own hosting service to be linked here, consider becoming a Developement-Sponsor and contact us under info@paracoin.org&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -648,7 +648,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle2">
                         <property name="text">
-                         <string>Where can I vote on Telos Topics?</string>
+                         <string>Where can I vote on para Topics?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -674,7 +674,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent2">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can vote about any TELOS related topic and suggest your own Votings or do a Bounty funding inside the Parara Dashboard &lt;a style='color: #CEB247' href=&quot;https://governance.rocks&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://governance.rocks&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can vote about any para related topic and suggest your own Votings or do a Bounty funding inside the Parara Dashboard &lt;a style='color: #CEB247' href=&quot;https://governance.rocks&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://governance.rocks&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -738,7 +738,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle3">
                         <property name="text">
-                         <string>3) Are there Marketplaces accepting TELOS?</string>
+                         <string>3) Are there Marketplaces accepting para?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -764,7 +764,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent3">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Yes there is for example an online auction plattform called &lt;a style='color: #CEB247' href=&quot;https://kryptobay.me&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://kryptobay.me&lt;/span&gt;&lt;/a&gt; where you can sell used and new stuff to earn TELOS. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Yes there is for example an online auction plattform called &lt;a style='color: #CEB247' href=&quot;https://kryptobay.me&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://kryptobay.me&lt;/span&gt;&lt;/a&gt; where you can sell used and new stuff to earn para. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -918,7 +918,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle5">
                         <property name="text">
-                         <string>Where can I exchange TELOS to Crypto and FIAT?</string>
+                         <string>Where can I exchange para to Crypto and FIAT?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -944,7 +944,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent5">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade TELOS for Bitcoin, BitcoinSubsidium and more at &lt;a style='color: #CEB247' href=&quot;https://bitdorado.biz.tr&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Bitdorado Exchange&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade TELOS for Bitcoin and USDT at &lt;a style='color: #CEB247' href=&quot;https://bitdorado.biz.tr&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;bitdorado.biz.tr&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade TELOS for Bitcoin Ethereum YEN USD EURO ROUBLES at &lt;a  style='color: #CEB247' href=&quot;https://crex24.com/?refid=msf3sqzhr0k81ekjknzx&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Crex24 &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade TELOS for Bitcoin and DOGE at &lt;a style='color: #CEB247' href=&quot;https://www.finexbox.com/Reg/register/referrer/341316.html&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Finexbox.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Telos is also tradeable at Graviex.net against Bitcoin &lt;a style='color: #CEB247' href=&quot;https://graviex.net/signup?ref=b0852bec93869be981123767&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Graviex.net&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade para for Bitcoin, BitcoinSubsidium and more at &lt;a style='color: #CEB247' href=&quot;https://bitdorado.biz.tr&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Bitdorado Exchange&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade para for Bitcoin and USDT at &lt;a style='color: #CEB247' href=&quot;https://bitdorado.biz.tr&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;bitdorado.biz.tr&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade para for Bitcoin Ethereum YEN USD EURO ROUBLES at &lt;a  style='color: #CEB247' href=&quot;https://crex24.com/?refid=msf3sqzhr0k81ekjknzx&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Crex24 &lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;You can Trade para for Bitcoin and DOGE at &lt;a style='color: #CEB247' href=&quot;https://www.finexbox.com/Reg/register/referrer/341316.html&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Finexbox.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;para is also tradeable at Graviex.net against Bitcoin &lt;a style='color: #CEB247' href=&quot;https://graviex.net/signup?ref=b0852bec93869be981123767&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;Graviex.net&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -1011,7 +1011,7 @@
                       <item>
                        <widget class="QLabel" name="labelSubtitle6">
                         <property name="text">
-                         <string>Where to find Crypto or Telos related videos?</string>
+                         <string>Where to find Crypto or para related videos?</string>
                         </property>
                         <property name="wordWrap">
                          <bool>true</bool>
@@ -1217,7 +1217,7 @@
                       <item>
                        <widget class="QLabel" name="labelContent8">
                         <property name="text">
-                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Yes, there is one currently available at &lt;a style='color: #CEB247' href=&quot;https://apps.apple.com/de/app/telos-wallet/id1479606829&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://apps.apple.com/de/app/telos-wallet/id1479606829&lt;/span&gt;&lt;/a&gt; .&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Yes, there is one currently available at &lt;a style='color: #CEB247' href=&quot;https://apps.apple.com/de/app/para-wallet/id1479606829&quot;&gt;&lt;text-decoration: underline; color:#0000ff;&quot;&gt;https://apps.apple.com/de/app/para-wallet/id1479606829&lt;/span&gt;&lt;/a&gt; .&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

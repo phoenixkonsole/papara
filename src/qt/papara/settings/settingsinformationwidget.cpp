@@ -12,7 +12,7 @@
 #include "qt/Parara/qtutils.h"
 #include <QDir>
 
-SettingsInformationWidget::SettingsInformationWidget(TELOSGUI* _window,QWidget *parent) :
+SettingsInformationWidget::SettingsInformationWidget(paraGUI* _window,QWidget *parent) :
     PWidget(_window,parent),
     ui(new Ui::SettingsInformationWidget)
 {

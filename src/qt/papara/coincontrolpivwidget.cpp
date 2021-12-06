@@ -27,14 +27,14 @@ CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
 
     // Title
 
-    ui->labelTitle->setText("Select TELOS Outputs to Spend");
+    ui->labelTitle->setText("Select para Outputs to Spend");
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
     // Label Style
 
     ui->labelTitleAfter->setProperty("cssClass", "text-main-purple");
     ui->labelTitleAmount->setProperty("cssClass", "text-main-purple");
-    ui->labelTitleAmount->setText("TELOS");
+    ui->labelTitleAmount->setText("para");
     ui->labelTitleBytes->setProperty("cssClass", "text-main-purple");
     ui->labelTitleBytes->setProperty("cssClass", "text-main-purple");
     ui->labelTitleChange->setProperty("cssClass", "text-main-purple");
@@ -60,12 +60,12 @@ CoinControlPivWidget::CoinControlPivWidget(QWidget *parent) :
 
     // Values
 
-    ui->labelValueAfter->setText("0.00 TELOS");
+    ui->labelValueAfter->setText("0.00 para");
     ui->labelValueAmount->setText("0");
     ui->labelValueBytes->setText("0");
     ui->labelValueDust->setText("No");
-    ui->labelValueChange->setText("0.00 TELOS");
-    ui->labelValueFee->setText("0.00 TELOS");
+    ui->labelValueChange->setText("0.00 para");
+    ui->labelValueFee->setText("0.00 para");
     ui->labelValueQuantity->setText("0");
 
     // Buttons

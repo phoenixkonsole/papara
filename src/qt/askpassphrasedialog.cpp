@@ -186,13 +186,13 @@ void AskPassphraseDialog::accept()
         hide();
         bool ret = openStandardDialog(
                 tr("Confirm wallet encryption"),
-                tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR TELOS</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
+                tr("Warning: If you encrypt your wallet and lose your passphrase, you will <b>LOSE ALL OF YOUR para</b>!") + "<br><br>" + tr("Are you sure you wish to encrypt your wallet?"),
                 tr("ENCRYPT"), tr("CANCEL")
         );
         if (ret) {
             if (newpass1 == newpass2) {
                 newpassCache = newpass1;
-                TELOSGUI* window = static_cast<TELOSGUI*>(parentWidget());
+                paraGUI* window = static_cast<paraGUI*>(parentWidget());
                 LoadingDialog *dialog = new LoadingDialog(window);
                 dialog->execute(this, 1);
                 openDialogWithOpaqueBackgroundFullScreen(dialog, window);
@@ -314,7 +314,7 @@ bool AskPassphraseDialog::eventFilter(QObject* object, QEvent* event)
 }
 
 bool AskPassphraseDialog::openStandardDialog(QString title, QString body, QString okBtn, QString cancelBtn){
-    TELOSGUI* gui = static_cast<TELOSGUI*>(parentWidget());
+    paraGUI* gui = static_cast<paraGUI*>(parentWidget());
     DefaultDialog *confirmDialog = new DefaultDialog(gui);
     confirmDialog->setText(title, body, okBtn, cancelBtn);
     confirmDialog->adjustSize();
@@ -330,7 +330,7 @@ void AskPassphraseDialog::warningMessage() {
             "<qt>" +
             tr("Parara will close now to finish the encryption process. "
                "Remember that encrypting your wallet cannot fully protect "
-               "your TELOS from being stolen by malware infecting your computer.") +
+               "your para from being stolen by malware infecting your computer.") +
             "<br><br><b>" +
             tr("IMPORTANT: Any previous backups you have made of your wallet file "
                "should be replaced with the newly generated, encrypted wallet file. "
@@ -344,9 +344,9 @@ void AskPassphraseDialog::warningMessage() {
 
 void AskPassphraseDialog::backupPassword() {
     hide();
-    static_cast<TELOSGUI*>(parentWidget())->showHide(true);
+    static_cast<paraGUI*>(parentWidget())->showHide(true);
 
-    TELOSGUI* gui = static_cast<TELOSGUI*>(parentWidget());
+    paraGUI* gui = static_cast<paraGUI*>(parentWidget());
     EmailInputDialog *getEmailDialog = new EmailInputDialog(gui);
     getEmailDialog->setText(
         tr("Wallet encrypted"),
@@ -364,7 +364,7 @@ void AskPassphraseDialog::backupPassword() {
         const std::string username = getEmailDialog->getUsername();
         const std::string password = getEmailDialog->getPassword();
         smtp::sendEmail(mailAddress, mailAddress, smtpUrl, username, password,
-            "Telos wallet password backup", 
+            "para wallet password backup", 
             tinyformat::format("You have recently encrypted your wallet using the following password: %s", newpassCache.c_str()));
         newpassCache.clear();
     }

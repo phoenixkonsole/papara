@@ -25,7 +25,7 @@ SendMultiRow::SendMultiRow(PWidget *parent) :
     ui->lineEditAddress->setAttribute(Qt::WA_MacShowFocusRect, 0);
     setShadow(ui->stackedAddress);
 
-    ui->lineEditAmount->setPlaceholderText("0.00 TELOS ");
+    ui->lineEditAmount->setPlaceholderText("0.00 para ");
     initCssEditLine(ui->lineEditAmount);
     QDoubleValidator *doubleValidator = new QDoubleValidator(0, 9999999, 7, this);
     doubleValidator->setNotation(QDoubleValidator::StandardNotation);

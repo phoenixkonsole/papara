@@ -50,7 +50,7 @@ public:
     MyAddressRow* cachedRow = nullptr;
 };
 
-ReceiveWidget::ReceiveWidget(TELOSGUI* parent) :
+ReceiveWidget::ReceiveWidget(paraGUI* parent) :
     PWidget(parent),
     ui(new Ui::ReceiveWidget)
 {
@@ -71,7 +71,7 @@ ReceiveWidget::ReceiveWidget(TELOSGUI* parent) :
 
     // Title
     ui->labelTitle->setText(tr("Receive"));
-    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive TELOS."));
+    ui->labelSubtitle1->setText(tr("Scan the QR code or copy the address to receive para."));
     setCssTitleScreen(ui->labelTitle);
     setCssSubtitleScreen(ui->labelSubtitle1);
 

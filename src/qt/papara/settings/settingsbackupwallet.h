@@ -17,7 +17,7 @@ class SettingsBackupWallet : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsBackupWallet(TELOSGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsBackupWallet(paraGUI* _window, QWidget *parent = nullptr);
     ~SettingsBackupWallet();
 
 private slots:

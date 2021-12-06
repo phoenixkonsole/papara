@@ -18,7 +18,7 @@ class SettingsSignMessageWidgets : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsSignMessageWidgets(TELOSGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsSignMessageWidgets(paraGUI* _window, QWidget *parent = nullptr);
     ~SettingsSignMessageWidgets();
 
     void setAddress_SM(const QString& address);

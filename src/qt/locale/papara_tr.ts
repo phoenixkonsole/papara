@@ -62,12 +62,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan TELOS adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your para addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan para adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan TELOS adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your para addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan para adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>TELOS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TELOS from being stolen by malware infecting your computer.</source>
-        <translation>TELOS şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, TELOS'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>para will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your para from being stolen by malware infecting your computer.</source>
+        <translation>para şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, para'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TELOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR para&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -254,12 +254,12 @@
         <translation>adres</translation>
     </message>
     <message>
-        <source>Enter a TELOS Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38 ile şifrelemek isteğiniz TELOS Adresini giriniz. Ortadaki kutucuğa bir parola giriniz. Şifrelenmiş özel anahtarı hesaplamak için şifrele tuşuna basınız. </translation>
+        <source>Enter a para Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38 ile şifrelemek isteğiniz para Adresini giriniz. Ortadaki kutucuğa bir parola giriniz. Şifrelenmiş özel anahtarı hesaplamak için şifrele tuşuna basınız. </translation>
     </message>
     <message>
-        <source>The TELOS address to encrypt</source>
-        <translation>Şifrelenecek TELOS adresi</translation>
+        <source>The para address to encrypt</source>
+        <translation>Şifrelenecek para adresi</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Geçerli imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this TELOS address</source>
-        <translation>Bu TELOS adresinin özel anahtarını şifreleyin</translation>
+        <source>Encrypt the private key for this para address</source>
+        <translation>Bu para adresinin özel anahtarını şifreleyin</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>İşlem geçmişini ara</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTELOS</source>
-        <translation>Gizlilik Aksiyonları zTELOS</translation>
+        <source>Privacy Actions for zpara</source>
+        <translation>Gizlilik Aksiyonları zpara</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -645,12 +645,12 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS CORE</translation>
+        <source>para Core</source>
+        <translation>para CORE</translation>
     </message>
     <message>
-        <source>Send coins to a TELOS address</source>
-        <translation>Koinleri TELOS adresine gönder</translation>
+        <source>Send coins to a para address</source>
+        <translation>Koinleri para adresine gönder</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and Parara: URIs)</source>
@@ -669,24 +669,24 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About TELOS Core</source>
+        <source>&amp;About para Core</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about TELOS Core</source>
+        <source>Show information about para Core</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
-        <source>Modify configuration options for TELOS</source>
-        <translation>TELOS için yapılandırma seçeneklerini değiştirin</translation>
+        <source>Modify configuration options for para</source>
+        <translation>para için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
-        <source>Sign messages with your TELOS addresses to prove you own them</source>
-        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı TELOS adresleriyle imzalayın</translation>
+        <source>Sign messages with your para addresses to prove you own them</source>
+        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı para adresleriyle imzalayın</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TELOS addresses</source>
-        <translation>Belirtilen TELOS adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
+        <source>Verify messages to ensure they were signed with specified para addresses</source>
+        <translation>Belirtilen para adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -717,8 +717,8 @@
         <translation>Açık Masternode yapılandırma dosyası</translation>
     </message>
     <message>
-        <source>Open a TELOS: URI or payment request</source>
-        <translation>Bir TELOS: URI veya ödeme isteği açın</translation>
+        <source>Open a para: URI or payment request</source>
+        <translation>Bir para: URI veya ödeme isteği açın</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -729,12 +729,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the TELOS Core help message to get a list with possible TELOS command-line options</source>
-        <translation>Olası TELOS komut satırı seçeneklerine sahip bir liste almak için TELOS Core yardım mesajını gösterin</translation>
+        <source>Show the para Core help message to get a list with possible para command-line options</source>
+        <translation>Olası para komut satırı seçeneklerine sahip bir liste almak için para Core yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>TELOS Core client</source>
-        <translation>TELOS Core istemci</translation>
+        <source>para Core client</source>
+        <translation>para Core istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1162,8 +1162,8 @@ Adres: %4
         <translation>Gönderen adresini düzenle</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TELOS address.</source>
-        <translation>Girilen "%1" adresi geçerli bir TELOS adresi değil.</translation>
+        <source>The entered address "%1" is not a valid para address.</source>
+        <translation>Girilen "%1" adresi geçerli bir para adresi değil.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1219,16 +1219,16 @@ Adres: %4
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS CORE</translation>
+        <source>para Core</source>
+        <translation>para CORE</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TELOS Core</source>
-        <translation>hakkında TELOS Core</translation>
+        <source>About para Core</source>
+        <translation>hakkında para Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1274,16 +1274,16 @@ Adres: %4
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to TELOS Core.</source>
-        <translation>TELOS Core'a hoşgeldiniz.</translation>
+        <source>Welcome to para Core.</source>
+        <translation>para Core'a hoşgeldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TELOS Core will store its data.</source>
-        <translation>Program ilk başlatıldığında TELOS Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
+        <source>As this is the first time the program is launched, you can choose where para Core will store its data.</source>
+        <translation>Program ilk başlatıldığında para Core'un verilerini nerede saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>TELOS Core will download and store a copy of the TELOS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>TELOS Core, TELOS blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecek. Cüzdan ayrıca bu dizinde saklanır.</translation>
+        <source>para Core will download and store a copy of the para block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>para Core, para blok zincirinin bir kopyasını indirecek ve depolayacaktır. Bu dizinde en az %1GB veri saklanacak ve zamanla büyüyecek. Cüzdan ayrıca bu dizinde saklanır.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1294,8 +1294,8 @@ Adres: %4
         <translation>Özel bir veri dizini kullanın:</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS CORE</translation>
+        <source>para Core</source>
+        <translation>para CORE</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1436,12 +1436,12 @@ Adres: %4
         <translation>Gönderim adresi girin</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other TELOS addresses after it matures.
-To Add: enter percentage to give and TELOS address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other para addresses after it matures.
+To Add: enter percentage to give and para address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>ÇokluGönderi, olgunlaştıktan sonra diğer TELOS adreslerinin bir listesine staking ya da masternode ödülünüzün 100% 'ünü otomatik olarak göndermenize olanak tanır.
-Eklemek için: Verilecek yüzdeyi ve ÇokluGönderi vektörüne eklemek için TELOS adresi girin.
+        <translation>ÇokluGönderi, olgunlaştıktan sonra diğer para adreslerinin bir listesine staking ya da masternode ödülünüzün 100% 'ünü otomatik olarak göndermenize olanak tanır.
+Eklemek için: Verilecek yüzdeyi ve ÇokluGönderi vektörüne eklemek için para adresi girin.
 Silme: Silinecek adresi girin ve silmek için basın.
 ÇokluGönderi, Etkinleştir'i tıklamadığınız sürece etkinleştirilmeyecektir</translation>
     </message>
@@ -1663,8 +1663,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Address /miktar:</translation>
     </message>
     <message>
-        <source>Add destinations to send TELOS to</source>
-        <translation>TELOS göndermek için varış yerleri ekleyin</translation>
+        <source>Add destinations to send para to</source>
+        <translation>para göndermek için varış yerleri ekleyin</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1797,8 +1797,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Doğrulanmamış değişikliğin harcamasını devre dışı bırakırsanız, bir işlemdeki değişiklik&lt;br/&gt;Bu işlem en az bir onay alıncaya kadar kullanılamaz.&lt;br/&gt;Bu aynı zamanda bakiyenizin nasıl hesaplandığını etkiler.</translation>
     </message>
     <message>
-        <source>Automatically open the TELOS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticideki TELOS istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
+        <source>Automatically open the para client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticideki para istemci bağlantı noktasını otomatik olarak açın. Bu, yalnızca yönlendiriciniz UPnP'yi destekliyorsa ve etkinleştirilmişse çalışır.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1817,12 +1817,12 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>Uzman</translation>
     </message>
     <message>
-        <source>Automatically start TELOS after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra otomatik olarak TELOS'i başlatın.</translation>
+        <source>Automatically start para after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra otomatik olarak para'i başlatın.</translation>
     </message>
     <message>
-        <source>&amp;Start TELOS on system login</source>
-        <translation>&amp; Sistem oturum açma işleminde TELOS'i başlat</translation>
+        <source>&amp;Start para on system login</source>
+        <translation>&amp; Sistem oturum açma işleminde para'i başlat</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1849,8 +1849,8 @@ Unutmayın, cüzdan, yeni adresi içeren işlemleri bulmak için blok zinciri ye
         <translation>&amp;ağ</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TELOS.</source>
-        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, TELOS yeniden başlatıldıktan sonra geçerli olur.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting para.</source>
+        <translation>Kullanıcı arabirimi dili burada ayarlanabilir. Bu ayar, para yeniden başlatıldıktan sonra geçerli olur.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1863,32 +1863,32 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TELOS units to zTELOS</source>
-        <translation>TELOS birimlerinin zTELOS'e otomatik basımını ektinleştir</translation>
+        <source>Enable automatic minting of para units to zpara</source>
+        <translation>para birimlerinin zpara'e otomatik basımını ektinleştir</translation>
     </message>
     <message>
-        <source>Enable zTELOS Automint</source>
-        <translation>zTELOS Otomatik basımı etkinleştir</translation>
+        <source>Enable zpara Automint</source>
+        <translation>zpara Otomatik basımı etkinleştir</translation>
     </message>
     <message>
-        <source>Percentage of incoming TELOS which get automatically converted to zTELOS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zTELOS'ye dönüştürülen gelen TELOS yüzdesi (dakika: 10%)</translation>
+        <source>Percentage of incoming para which get automatically converted to zpara via Zerocoin Protocol (min: 10%)</source>
+        <translation>Zerocoin Protokolü üzerinden otomatik olarak zpara'ye dönüştürülen gelen para yüzdesi (dakika: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTELOS</source>
-        <translation>Otomatikleştirilmiş zTELOS yüzdesi</translation>
+        <source>Percentage of autominted zpara</source>
+        <translation>Otomatikleştirilmiş zpara yüzdesi</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TELOS for this denomination is available</source>
-        <translation>Bu mezhebi için yeterli TELOS bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough para for this denomination is available</source>
+        <translation>Bu mezhebi için yeterli para bulunana kadar Zerocoin'e otomatik dönüşümle birlikte bekleyin</translation>
     </message>
     <message>
-        <source>Preferred Automint zTELOS Denomination</source>
-        <translation>Tercih edilen Automint zTELOS Nominal değeri</translation>
+        <source>Preferred Automint zpara Denomination</source>
+        <translation>Tercih edilen Automint zpara Nominal değeri</translation>
     </message>
     <message>
-        <source>Connect to the TELOS network through a SOCKS5 proxy.</source>
-        <translation>Bir SOCKS5 proxy vasıtasıyla TELOS ağına bağlanın.</translation>
+        <source>Connect to the para network through a SOCKS5 proxy.</source>
+        <translation>Bir SOCKS5 proxy vasıtasıyla para ağına bağlanın.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2038,8 +2038,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Toplam Bakiye, mevcut olmayan tüm paralar dahil.</translation>
     </message>
     <message>
-        <source>TELOS Balance</source>
-        <translation>TELOS Bakiyesi</translation>
+        <source>para Balance</source>
+        <translation>para Bakiyesi</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2062,18 +2062,18 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Mevcut kilitli bakiye sadece görüntülenebilir adreslerde.</translation>
     </message>
     <message>
-        <source>Your current TELOS balance, unconfirmed and immature transactions included</source>
-        <translation>Güncel TELOS bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
+        <source>Your current para balance, unconfirmed and immature transactions included</source>
+        <translation>Güncel para bakiyeniz, onaylanmamış ve olgunlaşmamış işlemler dahil</translation>
     </message>
     <message>
-        <source>zTELOS Balance</source>
-        <translation>zTELOS Bakiyesi</translation>
+        <source>zpara Balance</source>
+        <translation>zpara Bakiyesi</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTELOS are spendable.</source>
+These zpara are spendable.</source>
         <translation>Olgun: basılmış olduktan sonra 20'den fazla onay alınmış ve aynı ölçü biriminden 1 kereden fazla basılmış.
-Bu zTELOS ler harcanabilir.</translation>
+Bu zpara ler harcanabilir.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2082,8 +2082,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden 1 taneden daha az basım bulunmakta.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilgiler güncelliğini yitirmiş olabilir. Bir bağlantı kurulduktan sonra M-cüzdanınız otomatik olarak TELOS şebekesiyle senkronize edilir, ancak bu işlem henüz tamamlanmadı.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilgiler güncelliğini yitirmiş olabilir. Bir bağlantı kurulduktan sonra M-cüzdanınız otomatik olarak para şebekesiyle senkronize edilir, ancak bu işlem henüz tamamlanmadı.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2126,8 +2126,8 @@ Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden
         <translation>Harcanabilir:</translation>
     </message>
     <message>
-        <source>Locked TELOS or Masternode collaterals. These are excluded from zTELOS minting.</source>
-        <translation>Kilitli TELOS veya Masternode teminatları. Bunlar zTELOS matlaştırmadan çıkarılır.</translation>
+        <source>Locked para or Masternode collaterals. These are excluded from zpara minting.</source>
+        <translation>Kilitli para veya Masternode teminatları. Bunlar zpara matlaştırmadan çıkarılır.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2138,8 +2138,8 @@ Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden
         <translation>onaylanmamış:</translation>
     </message>
     <message>
-        <source>Your current zTELOS balance, unconfirmed and immature zTELOS included.</source>
-        <translation>Güncel zTELOS bakiyeniz, onaylanmamış ve olgunlaşmamış zTELOS'ler dahil.</translation>
+        <source>Your current zpara balance, unconfirmed and immature zpara included.</source>
+        <translation>Güncel zpara bakiyeniz, onaylanmamış ve olgunlaşmamış zpara'ler dahil.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2150,10 +2150,10 @@ Olgunlaşmamış: onaylandı, ancak basıldıktan sonra aynı ölçü biriminden
         <translation>senkronizasyon dışı</translation>
     </message>
     <message>
-        <source>Current percentage of zTELOS.
+        <source>Current percentage of zpara.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Mevcut zTELOS yüzdesi.
+        <translation>Mevcut zpara yüzdesi.
 AutoMint etkinleştirilirse, bu yüzde, yapılandırılmış AutoMint yüzdesi etrafında düzelir (varsayılan = 10%).
 </translation>
     </message>
@@ -2199,8 +2199,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Pivx başlatılamıyor: tıkla ve ödeme işleyicisi</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid TELOS address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir TELOS adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamaz! Bunun nedeni, geçersiz bir para adresi veya hatalı biçimlendirilmiş URI parametrelerinden kaynaklanabilir.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2285,8 +2285,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Zerocoin Actions:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilgiler güncelliğini yitirmiş olabilir. Bir bağlantı kurulduktan sonra M-cüzdanınız otomatik olarak TELOS şebekesiyle senkronize edilir, ancak bu işlem henüz tamamlanmadı.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilgiler güncelliğini yitirmiş olabilir. Bir bağlantı kurulduktan sonra M-cüzdanınız otomatik olarak para şebekesiyle senkronize edilir, ancak bu işlem henüz tamamlanmadı.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2297,8 +2297,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2325,12 +2325,12 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>GİZLİLİK</translation>
     </message>
     <message>
-        <source>zTELOS Control</source>
-        <translation>zTELOS Kontrolü</translation>
+        <source>zpara Control</source>
+        <translation>zpara Kontrolü</translation>
     </message>
     <message>
-        <source>zTELOS Selected:</source>
-        <translation>zTelos Seçildi:</translation>
+        <source>zpara Selected:</source>
+        <translation>zpara Seçildi:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2345,32 +2345,32 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in pivx.conf<
         <translation>Harca Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTELOS for spending</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zTELOS</translation>
+        <source>Available (mature and spendable) zpara for spending</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zpara</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Kullanılabilir Bakiye:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTELOS for spending
+        <source>Available (mature and spendable) zpara for spending
 
-zTELOS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Mevcut (olgun ve harcanabilir) harcama için zTELOS
+zpara are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>Mevcut (olgun ve harcanabilir) harcama için zpara
 
-zTELOS, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
+zpara, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezhepten 2 kat fazla darphane çekilir.</translation>
     </message>
     <message>
-        <source>0 zTELOS</source>
-        <translation>0 zTELOS</translation>
+        <source>0 zpara</source>
+        <translation>0 zpara</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
         <translation>şuna öde:</translation>
     </message>
     <message>
-        <source>The TELOS address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Ödemeyi göndermek için TELOS adresi. Boş olduğunda kendinize yerel ödeme oluşturur.</translation>
+        <source>The para address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Ödemeyi göndermek için para adresi. Boş olduğunda kendinize yerel ödeme oluşturur.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2421,8 +2421,8 @@ zTELOS, 20'den fazla teyit bulunduğunda olgunlaşır ve bundan sonra aynı mezh
         <translation>Zerocoin durumu:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTELOS</source>
-        <translation>Doğrulanmamış ve olgunlaşmamış zTELOS dahil toplam bakiye</translation>
+        <source>Total Balance including unconfirmed and immature zpara</source>
+        <translation>Doğrulanmamış ve olgunlaşmamış zpara dahil toplam bakiye</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2581,12 +2581,12 @@ Please be patient...</source>
 Lütfen sabırlı olun...</translation>
     </message>
     <message>
-        <source>zTELOS is currently disabled due to maintenance.</source>
-        <translation>zTELOS bakım nedeniyle şu an kullanıma kapalı.</translation>
+        <source>zpara is currently disabled due to maintenance.</source>
+        <translation>zpara bakım nedeniyle şu an kullanıma kapalı.</translation>
     </message>
     <message>
-        <source>zTELOS is currently undergoing maintenance.</source>
-        <translation>zTELOS halen bakım alıyor.</translation>
+        <source>zpara is currently undergoing maintenance.</source>
+        <translation>zpara halen bakım alıyor.</translation>
     </message>
     <message>
         <source>AutoMint Status:</source>
@@ -2685,8 +2685,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Miktar</translation>
     </message>
     <message>
-        <source>Enter a TELOS address (e.g. %1)</source>
-        <translation>Gir bir TELOS addres (e.g. %1)</translation>
+        <source>Enter a para address (e.g. %1)</source>
+        <translation>Gir bir para addres (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2729,8 +2729,8 @@ Lütfen sabırlı olun...</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS CORE</translation>
+        <source>para Core</source>
+        <translation>para CORE</translation>
     </message>
     </context>
 <context>
@@ -2827,8 +2827,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the TELOS debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Geçerli veri dizininden TELOS hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the para debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Geçerli veri dizininden para hata ayıklama günlük dosyasını açın. Bu, büyük günlük dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -3011,8 +3011,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Dışa:</translation>
     </message>
     <message>
-        <source>Welcome to the TELOS RPC console.</source>
-        <translation>TELOS RPC konsola hoşgeldiniz</translation>
+        <source>Welcome to the para RPC console.</source>
+        <translation>para RPC konsola hoşgeldiniz</translation>
     </message>
     <message>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
@@ -3098,12 +3098,12 @@ Lütfen sabırlı olun...</translation>
         <translation>Miktar:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TELOS network.</source>
-        <translation>Talep açıldığında görüntülenecek ödeme isteğine eklemek için isteğe bağlı bir mesaj. Not: Mesaj, ödemenin TELOS şebekesi üzerinden gönderilmeyecektir.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the para network.</source>
+        <translation>Talep açıldığında görüntülenecek ödeme isteğine eklemek için isteğe bağlı bir mesaj. Not: Mesaj, ödemenin para şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TELOS network.</source>
-        <translation>Talep açıldığında görüntülenecek, ödeme isteğine eklemek için isteğe bağlı bir mesaj.&lt;br&gt;Not: Mesaj, ödemenin TELOS şebekesi üzerinden gönderilmeyecektir.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the para network.</source>
+        <translation>Talep açıldığında görüntülenecek, ödeme isteğine eklemek için isteğe bağlı bir mesaj.&lt;br&gt;Not: Mesaj, ödemenin para şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3331,8 +3331,8 @@ Lütfen sabırlı olun...</translation>
         <translation>UTXO Boyutu:</translation>
     </message>
     <message>
-        <source>0 TELOS</source>
-        <translation>0 TELOS</translation>
+        <source>0 para</source>
+        <translation>0 para</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3387,16 +3387,16 @@ Lütfen sabırlı olun...</translation>
         <translation>Koinler otomatik seçildi</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTELOSs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTELOSs in fee,&lt;br /&gt;while "at least" pays 1000 uTELOSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uTELOS olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uTELOS öder,&lt;br /&gt;"en az" ise 1000 uTELOS öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uparas and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uparas in fee,&lt;br /&gt;while "at least" pays 1000 uparas. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 upara olarak ayarlanmış ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 upara öder,&lt;br /&gt;"en az" ise 1000 upara öder. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTELOSs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTELOSs in fee,&lt;br /&gt;while "total at least" pays 1000 uTELOSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Özel ücret 1000 uTELOS olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 uTELOS ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 uTELOS ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
+        <source>If the custom fee is set to 1000 uparas and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uparas in fee,&lt;br /&gt;while "total at least" pays 1000 uparas. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Özel ücret 1000 upara olarak ayarlanırsa ve işlem sadece 250 bayt ise, "kilobayt başına" ücret karşılığında yalnızca 250 upara ücreti verilir,&lt;br /&gt;"toplam en az" ise 1000 upara ödüyor. Bir kilobayttan daha büyük işlemler için kilobayt ödersiniz.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for TELOS transactions than the network can process.</source>
-        <translation>Yalnızca minimum ücreti ödemek, işlem hacmi bloklardaki alana göre daha az olduğu sürece iyidir.&lt;br /&gt;Ancak, bunun, TELOS işlemleri için ağın işleyebileceğinden daha fazla talep olması durumunda, onaylama işleminde asla sonuçlanamayacağına dikkat edin.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for para transactions than the network can process.</source>
+        <translation>Yalnızca minimum ücreti ödemek, işlem hacmi bloklardaki alana göre daha az olduğu sürece iyidir.&lt;br /&gt;Ancak, bunun, para işlemleri için ağın işleyebileceğinden daha fazla talep olması durumunda, onaylama işleminde asla sonuçlanamayacağına dikkat edin.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3443,8 +3443,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Alıcı ekle</translation>
     </message>
     <message>
-        <source>Anonymized TELOS</source>
-        <translation>anonim edilmiş TELOS</translation>
+        <source>Anonymized para</source>
+        <translation>anonim edilmiş para</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3491,8 +3491,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Bloğu böl aygıtı multipl adresle çalışmaz Tekrar deneyin</translation>
     </message>
     <message>
-        <source>Warning: Invalid TELOS address</source>
-        <translation>Uyarı: Geçersiz TELOS adresi</translation>
+        <source>Warning: Invalid para address</source>
+        <translation>Uyarı: Geçersiz para adresi</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -3586,8 +3586,8 @@ Lütfen sabırlı olun...</translation>
         <translation>şuna öde:</translation>
     </message>
     <message>
-        <source>The TELOS address to send the payment to</source>
-        <translation>Ödemeyi göndermek için TELOS adresi</translation>
+        <source>The para address to send the payment to</source>
+        <translation>Ödemeyi göndermek için para adresi</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3626,8 +3626,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the TELOS: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the TELOS network.</source>
-        <translation>TELOS e eklenmiş olan bir mesaj: İşleminizle beraber saklanacak olan URI hatırlamanız için. Not: Bu mesaj TELOS ağında yayınlanmayacak.</translation>
+        <source>A message that was attached to the para: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the para network.</source>
+        <translation>para e eklenmiş olan bir mesaj: İşleminizle beraber saklanacak olan URI hatırlamanız için. Not: Bu mesaj para ağında yayınlanmayacak.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3653,8 +3653,8 @@ Lütfen sabırlı olun...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TELOS Core is shutting down...</source>
-        <translation>TELOS Core kapanıyor ...</translation>
+        <source>para Core is shutting down...</source>
+        <translation>para Core kapanıyor ...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3676,8 +3676,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Sahip olduğunuzu kanıtlamak için adreslerinizle mesaj imzalayabilirsiniz. Kimlik avı saldırıları sizi kimliğini onlara yazmaya kandırmaya çalışabilir, çünkü belirsiz bir şey imzalamamaya dikkat edin. Kabul ettiğiniz tamamen ayrıntılı ifadeleri yalnızca imzalayın.</translation>
     </message>
     <message>
-        <source>The TELOS address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için TELOS adresi</translation>
+        <source>The para address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için para adresi</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3708,16 +3708,16 @@ Lütfen sabırlı olun...</translation>
         <translation>Geçerli imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TELOS address</source>
-        <translation>Bu TELOS adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala</translation>
+        <source>Sign the message to prove you own this para address</source>
+        <translation>Bu para adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala</translation>
     </message>
     <message>
-        <source>The TELOS address the message was signed with</source>
-        <translation>Mesajın imzalandığı TELOS adresi</translation>
+        <source>The para address the message was signed with</source>
+        <translation>Mesajın imzalandığı para adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TELOS address</source>
-        <translation>Belirtilen TELOS adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified para address</source>
+        <translation>Belirtilen para adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3803,8 +3803,8 @@ Lütfen sabırlı olun...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS CORE</translation>
+        <source>para Core</source>
+        <translation>para CORE</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3819,8 +3819,8 @@ Lütfen sabırlı olun...</translation>
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The TELOS Core developers</source>
-        <translation>The TELOS Core developers</translation>
+        <source>The para Core developers</source>
+        <translation>The para Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4339,8 +4339,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Koinleri göder</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TELOS.</source>
-        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 TELOS ile sınırlıdır.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 para.</source>
+        <translation>SwiftX yüksek değerler göndermeyi desteklemiyor. İşlemler şu anda %1 para ile sınırlıdır.</translation>
     </message>
 </context>
 <context>
@@ -4367,7 +4367,7 @@ Lütfen sabırlı olun...</translation>
     </message>
 </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Adet</translation>
@@ -4377,8 +4377,8 @@ Lütfen sabırlı olun...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4412,8 +4412,8 @@ Lütfen sabırlı olun...</translation>
         <translation>Hesaplanan akümülatör kontrol noktası, blok indeksiyle kaydedilen kontrol noktası değildir.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. TELOS Core is probably already running.</source>
-        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. TELOS Core muhtemelen zaten çalışıyor.</translation>
+        <source>Cannot obtain a lock on data directory %s. para Core is probably already running.</source>
+        <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. para Core muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4464,12 +4464,12 @@ Lütfen sabırlı olun...</translation>
         <translation>En iyi blok değiştirildiğinde komutu yürütün (cmd'deki %s yerine blok karması verilir)</translation>
     </message>
     <message>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (TELOS / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (para / Kb cinsinden), aktarma için sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Bundan daha küçük ücretler (TELOS / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Bundan daha küçük ücretler (para / Kb cinsinden), işlem yaratmada sıfır ücret olarak kabul edilir (varsayılan: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

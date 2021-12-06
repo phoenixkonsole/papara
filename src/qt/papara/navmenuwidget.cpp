@@ -8,7 +8,7 @@
 #include "qt/Parara/qtutils.h"
 #include "clientversion.h"
 
-NavMenuWidget::NavMenuWidget(TELOSGUI *mainWindow, QWidget *parent) :
+NavMenuWidget::NavMenuWidget(paraGUI *mainWindow, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::NavMenuWidget),
     window(mainWindow)

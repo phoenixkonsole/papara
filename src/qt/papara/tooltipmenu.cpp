@@ -9,7 +9,7 @@
 #include "qt/Parara/qtutils.h"
 #include <QTimer>
 
-TooltipMenu::TooltipMenu(TELOSGUI *_window, QWidget *parent) :
+TooltipMenu::TooltipMenu(paraGUI *_window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::TooltipMenu)
 {

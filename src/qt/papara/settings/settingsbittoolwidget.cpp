@@ -19,7 +19,7 @@
 #include <vector>
 
 
-SettingsBitToolWidget::SettingsBitToolWidget(TELOSGUI* _window, QWidget *parent) :
+SettingsBitToolWidget::SettingsBitToolWidget(paraGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBitToolWidget)
 {

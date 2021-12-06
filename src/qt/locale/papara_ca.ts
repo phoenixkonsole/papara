@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces TELOS per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your para addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces para per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces TELOS per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your para addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces para per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,15 +168,15 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>TELOS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TELOS from being stolen by malware infecting your computer.</source>
-        <translation>TELOS es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus TELOS de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>para will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your para from being stolen by malware infecting your computer.</source>
+        <translation>para es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus para de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TELOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR para&lt;/b&gt;!</source>
         <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES PIVS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -421,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
-        <source>Send coins to a TELOS address</source>
-        <translation>Envia monedes a una adreça TELOS</translation>
+        <source>Send coins to a para address</source>
+        <translation>Envia monedes a una adreça para</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -437,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TELOS Core</source>
-        <translation>&amp;Sobre TELOS Core</translation>
+        <source>&amp;About para Core</source>
+        <translation>&amp;Sobre para Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -461,8 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>TELOS Core client</source>
-        <translation>Client TELOS core</translation>
+        <source>para Core client</source>
+        <translation>Client para core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -805,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TELOS address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça TELOS vàlida.</translation>
+        <source>The entered address "%1" is not a valid para address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça para vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -862,16 +862,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TELOS Core</source>
-        <translation>Sobre TELOS Core</translation>
+        <source>About para Core</source>
+        <translation>Sobre para Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -917,12 +917,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to TELOS Core.</source>
-        <translation>Benvingut a TELOS Core.</translation>
+        <source>Welcome to para Core.</source>
+        <translation>Benvingut a para Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TELOS Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del TELOS Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where para Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del para Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -933,8 +933,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1152,8 +1152,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start TELOS after logging in to the system.</source>
-        <translation>Inicia TELOS automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start para after logging in to the system.</source>
+        <translation>Inicia para automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1240,16 +1240,16 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Reset</source>
         <translation>Restableix</translation>
     </message>
     <message>
-        <source>0 zTELOS</source>
-        <translation>0 zTELOS</translation>
+        <source>0 zpara</source>
+        <translation>0 zpara</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1326,8 +1326,8 @@
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     </context>
 <context>
@@ -1650,8 +1650,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TELOS Core is shutting down...</source>
-        <translation>TELOS Core s'està tancant...</translation>
+        <source>para Core is shutting down...</source>
+        <translation>para Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1716,8 +1716,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1896,7 +1896,7 @@
     </message>
     </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1906,8 +1906,8 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     </context>
 <context>

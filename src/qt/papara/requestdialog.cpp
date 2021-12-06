@@ -32,8 +32,8 @@ RequestDialog::RequestDialog(QWidget *parent) :
     setCssProperty(ui->comboBoxCoin, "btn-combo-coins");
     setCssProperty(ui->comboContainer, "container-purple");
 
-    ui->comboBoxCoin->addItem("TELOS", 0);
-    ui->comboBoxCoin->addItem("zTELOS", 1);
+    ui->comboBoxCoin->addItem("para", 0);
+    ui->comboBoxCoin->addItem("zpara", 1);
     ui->comboBoxCoin->setView(new QListView());
 
     // Label
@@ -45,7 +45,7 @@ RequestDialog::RequestDialog(QWidget *parent) :
     // Amount
     ui->labelSubtitleAmount->setText(tr("Amount"));
     setCssProperty(ui->labelSubtitleAmount, "text-title2-dialog");
-    ui->lineEditAmount->setPlaceholderText("0.00 TELOS");
+    ui->lineEditAmount->setPlaceholderText("0.00 para");
     setCssEditLineDialog(ui->lineEditAmount, true);
 
     QDoubleValidator *doubleValidator = new QDoubleValidator(0, 9999999, 7, this);
@@ -105,7 +105,7 @@ void RequestDialog::onNextClicked(){
         if(value <= 0 || !isValueValid){
             return;
         }
-        ui->labelTitle->setText("Request for " + BitcoinUnits::format(displayUnit, value, false, BitcoinUnits::separatorAlways) + " TELOS");
+        ui->labelTitle->setText("Request for " + BitcoinUnits::format(displayUnit, value, false, BitcoinUnits::separatorAlways) + " para");
         updateQr(info->address);
         ui->labelAddress->setText(info->address);
         ui->buttonsStack->setVisible(false);

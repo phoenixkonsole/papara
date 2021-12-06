@@ -10,7 +10,7 @@
 #include "qt/Parara/pwidget.h"
 #include "qt/Parara/furabstractlistitemdelegate.h"
 
-class TELOSGUI;
+class paraGUI;
 
 namespace Ui {
 class SettingsMultisendWidget;

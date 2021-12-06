@@ -75,7 +75,7 @@ void MasterNodesWidget::loadChart(){
             initChart();
         }
 }
-MasterNodesWidget::MasterNodesWidget(TELOSGUI *parent) :
+MasterNodesWidget::MasterNodesWidget(paraGUI *parent) :
     PWidget(parent),
     ui(new Ui::MasterNodesWidget)
 {
@@ -408,7 +408,7 @@ void MasterNodesWidget::onDeleteMNClicked(){
 void MasterNodesWidget::onCreateMNClicked(){
     if(verifyWalletUnlocked()) {
         if(walletModel->getBalance() <= (COIN * 1000)){
-            inform(tr("Not enough balance to create a masternode, 1,000 or more TELOS required."));
+            inform(tr("Not enough balance to create a masternode, 1,000 or more para required."));
             return;
         }
         showHideOp(true);

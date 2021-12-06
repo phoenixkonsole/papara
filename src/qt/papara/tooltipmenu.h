@@ -9,7 +9,7 @@
 #include <QWidget>
 #include <QModelIndex>
 
-class TELOSGUI;
+class paraGUI;
 class WalletModel;
 
 namespace Ui {
@@ -25,7 +25,7 @@ class TooltipMenu : public PWidget
     Q_OBJECT
 
 public:
-    explicit TooltipMenu(TELOSGUI* _window, QWidget *parent = nullptr);
+    explicit TooltipMenu(paraGUI* _window, QWidget *parent = nullptr);
     ~TooltipMenu() override;
 
     void setIndex(const QModelIndex &index);

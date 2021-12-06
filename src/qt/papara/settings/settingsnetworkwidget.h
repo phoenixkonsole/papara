@@ -18,7 +18,7 @@ class SettingsNetworkWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsNetworkWidget(TELOSGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsNetworkWidget(paraGUI* _window, QWidget *parent = nullptr);
     ~SettingsNetworkWidget();
 
     void setMapper(QDataWidgetMapper *mapper);

@@ -9,7 +9,7 @@
 #include "clientmodel.h"
 #include "qt/Parara/qtutils.h"
 
-SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(TELOSGUI* _window, QWidget *parent) :
+SettingsWalletOptionsWidget::SettingsWalletOptionsWidget(paraGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsWalletOptionsWidget)
 {

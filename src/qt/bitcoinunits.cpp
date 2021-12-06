@@ -21,18 +21,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TELOS);
-    unitlist.append(mTELOS);
-    unitlist.append(uTELOS);
+    unitlist.append(para);
+    unitlist.append(mpara);
+    unitlist.append(upara);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case TELOS:
-    case mTELOS:
-    case uTELOS:
+    case para:
+    case mpara:
+    case upara:
         return true;
     default:
         return false;
@@ -42,40 +42,40 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case TELOS:
-        return QString("TELOS");
-    case mTELOS:
-        return QString("mtelos");
-    case uTELOS:
-        return QString::fromUtf8("utelos");
+    case para:
+        return QString("para");
+    case mpara:
+        return QString("mpara");
+    case upara:
+        return QString::fromUtf8("upara");
     default:
         return QString("???");
     }
 }
 
-QString BitcoinUnits::name(int unit, bool isZTelos)
+QString BitcoinUnits::name(int unit, bool isZpara)
 {
     QString z = "";
-    if(isZTelos) z = "z";
+    if(isZpara) z = "z";
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TELOS:
-            return z + QString("TELOS");
-        case mTELOS:
-            return z + QString("mTELOS");
-        case uTELOS:
-            return z + QString::fromUtf8("μTELOS");
+        case para:
+            return z + QString("para");
+        case mpara:
+            return z + QString("mpara");
+        case upara:
+            return z + QString::fromUtf8("μpara");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TELOS:
-            return z + QString("tTELOS");
-        case mTELOS:
-            return z + QString("mtTELOS");
-        case uTELOS:
-            return z + QString::fromUtf8("μtTELOS");
+        case para:
+            return z + QString("tpara");
+        case mpara:
+            return z + QString("mtpara");
+        case upara:
+            return z + QString::fromUtf8("μtpara");
         default:
             return QString("???");
         }
@@ -86,23 +86,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TELOS:
-            return QString("TELOS");
-        case mTELOS:
-            return QString("Milli-TELOS (1 / 1" THIN_SP_UTF8 "000)");
-        case uTELOS:
-            return QString("Micro-TELOS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case para:
+            return QString("para");
+        case mpara:
+            return QString("Milli-para (1 / 1" THIN_SP_UTF8 "000)");
+        case upara:
+            return QString("Micro-para (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TELOS:
-            return QString("TestTELOSs");
-        case mTELOS:
-            return QString("Milli-TestTELOS (1 / 1" THIN_SP_UTF8 "000)");
-        case uTELOS:
-            return QString("Micro-TestTELOS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case para:
+            return QString("Testparas");
+        case mpara:
+            return QString("Milli-Testpara (1 / 1" THIN_SP_UTF8 "000)");
+        case upara:
+            return QString("Micro-Testpara (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -112,11 +112,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case TELOS:
+    case para:
         return 100000000;
-    case mTELOS:
+    case mpara:
         return 100000;
-    case uTELOS:
+    case upara:
         return 100;
     default:
         return 100000000;
@@ -126,11 +126,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case TELOS:
+    case para:
         return 8;
-    case mTELOS:
+    case mpara:
         return 5;
-    case uTELOS:
+    case upara:
         return 2;
     default:
         return 0;
@@ -212,7 +212,7 @@ QString BitcoinUnits::formatHtmlWithUnit(int unit, const CAmount& amount, bool p
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }
 
-QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZTELOS)
+QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZpara)
 {
     QSettings settings;
     int digits = settings.value("digits").toInt();
@@ -229,12 +229,12 @@ QString BitcoinUnits::floorWithUnit(int unit, const CAmount& amount, bool plussi
         }
     }
 
-    return result + QString(" ") + name(unit, isZTELOS);
+    return result + QString(" ") + name(unit, isZpara);
 }
 
-QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZTELOS)
+QString BitcoinUnits::floorHtmlWithUnit(int unit, const CAmount& amount, bool plussign, SeparatorStyle separators, bool cleanRemainderZeros, bool isZpara)
 {
-    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZTELOS));
+    QString str(floorWithUnit(unit, amount, plussign, separators, cleanRemainderZeros, isZpara));
     str.replace(QChar(THIN_SP_CP), QString(COMMA_HTML));
     return QString("<span style='white-space: nowrap;'>%1</span>").arg(str);
 }

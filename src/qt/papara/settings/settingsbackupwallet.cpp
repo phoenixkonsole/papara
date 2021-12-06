@@ -10,7 +10,7 @@
 #include "qt/Parara/qtutils.h"
 #include "guiinterface.h"
 #include "qt/Parara/qtutils.h"
-SettingsBackupWallet::SettingsBackupWallet(TELOSGUI* _window, QWidget *parent) :
+SettingsBackupWallet::SettingsBackupWallet(paraGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsBackupWallet)
 {

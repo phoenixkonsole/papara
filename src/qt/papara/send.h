@@ -14,12 +14,12 @@
 #include "qt/Parara/sendcustomfeedialog.h"
 #include "walletmodel.h"
 #include "coincontroldialog.h"
-#include "zteloscontroldialog.h"
+#include "zparacontroldialog.h"
 #include "qt/Parara/tooltipmenu.h"
 
 static const int MAX_SEND_POPUP_ENTRIES = 8;
 
-class TELOSGUI;
+class paraGUI;
 class ClientModel;
 class WalletModel;
 class WalletModelTransaction;
@@ -34,7 +34,7 @@ class SendWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SendWidget(TELOSGUI* parent);
+    explicit SendWidget(paraGUI* parent);
     ~SendWidget();
 
     void addEntry();
@@ -59,7 +59,7 @@ protected:
     void resizeEvent(QResizeEvent *event) override;
 
 private slots:
-    void onTELOSSelected(bool _isPIV);
+    void onparaSelected(bool _isPIV);
     void onSendClicked();
     void onContactsClicked(SendMultiRow* entry);
     void onMenuClicked(SendMultiRow* entry);
@@ -92,7 +92,7 @@ private:
     QString recipientsToString(QList<SendCoinsRecipient> recipients);
     SendMultiRow* createEntry();
     bool send(QList<SendCoinsRecipient> recipients);
-    bool sendZTelos(QList<SendCoinsRecipient> recipients);
+    bool sendZpara(QList<SendCoinsRecipient> recipients);
     void updateEntryLabels(QList<SendCoinsRecipient> recipients);
 
     // Process WalletModel::SendCoinsReturn and generate a pair consisting

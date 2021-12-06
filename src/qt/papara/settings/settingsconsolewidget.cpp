@@ -237,7 +237,7 @@ void RPCExecutor::requestCommand(const QString& command)
     }
 }
 
-SettingsConsoleWidget::SettingsConsoleWidget(TELOSGUI* _window, QWidget *parent) :
+SettingsConsoleWidget::SettingsConsoleWidget(paraGUI* _window, QWidget *parent) :
     PWidget(_window,parent),
     ui(new Ui::SettingsConsoleWidget)
 {

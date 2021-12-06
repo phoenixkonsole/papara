@@ -10,7 +10,7 @@
 #include <QString>
 #include "qt/Parara/prunnable.h"
 
-class TELOSGUI;
+class paraGUI;
 class ClientModel;
 class WalletModel;
 class WorkerTask;
@@ -22,13 +22,13 @@ class PWidget : public QWidget, public Runnable
 {
     Q_OBJECT
 public:
-    explicit PWidget(TELOSGUI* _window = nullptr, QWidget *parent = nullptr);
+    explicit PWidget(paraGUI* _window = nullptr, QWidget *parent = nullptr);
     explicit PWidget(PWidget *parent = nullptr);
 
     void setClientModel(ClientModel* model);
     void setWalletModel(WalletModel* model);
 
-    TELOSGUI* getWindow() { return this->window; }
+    paraGUI* getWindow() { return this->window; }
 
     void run(int type) override;
     void onError(QString error, int type) override;
@@ -43,7 +43,7 @@ protected slots:
     void onChangeTheme(bool isLightTheme, QString &theme);
 
 protected:
-    TELOSGUI* window = nullptr;
+    paraGUI* window = nullptr;
     ClientModel* clientModel = nullptr;
     WalletModel* walletModel = nullptr;
 

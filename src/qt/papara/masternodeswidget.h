@@ -13,7 +13,7 @@
 #include <QTimer>
 #include "masternodeman.h"
 #include "main.h"
-class TELOSGUI;
+class paraGUI;
 #if defined(HAVE_CONFIG_H)
 #include "config/Parara-config.h" /* for USE_QTCHARTS */
 #endif
@@ -43,7 +43,7 @@ class MasterNodesWidget : public PWidget
 
 public:
 
-    explicit MasterNodesWidget(TELOSGUI *parent = nullptr);
+    explicit MasterNodesWidget(paraGUI *parent = nullptr);
     ~MasterNodesWidget();
 
     void loadWalletModel() override;

@@ -7,7 +7,7 @@
 #include "optionsmodel.h"
 #include "qt/Parara/qtutils.h"
 
-SettingsNetworkWidget::SettingsNetworkWidget(TELOSGUI* _window, QWidget *parent) :
+SettingsNetworkWidget::SettingsNetworkWidget(paraGUI* _window, QWidget *parent) :
     PWidget(_window, parent),
     ui(new Ui::SettingsNetworkWidget)
 {

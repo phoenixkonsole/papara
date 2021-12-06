@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun TELOS osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your para addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun para osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun TELOS osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your para addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun para osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,15 +172,15 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>TELOS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TELOS from being stolen by malware infecting your computer.</source>
-        <translation>TELOS sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella PIVien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>para will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your para from being stolen by malware infecting your computer.</source>
+        <translation>para sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella PIVien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TELOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR para&lt;/b&gt;!</source>
         <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki PIVisi&lt;/b&gt;</translation>
     </message>
     <message>
@@ -565,12 +565,12 @@
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Ydin</translation>
+        <source>para Core</source>
+        <translation>para Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a TELOS address</source>
-        <translation>Lähetä kolikkoja TELOS osoitteeseen</translation>
+        <source>Send coins to a para address</source>
+        <translation>Lähetä kolikkoja para osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and Parara: URIs)</source>
@@ -585,24 +585,24 @@
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About TELOS Core</source>
-        <translation>TELOS Core &amp;ytimestä</translation>
+        <source>&amp;About para Core</source>
+        <translation>para Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about TELOS Core</source>
-        <translation>Näytä tietoja TELOS Ytimestä</translation>
+        <source>Show information about para Core</source>
+        <translation>Näytä tietoja para Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for TELOS</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja TELOS:lle</translation>
+        <source>Modify configuration options for para</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja para:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your TELOS addresses to prove you own them</source>
+        <source>Sign messages with your para addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TELOS addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä TELOS osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified para addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä para osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -633,8 +633,8 @@
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a TELOS: URI or payment request</source>
-        <translation>Avaa TELOS: URI tai pyydä maksua</translation>
+        <source>Open a para: URI or payment request</source>
+        <translation>Avaa para: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -645,12 +645,12 @@
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the TELOS Core help message to get a list with possible TELOS command-line options</source>
-        <translation>Näytä TELOS Ydin apuviesti saadaksesi lista mahdollisista TELOS komentolinja komennoista.</translation>
+        <source>Show the para Core help message to get a list with possible para command-line options</source>
+        <translation>Näytä para Ydin apuviesti saadaksesi lista mahdollisista para komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>TELOS Core client</source>
-        <translation>TELOS Ydin asiakasohjelma</translation>
+        <source>para Core client</source>
+        <translation>para Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -919,8 +919,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Ydin</translation>
+        <source>para Core</source>
+        <translation>para Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -938,12 +938,12 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to TELOS Core.</source>
-        <translation>Tervetuloa TELOS Ytimeen.</translation>
+        <source>Welcome to para Core.</source>
+        <translation>Tervetuloa para Ytimeen.</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Ydin</translation>
+        <source>para Core</source>
+        <translation>para Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1129,12 +1129,12 @@
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start TELOS after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä TELOS kun kirjaudut sisään.</translation>
+        <source>Automatically start para after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä para kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start TELOS on system login</source>
-        <translation>&amp;Aloita TELOS järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start para on system login</source>
+        <translation>&amp;Aloita para järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1153,12 +1153,12 @@
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TELOS.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting para.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the TELOS network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä TELOS verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the para network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä para verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1391,8 +1391,8 @@
         <translation>Määrä</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Ydin</translation>
+        <source>para Core</source>
+        <translation>para Ydin</translation>
     </message>
     </context>
 <context>
@@ -1449,8 +1449,8 @@
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the TELOS debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa TELOS debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the para debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa para debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1561,8 +1561,8 @@
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the TELOS RPC console.</source>
-        <translation>Tervetuloa TELOS RPC konsoliin.</translation>
+        <source>Welcome to the para RPC console.</source>
+        <translation>Tervetuloa para RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1604,12 +1604,12 @@
         <translation>M&amp;äärä:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TELOS network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana TELOS verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the para network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana para verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TELOS network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana TELOS  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the para network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana para  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1809,8 +1809,8 @@
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 TELOS</source>
-        <translation>0 TELOS</translation>
+        <source>0 para</source>
+        <translation>0 para</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1885,8 +1885,8 @@
         <translation>Kopioi taksa</translation>
     </message>
     <message>
-        <source>Warning: Invalid TELOS address</source>
-        <translation>Varoitus: Virheellinen TELOS osoite</translation>
+        <source>Warning: Invalid para address</source>
+        <translation>Varoitus: Virheellinen para osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1936,8 +1936,8 @@
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The TELOS address to send the payment to</source>
-        <translation>TELOS osoite johon maksu lähetetään</translation>
+        <source>The para address to send the payment to</source>
+        <translation>para osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1979,8 +1979,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TELOS Core is shutting down...</source>
-        <translation>TELOS core sammuu...</translation>
+        <source>para Core is shutting down...</source>
+        <translation>para core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1998,8 +1998,8 @@
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The TELOS address to sign the message with</source>
-        <translation>TELOS osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The para address to sign the message with</source>
+        <translation>para osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2030,16 +2030,16 @@
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TELOS address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän TELOS osoitteen</translation>
+        <source>Sign the message to prove you own this para address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän para osoitteen</translation>
     </message>
     <message>
-        <source>The TELOS address the message was signed with</source>
-        <translation>TELOS osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The para address the message was signed with</source>
+        <translation>para osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TELOS address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla TELOS osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified para address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla para osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2121,8 +2121,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Ydin</translation>
+        <source>para Core</source>
+        <translation>para Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2137,8 +2137,8 @@
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The TELOS Core developers</source>
-        <translation>TELOS core kehittäjät</translation>
+        <source>The para Core developers</source>
+        <translation>para core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2433,7 +2433,7 @@
     </message>
 </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
@@ -2486,8 +2486,8 @@
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of TELOS Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version TELOS Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of para Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version para Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

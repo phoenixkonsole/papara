@@ -68,12 +68,12 @@ OptionsDialog::OptionsDialog(QWidget* parent, bool enableWallet) : QDialog(paren
     ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWindow));
 #endif
 
-    /* remove Wallet tab and zTelos options in case of -disablewallet */
+    /* remove Wallet tab and zpara options in case of -disablewallet */
     if (!enableWallet) {
         ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWallet));
 
-        ui->verticalZTelosOptionsWidget->hide();
-        ui->verticalZTelosDisplayWidget->hide();
+        ui->verticalZparaOptionsWidget->hide();
+        ui->verticalZparaDisplayWidget->hide();
     }
 
     /* Display elements init */

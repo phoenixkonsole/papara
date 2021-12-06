@@ -205,7 +205,7 @@ public:
     /// Get process return value
     int getReturnValue() { return returnValue; }
 
-    /// Get window identifier of QMainWindow (TELOSGUI)
+    /// Get window identifier of QMainWindow (paraGUI)
     WId getMainWinId() const;
 
 public slots:
@@ -227,7 +227,7 @@ private:
     QThread* coreThread;
     OptionsModel* optionsModel;
     ClientModel* clientModel;
-    TELOSGUI* window;
+    paraGUI* window;
     QTimer* pollShutdownTimer;
 #ifdef ENABLE_WALLET
     PaymentServer* paymentServer;
@@ -358,7 +358,7 @@ void BitcoinApplication::createOptionsModel()
 
 void BitcoinApplication::createWindow(const NetworkStyle* networkStyle)
 {
-    window = new TELOSGUI(networkStyle, 0);
+    window = new paraGUI(networkStyle, 0);
 
     pollShutdownTimer = new QTimer(window);
     connect(pollShutdownTimer, SIGNAL(timeout()), window, SLOT(detectShutdown()));
@@ -466,8 +466,8 @@ void BitcoinApplication::initializeResult(int retval)
         if (pwalletMain) {
             walletModel = new WalletModel(pwalletMain, optionsModel);
 
-            window->addWallet(TELOSGUI::DEFAULT_WALLET, walletModel);
-            window->setCurrentWallet(TELOSGUI::DEFAULT_WALLET);
+            window->addWallet(paraGUI::DEFAULT_WALLET, walletModel);
+            window->setCurrentWallet(paraGUI::DEFAULT_WALLET);
 
             connect(walletModel, SIGNAL(coinsSent(CWallet*, SendCoinsRecipient, QByteArray)),
                 paymentServer, SLOT(fetchPaymentACK(CWallet*, const SendCoinsRecipient&, QByteArray)));
@@ -507,7 +507,7 @@ void BitcoinApplication::shutdownResult(int retval)
 
 void BitcoinApplication::handleRunawayException(const QString& message)
 {
-    QMessageBox::critical(0, "Runaway exception", TELOSGUI::tr("A fatal error occurred. Parara can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", paraGUI::tr("A fatal error occurred. Parara can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(1);
 }
 
@@ -658,7 +658,7 @@ int main(int argc, char* argv[])
     bool ret = true;
 #ifdef ENABLE_WALLET
     // Check if the wallet exists or need to be created
-    std::string strWalletFile = GetArg("-wallet", "telos.wlt.file"); // Do not use wallet.dat as it is targeted by malware
+    std::string strWalletFile = GetArg("-wallet", "para.wlt.file"); // Do not use wallet.dat as it is targeted by malware
     std::string strDataDir = GetDataDir().string();
     // Wallet file must be a plain filename without a directory
     if (strWalletFile != boost::filesystem::basename(strWalletFile) + boost::filesystem::extension(strWalletFile)){

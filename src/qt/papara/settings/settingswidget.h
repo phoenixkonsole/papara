@@ -19,7 +19,7 @@
 #include "qt/Parara/settings/settingsinformationwidget.h"
 #include "qt/Parara/settings/settingsconsolewidget.h"
 
-class TELOSGUI;
+class paraGUI;
 
 QT_BEGIN_NAMESPACE
 class QDataWidgetMapper;
@@ -34,7 +34,7 @@ class SettingsWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsWidget(TELOSGUI* parent);
+    explicit SettingsWidget(paraGUI* parent);
     ~SettingsWidget();
 
     void loadClientModel() override;

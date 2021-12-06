@@ -134,7 +134,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget* parent) : QDialog(parent, Qt::WindowSy
     ui->customFee->setValue(settings.value("nTransactionFee").toLongLong());
     ui->checkBoxMinimumFee->setChecked(settings.value("fPayOnlyMinFee").toBool());
     //ui->checkBoxFreeTx->setChecked(settings.value("fSendFreeTransactions").toBool());
-    ui->checkzTELOS->hide();
+    ui->checkzpara->hide();
 
     // Making zero fee txes option not visible (no need to clean this.. wallet 4.0 is right behind the corner)
     ui->checkBoxFreeTx->setChecked(false);

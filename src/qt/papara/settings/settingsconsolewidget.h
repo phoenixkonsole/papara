@@ -29,7 +29,7 @@ class SettingsConsoleWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsConsoleWidget(TELOSGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsConsoleWidget(paraGUI* _window, QWidget *parent = nullptr);
     ~SettingsConsoleWidget();
 
     void loadClientModel() override;

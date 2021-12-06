@@ -19,7 +19,7 @@ class SettingsBitToolWidget : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsBitToolWidget(TELOSGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsBitToolWidget(paraGUI* _window, QWidget *parent = nullptr);
     ~SettingsBitToolWidget();
 protected:
     void resizeEvent(QResizeEvent *event) override;

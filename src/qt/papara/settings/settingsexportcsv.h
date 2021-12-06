@@ -19,7 +19,7 @@ class SettingsExportCSV : public PWidget
     Q_OBJECT
 
 public:
-    explicit SettingsExportCSV(TELOSGUI* _window, QWidget *parent = nullptr);
+    explicit SettingsExportCSV(paraGUI* _window, QWidget *parent = nullptr);
     ~SettingsExportCSV();
 
 private Q_SLOTS:

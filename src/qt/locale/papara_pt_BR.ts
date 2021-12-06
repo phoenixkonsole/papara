@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços TELOS para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your para addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços para para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços TELOS para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your para addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços para para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>TELOS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TELOS from being stolen by malware infecting your computer.</source>
-        <translation>TELOS vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas PIVs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>para will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your para from being stolen by malware infecting your computer.</source>
+        <translation>para vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas PIVs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TELOS&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS TELOS&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR para&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS para&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,7 +254,7 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>Enter a TELOS Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a para Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -409,8 +409,8 @@
         <translation>Olhar histórico de transação</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTELOS</source>
-        <translation>Ações privadas para zTELOS</translation>
+        <source>Privacy Actions for zpara</source>
+        <translation>Ações privadas para zpara</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
@@ -613,12 +613,12 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
-        <source>Send coins to a TELOS address</source>
-        <translation>Enviar moedas para um endereço TELOS</translation>
+        <source>Send coins to a para address</source>
+        <translation>Enviar moedas para um endereço para</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and Parara: URIs)</source>
@@ -637,24 +637,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TELOS Core</source>
-        <translation>&amp;Sobre o TELOS Core</translation>
+        <source>&amp;About para Core</source>
+        <translation>&amp;Sobre o para Core</translation>
     </message>
     <message>
-        <source>Show information about TELOS Core</source>
-        <translation>Mostra informação sobre o TELOS Core</translation>
+        <source>Show information about para Core</source>
+        <translation>Mostra informação sobre o para Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for TELOS</source>
-        <translation>Modificar opções de configuração para TELOS</translation>
+        <source>Modify configuration options for para</source>
+        <translation>Modificar opções de configuração para para</translation>
     </message>
     <message>
-        <source>Sign messages with your TELOS addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços TELOS para provar que você os detém</translation>
+        <source>Sign messages with your para addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços para para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TELOS addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços TELOS especificados</translation>
+        <source>Verify messages to ensure they were signed with specified para addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços para especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -685,8 +685,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a TELOS: URI or payment request</source>
-        <translation>Abrir um TELOS: URI ou requisição de pagamento</translation>
+        <source>Open a para: URI or payment request</source>
+        <translation>Abrir um para: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -697,12 +697,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the TELOS Core help message to get a list with possible TELOS command-line options</source>
-        <translation>Mostra a ajuda da TELOS Core para receber uma lista com possíveis opções de linha de comando TELOS</translation>
+        <source>Show the para Core help message to get a list with possible para command-line options</source>
+        <translation>Mostra a ajuda da para Core para receber uma lista com possíveis opções de linha de comando para</translation>
     </message>
     <message>
-        <source>TELOS Core client</source>
-        <translation>Cliente Core TELOS</translation>
+        <source>para Core client</source>
+        <translation>Cliente Core para</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1118,8 +1118,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TELOS address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de TELOS</translation>
+        <source>The entered address "%1" is not a valid para address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de para</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1175,16 +1175,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TELOS Core</source>
-        <translation>Sobre o TELOS Core</translation>
+        <source>About para Core</source>
+        <translation>Sobre o para Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1226,16 +1226,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to TELOS Core.</source>
-        <translation>Bem-vindo ao TELOS Core.</translation>
+        <source>Welcome to para Core.</source>
+        <translation>Bem-vindo ao para Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TELOS Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde TELOS Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where para Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde para Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>TELOS Core will download and store a copy of the TELOS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>TELOS Core vai baixar e armazenar uma cópia da blockchain TELOS. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>para Core will download and store a copy of the para block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>para Core vai baixar e armazenar uma cópia da blockchain para. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1246,8 +1246,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1577,8 +1577,8 @@ MultiSend: %1</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the TELOS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente TELOS no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the para client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente para no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1597,12 +1597,12 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start TELOS after logging in to the system.</source>
-        <translation>Iniciar automaticamente TELOS depois de logar no sistema.</translation>
+        <source>Automatically start para after logging in to the system.</source>
+        <translation>Iniciar automaticamente para depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start TELOS on system login</source>
-        <translation>&amp;Iniciar TELOS ao logar no sistema</translation>
+        <source>&amp;Start para on system login</source>
+        <translation>&amp;Iniciar para ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1617,8 +1617,8 @@ MultiSend: %1</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TELOS.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do TELOS.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting para.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do para.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1627,8 +1627,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
 https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the TELOS network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede TELOS através de um proxy SOCKS5</translation>
+        <source>Connect to the para network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede para através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1758,8 +1758,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede TELOS após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede para após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1855,16 +1855,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Ações Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede TELOS após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede para após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1883,8 +1883,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The TELOS address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>O endereço TELOS para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
+        <source>The para address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>O endereço para para enviar o pagamento. Cria um pagamento local para si mesmo quando vazio.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1923,8 +1923,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Estatísticas zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTELOS</source>
-        <translation>Balanço Total incluindo não confirmadas e imaturas zTELOS</translation>
+        <source>Total Balance including unconfirmed and immature zpara</source>
+        <translation>Balanço Total incluindo não confirmadas e imaturas zpara</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2045,8 +2045,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a TELOS address (e.g. %1)</source>
-        <translation>Insira um endereço TELOS (e.g. %1)</translation>
+        <source>Enter a para address (e.g. %1)</source>
+        <translation>Insira um endereço para (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2085,8 +2085,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     </context>
 <context>
@@ -2307,8 +2307,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the TELOS RPC console.</source>
-        <translation>Bem-vindo ao console da TELOS RPC</translation>
+        <source>Welcome to the para RPC console.</source>
+        <translation>Bem-vindo ao console da para RPC</translation>
     </message>
     <message>
         <source>Do you want to continue?.&lt;br /&gt;</source>
@@ -2567,8 +2567,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 TELOS</source>
-        <translation>0 TELOS</translation>
+        <source>0 para</source>
+        <translation>0 para</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2611,12 +2611,12 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTELOSs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTELOSs in fee,&lt;br /&gt;while "at least" pays 1000 uTELOSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uTELOSs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uTELOSs em taxa,&lt;br /&gt; pagará pelo menos 1000 uTELOSs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uparas and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uparas in fee,&lt;br /&gt;while "at least" pays 1000 uparas. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uparas e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uparas em taxa,&lt;br /&gt; pagará pelo menos 1000 uparas. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for TELOS transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de TELOS do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for para transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de para do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2663,8 +2663,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Adicionar &amp;Recipiente</translation>
     </message>
     <message>
-        <source>Anonymized TELOS</source>
-        <translation>TELOS anonimizadas</translation>
+        <source>Anonymized para</source>
+        <translation>para anonimizadas</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -2699,8 +2699,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Copiar troco</translation>
     </message>
     <message>
-        <source>Warning: Invalid TELOS address</source>
-        <translation>Aviso: endereço TELOS inválido</translation>
+        <source>Warning: Invalid para address</source>
+        <translation>Aviso: endereço para inválido</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2786,8 +2786,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The TELOS address to send the payment to</source>
-        <translation>O endereço TELOS para enviar o pagamento</translation>
+        <source>The para address to send the payment to</source>
+        <translation>O endereço para para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2849,8 +2849,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TELOS Core is shutting down...</source>
-        <translation>TELOS Core está desligando...</translation>
+        <source>para Core is shutting down...</source>
+        <translation>para Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2868,8 +2868,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The TELOS address to sign the message with</source>
-        <translation>O endereço TELOS para assinar a mensagem</translation>
+        <source>The para address to sign the message with</source>
+        <translation>O endereço para para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2900,16 +2900,16 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TELOS address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço TELOS</translation>
+        <source>Sign the message to prove you own this para address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço para</translation>
     </message>
     <message>
-        <source>The TELOS address the message was signed with</source>
-        <translation>O endereço TELOS que assinou a mensagem</translation>
+        <source>The para address the message was signed with</source>
+        <translation>O endereço para que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TELOS address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço TELOS especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified para address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço para especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2991,8 +2991,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3007,8 +3007,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The TELOS Core developers</source>
-        <translation>Os desenvolvedores do TELOS Core</translation>
+        <source>The para Core developers</source>
+        <translation>Os desenvolvedores do para Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3515,7 +3515,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
     </message>
 </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantia</translation>
@@ -3525,8 +3525,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -3552,12 +3552,12 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em TELOS/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em para/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em TELOS/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em para/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3576,8 +3576,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Define o tamanho máximo de transações de alta prioridade/taxa baixa em bytes (padrão: %d)</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TELOS.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 TELOS.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 para.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 para.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3592,8 +3592,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong TELOS Core will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core TELOS não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong para Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core para não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3660,8 +3660,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The TELOS Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do TELOS Core</translation>
+        <source>Copyright (C) 2015-%i The para Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do para Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3712,8 +3712,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of TELOS Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da TELOS Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of para Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da para Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3752,8 +3752,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in TELOS/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em TELOS/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in para/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em para/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -4066,8 +4066,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Verificando carteira...</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart TELOS Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o TELOS Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart para Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o para Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

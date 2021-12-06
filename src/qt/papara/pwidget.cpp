@@ -8,7 +8,7 @@
 #include <QRunnable>
 #include <QThreadPool>
 
-PWidget::PWidget(TELOSGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
+PWidget::PWidget(paraGUI* _window, QWidget *parent) : QWidget((parent) ? parent : _window), window(_window){init();}
 PWidget::PWidget(PWidget* parent) : QWidget(parent), window(parent->getWindow()){init();}
 
 void PWidget::init() {

@@ -65,7 +65,7 @@ CoinControlDialog::CoinControlDialog(QWidget* parent, bool fMultisigEnabled) : Q
 
     // Title
 
-    ui->labelTitle->setText("Select TELOS Denominations to Spend");
+    ui->labelTitle->setText("Select para Denominations to Spend");
     ui->labelTitle->setProperty("cssClass", "text-title-dialog");
 
     // Label Style
@@ -688,7 +688,7 @@ void CoinControlDialog::updateLabels(WalletModel* model, QDialog* dialog)
     }
 
     // actually update labels
-    int nDisplayUnit = BitcoinUnits::TELOS;
+    int nDisplayUnit = BitcoinUnits::para;
     if (model && model->getOptionsModel())
         nDisplayUnit = model->getOptionsModel()->getDisplayUnit();
 

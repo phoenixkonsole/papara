@@ -276,7 +276,7 @@
     </message>
     </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     </context>
 <context>
     <name>Parara-core</name>

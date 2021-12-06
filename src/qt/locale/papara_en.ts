@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your TELOS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your para addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your TELOS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your para addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>TELOS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TELOS from being stolen by malware infecting your computer.</source>
+        <source>para will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your para from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TELOS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR para&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -326,12 +326,12 @@
     </message>
     <message>
         <location line="-424"/>
-        <source>Enter a TELOS Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a para Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>The TELOS address to encrypt</source>
+        <source>The para address to encrypt</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -375,7 +375,7 @@
     </message>
     <message>
         <location line="+18"/>
-        <source>Encrypt the private key for this TELOS address</source>
+        <source>Encrypt the private key for this para address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -557,7 +557,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zTELOS</source>
+        <source>Privacy Actions for zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -841,12 +841,12 @@
     <message>
         <location line="-448"/>
         <location line="+938"/>
-        <source>TELOS Core</source>
+        <source>para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-742"/>
-        <source>Send coins to a TELOS address</source>
+        <source>Send coins to a para address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -871,27 +871,27 @@
     </message>
     <message>
         <location line="+43"/>
-        <source>&amp;About TELOS Core</source>
+        <source>&amp;About para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about TELOS Core</source>
+        <source>Show information about para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Modify configuration options for TELOS</source>
+        <source>Modify configuration options for para</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your TELOS addresses to prove you own them</source>
+        <source>Sign messages with your para addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified TELOS addresses</source>
+        <source>Verify messages to ensure they were signed with specified para addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -931,7 +931,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a TELOS: URI or payment request</source>
+        <source>Open a para: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -946,17 +946,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the TELOS Core help message to get a list with possible TELOS command-line options</source>
+        <source>Show the para Core help message to get a list with possible para command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+234"/>
-        <source>TELOS Core client</source>
+        <source>para Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+219"/>
-        <source>%n active connection(s) to TELOS network</source>
+        <source>%n active connection(s) to para network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1129,7 +1129,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx.cpp" line="+478"/>
-        <source>A fatal error occurred. TELOS can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. para can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1536,7 +1536,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid TELOS address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid para address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1650,7 +1650,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>TELOS Core</source>
+        <source>para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1661,7 +1661,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About TELOS Core</source>
+        <source>About para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1719,17 +1719,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to TELOS Core.</source>
+        <source>Welcome to para Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where TELOS Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where para Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>TELOS Core will download and store a copy of the TELOS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>para Core will download and store a copy of the para block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1744,7 +1744,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>TELOS Core</source>
+        <source>para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1920,8 +1920,8 @@ Address: %4
     </message>
     <message>
         <location line="-106"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other TELOS addresses after it matures.
-To Add: enter percentage to give and TELOS address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other para addresses after it matures.
+To Add: enter percentage to give and para address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2242,7 +2242,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send TELOS to</source>
+        <source>Add destinations to send para to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2408,7 +2408,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the TELOS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the para client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2433,12 +2433,12 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="-236"/>
-        <source>Automatically start TELOS after logging in to the system.</source>
+        <source>Automatically start para after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start TELOS on system login</source>
+        <source>&amp;Start para on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2473,7 +2473,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting TELOS.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting para.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2489,17 +2489,17 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of TELOS units to zTELOS</source>
+        <source>Enable automatic minting of para units to zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zTELOS Automint</source>
+        <source>Enable zpara Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zTELOS minting from specific addresses</source>
+        <source>Enable automatic zpara minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2509,23 +2509,23 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming TELOS which get automatically converted to zTELOS via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming para which get automatically converted to zpara via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zTELOS</source>
+        <source>Percentage of autominted zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough TELOS for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough para for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zTELOS Denomination</source>
+        <source>Preferred Automint zpara Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2535,7 +2535,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the TELOS network through a SOCKS5 proxy.</source>
+        <source>Connect to the para network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2744,7 +2744,7 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     </message>
     <message>
         <location line="+71"/>
-        <source>TELOS Balance</source>
+        <source>para Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2776,19 +2776,19 @@ https://www.transifex.com/pivx-project/pivx-project-translations</source>
     <message>
         <location line="+16"/>
         <location line="+19"/>
-        <source>Your current TELOS balance, unconfirmed and immature transactions included</source>
+        <source>Your current para balance, unconfirmed and immature transactions included</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+96"/>
-        <source>zTELOS Balance</source>
+        <source>zpara Balance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+53"/>
         <location line="+17"/>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTELOS are spendable.</source>
+These zpara are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2803,7 +2803,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="-725"/>
         <location line="+852"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2861,7 +2861,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+191"/>
         <location line="+19"/>
-        <source>Locked TELOS or Masternode collaterals. These are excluded from zTELOS minting.</source>
+        <source>Locked para or Masternode collaterals. These are excluded from zpara minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2877,7 +2877,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+58"/>
         <location line="+19"/>
-        <source>Your current zTELOS balance, unconfirmed and immature zTELOS included.</source>
+        <source>Your current zpara balance, unconfirmed and immature zpara included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2893,7 +2893,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+111"/>
-        <source>Current percentage of zTELOS.
+        <source>Current percentage of zpara.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -2956,7 +2956,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+110"/>
-        <source>URI cannot be parsed! This can be caused by an invalid TELOS address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3064,7 +3064,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3080,7 +3080,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+229"/>
-        <source>zTELOS</source>
+        <source>zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3115,12 +3115,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+462"/>
-        <source>zTELOS Control</source>
+        <source>zpara Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zTELOS Selected:</source>
+        <source>zpara Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3145,7 +3145,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zTELOS for spending</source>
+        <source>Available (mature and spendable) zpara for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3155,9 +3155,9 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zTELOS for spending
+        <source>Available (mature and spendable) zpara for spending
 
-zTELOS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+zpara are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3174,7 +3174,7 @@ zTELOS are mature when they have more than 20 confirmations AND more than 2 mint
         <location line="+31"/>
         <location line="+31"/>
         <location line="+31"/>
-        <source>0 zTELOS</source>
+        <source>0 zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3184,7 +3184,7 @@ zTELOS are mature when they have more than 20 confirmations AND more than 2 mint
     </message>
     <message>
         <location line="+27"/>
-        <source>The TELOS address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The para address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3252,7 +3252,7 @@ zTELOS are mature when they have more than 20 confirmations AND more than 2 mint
         <location line="+25"/>
         <location line="+704"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zTELOS</source>
+        <source>Total Balance including unconfirmed and immature zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3286,14 +3286,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+40"/>
-        <source>Show the current status of automatic zTELOS minting.
+        <source>Show the current status of automatic zpara minting.
 
 To change the status (restart required):
 - enable: add &apos;enablezeromint=1&apos; to pivx.conf
 - disable: add &apos;enablezeromint=0&apos; to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTELOS
+- menu Settings-&gt;Options-&gt;Percentage of autominted zpara
 
 </source>
         <translation type="unfinished"></translation>
@@ -3363,7 +3363,7 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="-1092"/>
-        <source>Show zTELOS denominations list</source>
+        <source>Show zpara denominations list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3373,12 +3373,12 @@ To change the percentage (no restart required):
     </message>
     <message>
         <location line="+29"/>
-        <source>zTELOS minting is DISABLED</source>
+        <source>zpara minting is DISABLED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+131"/>
-        <source>zTELOS spending is NOT private (links back to the mint transaction)</source>
+        <source>zpara spending is NOT private (links back to the mint transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3544,12 +3544,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+240"/>
-        <source>zTELOS Spend #: </source>
+        <source>zpara Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>zTELOS Mint</source>
+        <source>zpara Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3569,12 +3569,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+17"/>
-        <source>zTELOS is currently disabled due to maintenance.</source>
+        <source>zpara is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-537"/>
-        <source>zTELOS is currently undergoing maintenance.</source>
+        <source>zpara is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3874,7 +3874,7 @@ Please be patient...</source>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+105"/>
-        <source>Enter a TELOS address (e.g. %1)</source>
+        <source>Enter a para address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3938,7 +3938,7 @@ Please be patient...</source>
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
-        <source>TELOS Core</source>
+        <source>para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3963,7 +3963,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+40"/>
-        <source>TELOS Core didn&apos;t yet exit safely...</source>
+        <source>para Core didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4115,7 +4115,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the TELOS debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the para debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4287,7 +4287,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zTELOS Backup Path:</source>
+        <source>Custom zpara Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4387,7 +4387,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="-39"/>
-        <source>Welcome to the TELOS RPC console.</source>
+        <source>Welcome to the para RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4572,7 +4572,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+26"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TELOS network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the para network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4582,7 +4582,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+182"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TELOS network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the para network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4880,12 +4880,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 TELOS</source>
+        <source>0 para</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+149"/>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 TELOS applies</source>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 para applies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4955,18 +4955,18 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1026"/>
-        <source>If the custom fee is set to 1000 uTELOSs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTELOSs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uTELOSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uparas and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uparas in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uparas. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uTELOSs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uTELOSs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uTELOSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uparas and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uparas in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uparas. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for TELOS transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for para transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5026,7 +5026,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized TELOS</source>
+        <source>Anonymized para</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5086,7 +5086,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+653"/>
-        <source>Warning: Invalid TELOS address</source>
+        <source>Warning: Invalid para address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5225,7 +5225,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>The TELOS address to send the payment to</source>
+        <source>The para address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5279,7 +5279,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the TELOS: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the TELOS network.</source>
+        <source>A message that was attached to the para: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the para network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5314,7 +5314,7 @@ Please be patient...</source>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>TELOS Core is shutting down...</source>
+        <source>para Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5342,7 +5342,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+15"/>
-        <source>The TELOS address to sign the message with</source>
+        <source>The para address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5384,17 +5384,17 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Sign the message to prove you own this TELOS address</source>
+        <source>Sign the message to prove you own this para address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+103"/>
-        <source>The TELOS address the message was signed with</source>
+        <source>The para address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>Verify the message to ensure it was signed with the specified TELOS address</source>
+        <source>Verify the message to ensure it was signed with the specified para address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5509,7 +5509,7 @@ Please be patient...</source>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>TELOS Core</source>
+        <source>para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5529,7 +5529,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>The TELOS Core developers</source>
+        <source>The para Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5906,12 +5906,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+7"/>
-        <source>TELOS Stake</source>
+        <source>para Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>zTELOS Stake</source>
+        <source>zpara Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5936,37 +5936,37 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted TELOS to zTELOS</source>
+        <source>Converted para to zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zTELOS</source>
+        <source>Spent zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received TELOS from zTELOS</source>
+        <source>Received para from zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zTELOS from zTELOS Spend</source>
+        <source>Minted Change as zpara from zpara Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zTELOS to TELOS</source>
+        <source>Converted zpara to para</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+56"/>
-        <source>Anonymous (zTELOS Transaction)</source>
+        <source>Anonymous (zpara Transaction)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Anonymous (zTELOS Stake)</source>
+        <source>Anonymous (zpara Stake)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6235,12 +6235,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="-310"/>
-        <source>Received TELOS from zTELOS</source>
+        <source>Received para from zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Zerocoin Spend, Change in zTELOS</source>
+        <source>Zerocoin Spend, Change in zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6287,7 +6287,7 @@ Please be patient...</source>
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TELOS.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 para.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6325,10 +6325,10 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     <message>
-        <location filename="../forms/zteloscontroldialog.ui" line="+20"/>
-        <source>Select zTELOS to Spend</source>
+        <location filename="../forms/zparacontroldialog.ui" line="+20"/>
+        <source>Select zpara to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6344,7 +6344,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="-7"/>
-        <source>zTELOS</source>
+        <source>zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6392,7 +6392,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. TELOS Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. para Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6432,17 +6432,17 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zTELOS minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zpara minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enable or disable staking functionality for TELOS inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for para inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zTELOS inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for zpara inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6487,12 +6487,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+8"/>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6637,7 +6637,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. TELOS Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. para Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6647,12 +6647,12 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TELOS.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 para.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TELOS.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 para.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6672,7 +6672,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TELOS Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong para Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6852,7 +6852,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The TELOS Core Developers</source>
+        <source>Copyright (C) 2015-%i The para Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6917,7 +6917,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Enable precomputation of zTELOS spends and stakes (0-1, default %u)</source>
+        <source>Enable precomputation of zpara spends and stakes (0-1, default %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6962,7 +6962,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of TELOS Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of para Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7032,7 +7032,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Fee (in TELOS/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in para/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7082,7 +7082,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. TELOS Core is shutting down.</source>
+        <source>Initialization sanity check failed. para Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7162,22 +7162,22 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+9"/>
-        <source>Recalculating TELOS supply...</source>
+        <source>Recalculating para supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating minted ZTELOS...</source>
+        <source>Recalculating minted Zpara...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Recalculating spent ZTELOS...</source>
+        <source>Recalculating spent Zpara...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the TELOS and zTELOS money supply statistics</source>
+        <source>Reindex the para and zpara money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7229,7 +7229,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all TELOS specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all para specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7274,7 +7274,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>Specify custom backup path to add a copy of any automatic zTELOS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic zpara backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7824,7 +7824,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zTELOS wallet...</source>
+        <source>Syncing zpara wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7964,7 +7964,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zTELOS</source>
+        <source>Value is below the smallest available denomination (= 1) of zpara</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7984,7 +7984,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart TELOS Core to complete</source>
+        <source>Wallet needed to be rewritten: restart para Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -62,12 +62,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Voici vos adresses TELOS pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
+        <source>These are your para addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Voici vos adresses para pour envoyer des paiements.  Assurez-vous de toujours vérifier le montant et l'adresse de réception avant d'envoyer les jetons</translation>
     </message>
     <message>
-        <source>These are your TELOS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Voici vos adresses TELOS pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
+        <source>These are your para addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Voici vos adresses para pour les réceptions de vos paiments. Il est recommandé d'utiliser une nouvelle adresse de réception pour chaque transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>TELOS will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TELOS from being stolen by malware infecting your computer.</source>
-        <translation>TELOS va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos PIVs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>para will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your para from being stolen by malware infecting your computer.</source>
+        <translation>para va maintenant se fermer pour finir le processus de cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos PIVs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TELOS&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS TELOS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR para&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS para&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -254,12 +254,12 @@
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>Enter a TELOS Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse TELOS que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
+        <source>Enter a para Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse para que vous voulez chiffrer en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur chiffrer pour calculer le chiffrage de la clé privée.</translation>
     </message>
     <message>
-        <source>The TELOS address to encrypt</source>
-        <translation>L'adresse TELOS à chiffrer</translation>
+        <source>The para address to encrypt</source>
+        <translation>L'adresse para à chiffrer</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -290,8 +290,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Encrypt the private key for this TELOS address</source>
-        <translation>Chiffrer la clef privée pour cette adresse TELOS</translation>
+        <source>Encrypt the private key for this para address</source>
+        <translation>Chiffrer la clef privée pour cette adresse para</translation>
     </message>
     <message>
         <source>Reset all fields</source>
@@ -433,8 +433,8 @@
         <translation>Afficher l'historique de transaction</translation>
     </message>
     <message>
-        <source>Privacy Actions for zTELOS</source>
-        <translation>Actions confidentielles pour zTELOS</translation>
+        <source>Privacy Actions for zpara</source>
+        <translation>Actions confidentielles pour zpara</translation>
     </message>
     <message>
         <source>&amp;Governance</source>
@@ -653,16 +653,16 @@
         <translation>Onglets de la barre d'outils</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
-        <source>Send coins to a TELOS address</source>
-        <translation>Envoyer des pièces à une adresse TELOS</translation>
+        <source>Send coins to a para address</source>
+        <translation>Envoyer des pièces à une adresse para</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and Parara: URIs)</source>
-        <translation>Requêtes de paiements (Génère des QR codes et des URIs TELOS)</translation>
+        <translation>Requêtes de paiements (Génère des QR codes et des URIs para)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -677,24 +677,24 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TELOS Core</source>
-        <translation>A &amp;propos de TELOS Core</translation>
+        <source>&amp;About para Core</source>
+        <translation>A &amp;propos de para Core</translation>
     </message>
     <message>
-        <source>Show information about TELOS Core</source>
-        <translation>Afficher les information concernant TELOS Core</translation>
+        <source>Show information about para Core</source>
+        <translation>Afficher les information concernant para Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for TELOS</source>
-        <translation>Modifier les options de configuration pour TELOS</translation>
+        <source>Modify configuration options for para</source>
+        <translation>Modifier les options de configuration pour para</translation>
     </message>
     <message>
-        <source>Sign messages with your TELOS addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse TELOS pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your para addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse para pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TELOS addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse TELOS spécifiée</translation>
+        <source>Verify messages to ensure they were signed with specified para addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse para spécifiée</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -725,8 +725,8 @@
         <translation>Ouvrir le fichier de configuration de Masternode</translation>
     </message>
     <message>
-        <source>Open a TELOS: URI or payment request</source>
-        <translation>Ouvrir un TELOS: URI ou requête de paiement</translation>
+        <source>Open a para: URI or payment request</source>
+        <translation>Ouvrir un para: URI ou requête de paiement</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -737,12 +737,12 @@
         <translation>Fenêtre de Explorateur de Bloc</translation>
     </message>
     <message>
-        <source>Show the TELOS Core help message to get a list with possible TELOS command-line options</source>
-        <translation>Afficher les message d'aide de TELOS Core pour avoir les options pour ligne de commande</translation>
+        <source>Show the para Core help message to get a list with possible para command-line options</source>
+        <translation>Afficher les message d'aide de para Core pour avoir les options pour ligne de commande</translation>
     </message>
     <message>
-        <source>TELOS Core client</source>
-        <translation>TELOS Core client</translation>
+        <source>para Core client</source>
+        <translation>para Core client</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ Adresse : %4
         <translation>Le portefeuille est &lt;b&gt;crypté&lt;/b&gt; et actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. TELOS can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale s'est produite. TELOS Core ne peut plus poursuivre en toute sécurité et va quitter.</translation>
+        <source>A fatal error occurred. para can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale s'est produite. para Core ne peut plus poursuivre en toute sécurité et va quitter.</translation>
     </message>
 </context>
 <context>
@@ -1177,8 +1177,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TELOS address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse TELOS valide</translation>
+        <source>The entered address "%1" is not a valid para address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse para valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1266,16 +1266,16 @@ Adresse : %4
         <translation>version</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TELOS Core</source>
-        <translation>A propos de TELOS Core</translation>
+        <source>About para Core</source>
+        <translation>A propos de para Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1321,16 +1321,16 @@ Adresse : %4
         <translation>Bienvenu</translation>
     </message>
     <message>
-        <source>Welcome to TELOS Core.</source>
-        <translation>Bienvenue à TELOS Core</translation>
+        <source>Welcome to para Core.</source>
+        <translation>Bienvenue à para Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TELOS Core will store its data.</source>
-        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où TELOS Core va stocker ses données.</translation>
+        <source>As this is the first time the program is launched, you can choose where para Core will store its data.</source>
+        <translation>Comme c'est la première fois que le programme est lancé, vous pouvez choisir où para Core va stocker ses données.</translation>
     </message>
     <message>
-        <source>TELOS Core will download and store a copy of the TELOS block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>TELOS Core téléchargera et stockera une copie de la chaîne de blocs TELOS. Au moins %1 Go de données sera stocké dans ce répertoire, et il va augmenter au fil du temps. Le portefeuille sera également stocké dans ce répertoire.</translation>
+        <source>para Core will download and store a copy of the para block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>para Core téléchargera et stockera une copie de la chaîne de blocs para. Au moins %1 Go de données sera stocké dans ce répertoire, et il va augmenter au fil du temps. Le portefeuille sera également stocké dans ce répertoire.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1341,8 +1341,8 @@ Adresse : %4
         <translation>Utiliser un répertoire spécifique de données </translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1483,12 +1483,12 @@ Adresse : %4
         <translation>Saisir l'adresse à laquelle envoyer</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other TELOS addresses after it matures.
-To Add: enter percentage to give and TELOS address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other para addresses after it matures.
+To Add: enter percentage to give and para address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses TELOS  après leur maturité.
-Pour ajouter: entrez le pourcentage à donner et l'adresse TELOS à ajouter au vecteur d'Envoi-multiple.
+        <translation>L'Envoi-multiple vous perment d'envoyer automatiquement jusqu'à 100% de vos récompenses Stake ou Masternode à une liste d'adresses para  après leur maturité.
+Pour ajouter: entrez le pourcentage à donner et l'adresse para à ajouter au vecteur d'Envoi-multiple.
 Pour supprimer: Entrez l'adresse à effacer et appuyez sur Supprimer.
 L'Envoi-multiple ne sera activé que si vous avez cliqué sur Activer</translation>
     </message>
@@ -1746,8 +1746,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Adresse / Montant:</translation>
     </message>
     <message>
-        <source>Add destinations to send TELOS to</source>
-        <translation>Ajouter des destinations pour envoyer TELOS</translation>
+        <source>Add destinations to send para to</source>
+        <translation>Ajouter des destinations pour envoyer para</translation>
     </message>
     <message>
         <source>Add &amp;Destination</source>
@@ -1880,8 +1880,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>SI vous désactivez la dépense de la monnaire non confirmée, la monnaie rendue sur une transaction &lt;br/&gt;ne peut pas être utilisée tant que celle-ci n'a pas reçue au moins une confirmation &lt;br/&gt;Ceci implique également la manière dont votre solde est calculé.</translation>
     </message>
     <message>
-        <source>Automatically open the TELOS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client TELOS sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
+        <source>Automatically open the para client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client para sur le routeur. Ceci fonctionne uniquement si votre routeur prend en charge UPnP et que celui-ci est activé.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1900,12 +1900,12 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start TELOS after logging in to the system.</source>
-        <translation>Démarrez TELOS automatiquement après vous être connecté au système.</translation>
+        <source>Automatically start para after logging in to the system.</source>
+        <translation>Démarrez para automatiquement après vous être connecté au système.</translation>
     </message>
     <message>
-        <source>&amp;Start TELOS on system login</source>
-        <translation>Démarrer TELOS au démarrage système</translation>
+        <source>&amp;Start para on system login</source>
+        <translation>Démarrer para au démarrage système</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1932,8 +1932,8 @@ S'il vous plaît soyez patient après avoir cliqué sur l'importation.</translat
         <translation>Réseau</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TELOS.</source>
-        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de TELOS.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting para.</source>
+        <translation>La langue de l'interface utilisateur peut être définie ici. Ce paramètre prendra effet après le redémarrage de para.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1946,44 +1946,44 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of TELOS units to zTELOS</source>
-        <translation>Activé l'auto-monnayage de TELOS unités en zTELOS</translation>
+        <source>Enable automatic minting of para units to zpara</source>
+        <translation>Activé l'auto-monnayage de para unités en zpara</translation>
     </message>
     <message>
-        <source>Enable zTELOS Automint</source>
-        <translation>Activer l'Auto-monnayage zTELOS </translation>
+        <source>Enable zpara Automint</source>
+        <translation>Activer l'Auto-monnayage zpara </translation>
     </message>
     <message>
-        <source>Enable automatic zTELOS minting from specific addresses</source>
-        <translation>Activer la frappe zTELOS automatique à partir d'adresses spécifiques</translation>
+        <source>Enable automatic zpara minting from specific addresses</source>
+        <translation>Activer la frappe zpara automatique à partir d'adresses spécifiques</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Activer les Adresses Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming TELOS which get automatically converted to zTELOS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des TELOS entrants qui seront automatiquement convertis en zTELOS via le protocole Zerocoin (min. 10%)</translation>
+        <source>Percentage of incoming para which get automatically converted to zpara via Zerocoin Protocol (min: 10%)</source>
+        <translation>Pourcentage des para entrants qui seront automatiquement convertis en zpara via le protocole Zerocoin (min. 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zTELOS</source>
-        <translation>Pourcentage de zTELOS auto-monnayé</translation>
+        <source>Percentage of autominted zpara</source>
+        <translation>Pourcentage de zpara auto-monnayé</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough TELOS for this denomination is available</source>
-        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de TELOS disponibles pour la dénomination demandée</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough para for this denomination is available</source>
+        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de para disponibles pour la dénomination demandée</translation>
     </message>
     <message>
-        <source>Preferred Automint zTELOS Denomination</source>
-        <translation>Dénomination préférée pour l'auto-monnayage zTELOS</translation>
+        <source>Preferred Automint zpara Denomination</source>
+        <translation>Dénomination préférée pour l'auto-monnayage zpara</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
         <translation>Seuil de partage du Stake</translation>
     </message>
     <message>
-        <source>Connect to the TELOS network through a SOCKS5 proxy.</source>
-        <translation>Se connetcer au réseau TELOS via un proxy SOCKS5.</translation>
+        <source>Connect to the para network through a SOCKS5 proxy.</source>
+        <translation>Se connetcer au réseau para via un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2141,8 +2141,8 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Solde total, incluant les pièces indisponibles.</translation>
     </message>
     <message>
-        <source>TELOS Balance</source>
-        <translation>Solde de TELOS</translation>
+        <source>para Balance</source>
+        <translation>Solde de para</translation>
     </message>
     <message>
         <source>Pending:</source>
@@ -2165,18 +2165,18 @@ https://www.transifex.com/pivx-project/pivx-project-translations</translation>
         <translation>Solde courant bloqué dans des adresses témoin</translation>
     </message>
     <message>
-        <source>Your current TELOS balance, unconfirmed and immature transactions included</source>
-        <translation>Votre solde TELOS actuel, incluant les transactions non confirmées et immatures</translation>
+        <source>Your current para balance, unconfirmed and immature transactions included</source>
+        <translation>Votre solde para actuel, incluant les transactions non confirmées et immatures</translation>
     </message>
     <message>
-        <source>zTELOS Balance</source>
-        <translation>Solde de zTELOS</translation>
+        <source>zpara Balance</source>
+        <translation>Solde de zpara</translation>
     </message>
     <message>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zTELOS are spendable.</source>
+These zpara are spendable.</source>
         <translation>Maturité: plus de 20 confirmations et plus de 1 monnaie de la même dénomination après sa frappe.
-Ces zTELOS sont dépensables.</translation>
+Ces zpara sont dépensables.</translation>
     </message>
     <message>
         <source>Unconfirmed: less than 20 confirmations
@@ -2185,8 +2185,8 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmé, mais moins de 1 monnaie de la même dénomination après sa frappe</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau TELOS après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau para après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
     </message>
     <message>
         <source>OVERVIEW</source>
@@ -2229,8 +2229,8 @@ Immature: confirmé, mais moins de 1 monnaie de la même dénomination après sa
         <translation>Dépensable:</translation>
     </message>
     <message>
-        <source>Locked TELOS or Masternode collaterals. These are excluded from zTELOS minting.</source>
-        <translation>TELOS Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus du monnayage zTELOS.</translation>
+        <source>Locked para or Masternode collaterals. These are excluded from zpara minting.</source>
+        <translation>para Verrouillé ou Masternode collatéraux. Ceux-ci sont exclus du monnayage zpara.</translation>
     </message>
     <message>
         <source>Locked:</source>
@@ -2241,8 +2241,8 @@ Immature: confirmé, mais moins de 1 monnaie de la même dénomination après sa
         <translation>Non confirmé:</translation>
     </message>
     <message>
-        <source>Your current zTELOS balance, unconfirmed and immature zTELOS included.</source>
-        <translation>Votre solde courant zTELOS, incluant les zTELOS non confirmés et immatures.</translation>
+        <source>Your current zpara balance, unconfirmed and immature zpara included.</source>
+        <translation>Votre solde courant zpara, incluant les zpara non confirmés et immatures.</translation>
     </message>
     <message>
         <source>Recent transactions</source>
@@ -2253,10 +2253,10 @@ Immature: confirmé, mais moins de 1 monnaie de la même dénomination après sa
         <translation>désynchronisé</translation>
     </message>
     <message>
-        <source>Current percentage of zTELOS.
+        <source>Current percentage of zpara.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
-        <translation>Le pourcentage actuel de zTELOS.
+        <translation>Le pourcentage actuel de zpara.
 Si l'Auto-monnayage est activé, ce pourcentage sera réglé au niveau du pourcentage d'Auto-monnayage configuré (par défaut = 10%).
 </translation>
     </message>
@@ -2302,8 +2302,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Impossible de démarrer Parara: gestionnaire click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid TELOS address or malformed URI parameters.</source>
-        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse TELOS invalide ou à des paramètres URI incorrectes.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid para address or malformed URI parameters.</source>
+        <translation>L'URI ne peut pas être analysée! Cela peut être dû à une adresse para invalide ou à des paramètres URI incorrectes.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2388,8 +2388,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Actions Zerocoin:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TELOS network after a connection is established, but this process has not completed yet.</source>
-        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau TELOS après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the para network after a connection is established, but this process has not completed yet.</source>
+        <translation>Les informations affichées pourraient être périmées. Votre portefeuille se synchronise automatiquement avec le réseau para après l'établissement d'une connexion, mais ce processus n'est pas encore terminé.</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2400,8 +2400,8 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2428,12 +2428,12 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>CONFIDENTIALITÉ</translation>
     </message>
     <message>
-        <source>zTELOS Control</source>
-        <translation>Choisir les zTELOS</translation>
+        <source>zpara Control</source>
+        <translation>Choisir les zpara</translation>
     </message>
     <message>
-        <source>zTELOS Selected:</source>
-        <translation>zTELOS sélectionnés:</translation>
+        <source>zpara Selected:</source>
+        <translation>zpara sélectionnés:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2448,32 +2448,32 @@ Pour activer Auto-monnayage, changez 'enablezeromint = 0' en 'enablezeromint = 1
         <translation>Dépenser les Zerocoin</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTELOS for spending</source>
-        <translation>zTELOS disponibles (matures et utilisables) pour les dépenses</translation>
+        <source>Available (mature and spendable) zpara for spending</source>
+        <translation>zpara disponibles (matures et utilisables) pour les dépenses</translation>
     </message>
     <message>
         <source>Available Balance:</source>
         <translation>Solde disponible:</translation>
     </message>
     <message>
-        <source>Available (mature and spendable) zTELOS for spending
+        <source>Available (mature and spendable) zpara for spending
 
-zTELOS are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>zTELOS disponibles (matures et utilisables) pour les dépenses
+zpara are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
+        <translation>zpara disponibles (matures et utilisables) pour les dépenses
 
-Les zTELOS sont matures lorsqu'ils ont plus de 20 confirmations ET plus de 2 monnaies de même dénomination après leur frappe</translation>
+Les zpara sont matures lorsqu'ils ont plus de 20 confirmations ET plus de 2 monnaies de même dénomination après leur frappe</translation>
     </message>
     <message>
-        <source>0 zTELOS</source>
-        <translation>0 zTELOS</translation>
+        <source>0 zpara</source>
+        <translation>0 zpara</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The TELOS address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>L'adresse TELOS à laquelle envoyer le paiement. Le système créé un paiement à vous même lorsque ce champs est vide.</translation>
+        <source>The para address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>L'adresse para à laquelle envoyer le paiement. Le système créé un paiement à vous même lorsque ce champs est vide.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2524,8 +2524,8 @@ Les zTELOS sont matures lorsqu'ils ont plus de 20 confirmations ET plus de 2 mon
         <translation>Statistiques Zerocoin:</translation>
     </message>
     <message>
-        <source>Total Balance including unconfirmed and immature zTELOS</source>
-        <translation>Solde total incluant les zTELOS non confirmés et immatures</translation>
+        <source>Total Balance including unconfirmed and immature zpara</source>
+        <translation>Solde total incluant les zpara non confirmés et immatures</translation>
     </message>
     <message>
         <source>Total Zerocoin  Balance:</source>
@@ -2546,24 +2546,24 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmé, mais moins de 1 monnaie de la même dénomination après sa frappe</translation>
     </message>
     <message>
-        <source>Show the current status of automatic zTELOS minting.
+        <source>Show the current status of automatic zpara minting.
 
 To change the status (restart required):
 - enable: add 'enablezeromint=1' to pivx.conf
 - disable: add 'enablezeromint=0' to pivx.conf
 
 To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zTELOS
+- menu Settings-&gt;Options-&gt;Percentage of autominted zpara
 
 </source>
-        <translation>Afficher l'état actuel de l'Auto-monnayage zTELOS.
+        <translation>Afficher l'état actuel de l'Auto-monnayage zpara.
 
 Pour changer le statut (redémarrage requis):
 - enable: ajoute 'enablezeromint = 1' au fichier pivx.conf
 - disable: ajoute 'enablezeromint = 0' au fichier pivx.conf
 
 Pour changer le pourcentage (pas de redémarrage requis):
-- menu Paramètres-&gt; Options-&gt; Pourcentage de zTELOS auto-monnayé
+- menu Paramètres-&gt; Options-&gt; Pourcentage de zpara auto-monnayé
 
 </translation>
     </message>
@@ -2612,8 +2612,8 @@ Pour changer le pourcentage (pas de redémarrage requis):
         <translation>0 x</translation>
     </message>
     <message>
-        <source>Show zTELOS denominations list</source>
-        <translation>Montrer la liste des Dénominations pour zTELOS</translation>
+        <source>Show zpara denominations list</source>
+        <translation>Montrer la liste des Dénominations pour zpara</translation>
     </message>
     <message>
         <source>Show Denominations</source>
@@ -2750,12 +2750,12 @@ Please be patient...</source>
 S'il vous plaît soyez patient ...</translation>
     </message>
     <message>
-        <source>zTELOS Spend #: </source>
-        <translation>Dépense zTELOS #:</translation>
+        <source>zpara Spend #: </source>
+        <translation>Dépense zpara #:</translation>
     </message>
     <message>
-        <source>zTELOS Mint</source>
-        <translation>Monnayage zTELOS</translation>
+        <source>zpara Mint</source>
+        <translation>Monnayage zpara</translation>
     </message>
     <message>
         <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
@@ -2770,12 +2770,12 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Pourcentage cible configuré: &lt;b&gt;</translation>
     </message>
     <message>
-        <source>zTELOS is currently disabled due to maintenance.</source>
-        <translation>zTELOS est actuellement désactivé pour cause de maintenance.</translation>
+        <source>zpara is currently disabled due to maintenance.</source>
+        <translation>zpara est actuellement désactivé pour cause de maintenance.</translation>
     </message>
     <message>
-        <source>zTELOS is currently undergoing maintenance.</source>
-        <translation>zTELOS est actuellement en cours de maintenance.</translation>
+        <source>zpara is currently undergoing maintenance.</source>
+        <translation>zpara est actuellement en cours de maintenance.</translation>
     </message>
     <message>
         <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
@@ -3016,8 +3016,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a TELOS address (e.g. %1)</source>
-        <translation>Entrez une adresse TELOS (par ex. %1)</translation>
+        <source>Enter a para address (e.g. %1)</source>
+        <translation>Entrez une adresse para (par ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3064,8 +3064,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -3084,8 +3084,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Erreur de lecture du fichier de configuration Masternode: %1</translation>
     </message>
     <message>
-        <source>TELOS Core didn't yet exit safely...</source>
-        <translation>TELOS Core n'a pas encore quitté en toute sécurité ...</translation>
+        <source>para Core didn't yet exit safely...</source>
+        <translation>para Core n'a pas encore quitté en toute sécurité ...</translation>
     </message>
 </context>
 <context>
@@ -3182,7 +3182,7 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Chaîne de bloc</translation>
     </message>
     <message>
-        <source>Open the TELOS debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the para debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Ouvrir le fichier journal de déboguage depuis le répertoire de données courant. Cela peut prendre quelques minutes pour les fichier journaux volumineux.</translation>
     </message>
     <message>
@@ -3318,8 +3318,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Chemin du répertoire de sauvegarde personnalisé:</translation>
     </message>
     <message>
-        <source>Custom zTELOS Backup Path:</source>
-        <translation>Chemin du répertoire de sauvegarde zTELOS personnalisé:</translation>
+        <source>Custom zpara Backup Path:</source>
+        <translation>Chemin du répertoire de sauvegarde zpara personnalisé:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3398,8 +3398,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Sortie:</translation>
     </message>
     <message>
-        <source>Welcome to the TELOS RPC console.</source>
-        <translation>Bienvenue sur la console TELOS RPC.</translation>
+        <source>Welcome to the para RPC console.</source>
+        <translation>Bienvenue sur la console para RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3541,16 +3541,16 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Montant:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TELOS network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux TELOS.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the para network.</source>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux para.</translation>
     </message>
     <message>
         <source>RECEIVE</source>
         <translation>RECEVOIR</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TELOS network.</source>
-        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux TELOS.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the para network.</source>
+        <translation>Un message optionnel à ajouter à la demande de paiement, lequel sera affiché lorsque la demande sera ouverte. &lt;br /&gt; Note: Le message ne sera pas renvoyé avec le paiement sur le réseaux para.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3786,12 +3786,12 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Taille UTXO:</translation>
     </message>
     <message>
-        <source>0 TELOS</source>
-        <translation>0 TELOS</translation>
+        <source>0 para</source>
+        <translation>0 para</translation>
     </message>
     <message>
-        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 TELOS applies</source>
-        <translation>La technologie SwiftX permet des transactions quasi instantanées - Des frais minimum de 0.01 TELOS s'appliquent</translation>
+        <source>SwiftX technology allows for near instant transactions - A flat fee of 0.01 para applies</source>
+        <translation>La technologie SwiftX permet des transactions quasi instantanées - Des frais minimum de 0.01 para s'appliquent</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3846,16 +3846,16 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Pièces automatiquement sélectionnées</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTELOSs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTELOSs in fee,&lt;br /&gt;while "at least" pays 1000 uTELOSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si le tarif personnalisé est fixé à 1000 uTELOS et que la transaction ne représente que 250 octets, "par kilo-octet", alors le système ne paiera que 250 uTELOS en frais,&lt;br /&gt;tandis que le choix "au moins" paiera 1000 uTELOS forfaitairement. Pour les transactions supérieures à un kilo-octet, les deux choix paieront les frais par kilo-octets.</translation>
+        <source>If the custom fee is set to 1000 uparas and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uparas in fee,&lt;br /&gt;while "at least" pays 1000 uparas. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si le tarif personnalisé est fixé à 1000 upara et que la transaction ne représente que 250 octets, "par kilo-octet", alors le système ne paiera que 250 upara en frais,&lt;br /&gt;tandis que le choix "au moins" paiera 1000 upara forfaitairement. Pour les transactions supérieures à un kilo-octet, les deux choix paieront les frais par kilo-octets.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uTELOSs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uTELOSs in fee,&lt;br /&gt;while "total at least" pays 1000 uTELOSs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Si le tarif personnalisé est fixé à 1000 uTELOS et que la transaction ne représente que 250 octets, "par kilo-octet", alors le système ne paiera que 250 uTELOS en frais,tandis que le choix "total au moins" paiera 1000 uTELOS. Pour les transactions supérieures à un kilo-octet, les deux choix paieront les frais par kilo-octets.</translation>
+        <source>If the custom fee is set to 1000 uparas and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uparas in fee,&lt;br /&gt;while "total at least" pays 1000 uparas. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Si le tarif personnalisé est fixé à 1000 upara et que la transaction ne représente que 250 octets, "par kilo-octet", alors le système ne paiera que 250 upara en frais,tandis que le choix "total au moins" paiera 1000 upara. Pour les transactions supérieures à un kilo-octet, les deux choix paieront les frais par kilo-octets.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for TELOS transactions than the network can process.</source>
-        <translation>Payer les frais minimum est convenable tant qu'il y a moins de volume de transactions que d'espace dans les blocs. &lt;br /&gt; Mais sachez que cela peut aboutir à une transaction qui ne se confirmera jamais lorsqu'il y aura plus de transactions TELOS que le réseau ne peut en traiter.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for para transactions than the network can process.</source>
+        <translation>Payer les frais minimum est convenable tant qu'il y a moins de volume de transactions que d'espace dans les blocs. &lt;br /&gt; Mais sachez que cela peut aboutir à une transaction qui ne se confirmera jamais lorsqu'il y aura plus de transactions para que le réseau ne peut en traiter.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3902,8 +3902,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Ajouter un destinataire</translation>
     </message>
     <message>
-        <source>Anonymized TELOS</source>
-        <translation>TELOS anonymisé</translation>
+        <source>Anonymized para</source>
+        <translation>para anonymisé</translation>
     </message>
     <message>
         <source>Balance:</source>
@@ -3950,8 +3950,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>L'outil de séparation de bloc ne fonctionne pas avec les adresses multiples. Réessayez.</translation>
     </message>
     <message>
-        <source>Warning: Invalid TELOS address</source>
-        <translation>Attention: adresse TELOS invalide</translation>
+        <source>Warning: Invalid para address</source>
+        <translation>Attention: adresse para invalide</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -4053,8 +4053,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The TELOS address to send the payment to</source>
-        <translation>L'adresse TELOS à laquelle envoyer le paiement</translation>
+        <source>The para address to send the payment to</source>
+        <translation>L'adresse para à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4093,8 +4093,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Message :</translation>
     </message>
     <message>
-        <source>A message that was attached to the TELOS: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the TELOS network.</source>
-        <translation>Un message qui était attaché au TELOS: URI qui sera stockée avec la transaction pour votre référence ultérieure. Remarque: Ce message ne sera pas envoyé sur le réseau TELOS.</translation>
+        <source>A message that was attached to the para: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the para network.</source>
+        <translation>Un message qui était attaché au para: URI qui sera stockée avec la transaction pour votre référence ultérieure. Remarque: Ce message ne sera pas envoyé sur le réseau para.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -4120,8 +4120,8 @@ S'il vous plaît soyez patient ...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TELOS Core is shutting down...</source>
-        <translation>TELOS Core est en cours de fermeture...</translation>
+        <source>para Core is shutting down...</source>
+        <translation>para Core est en cours de fermeture...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4143,8 +4143,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Vous pouvez signer des messages avec vos adresses pour prouver que vous les possédez. Veillez à ne rien signer d'imprécis, car des attaques de type phishing pourraient vous inciter à divulger votre identité. Ne signez que des déclarations détaillées que vous avez approuvé.</translation>
     </message>
     <message>
-        <source>The TELOS address to sign the message with</source>
-        <translation>L'adresse TELOS avec laquelle signer le message</translation>
+        <source>The para address to sign the message with</source>
+        <translation>L'adresse para avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -4175,16 +4175,16 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TELOS address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse TELOS</translation>
+        <source>Sign the message to prove you own this para address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse para</translation>
     </message>
     <message>
-        <source>The TELOS address the message was signed with</source>
-        <translation>L'adresse TELOS avec laquelle le message a été signé</translation>
+        <source>The para address the message was signed with</source>
+        <translation>L'adresse para avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TELOS address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse TELOS renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified para address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse para renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -4270,8 +4270,8 @@ S'il vous plaît soyez patient ...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TELOS Core</source>
-        <translation>TELOS Core</translation>
+        <source>para Core</source>
+        <translation>para Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -4286,8 +4286,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Les développeurs Dash Core</translation>
     </message>
     <message>
-        <source>The TELOS Core developers</source>
-        <translation>Les développeurs TELOS Core</translation>
+        <source>The para Core developers</source>
+        <translation>Les développeurs para Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4550,12 +4550,12 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Reçu via Obfuscation</translation>
     </message>
     <message>
-        <source>TELOS Stake</source>
-        <translation>TELOS Stake</translation>
+        <source>para Stake</source>
+        <translation>para Stake</translation>
     </message>
     <message>
-        <source>zTELOS Stake</source>
-        <translation>zTELOS Stake</translation>
+        <source>zpara Stake</source>
+        <translation>zpara Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4574,32 +4574,32 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Le cryptage créé des unités</translation>
     </message>
     <message>
-        <source>Converted TELOS to zTELOS</source>
-        <translation>TELOS converti en zTELOS</translation>
+        <source>Converted para to zpara</source>
+        <translation>para converti en zpara</translation>
     </message>
     <message>
-        <source>Spent zTELOS</source>
-        <translation>zTELOS dépensés</translation>
+        <source>Spent zpara</source>
+        <translation>zpara dépensés</translation>
     </message>
     <message>
-        <source>Received TELOS from zTELOS</source>
-        <translation>TELOS reçu depuis zTELOS</translation>
+        <source>Received para from zpara</source>
+        <translation>para reçu depuis zpara</translation>
     </message>
     <message>
-        <source>Minted Change as zTELOS from zTELOS Spend</source>
-        <translation>Monnaie rendue à partir d'une dépense zTELOS frappée comme zTELOS </translation>
+        <source>Minted Change as zpara from zpara Spend</source>
+        <translation>Monnaie rendue à partir d'une dépense zpara frappée comme zpara </translation>
     </message>
     <message>
-        <source>Converted zTELOS to TELOS</source>
-        <translation>zTELOS converti en TELOS</translation>
+        <source>Converted zpara to para</source>
+        <translation>zpara converti en para</translation>
     </message>
     <message>
-        <source>Anonymous (zTELOS Transaction)</source>
-        <translation>Anonyme (transaction zTELOS)</translation>
+        <source>Anonymous (zpara Transaction)</source>
+        <translation>Anonyme (transaction zpara)</translation>
     </message>
     <message>
-        <source>Anonymous (zTELOS Stake)</source>
-        <translation>Anonyme (zTELOS Stake)</translation>
+        <source>Anonymous (zpara Stake)</source>
+        <translation>Anonyme (zpara Stake)</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4714,7 +4714,7 @@ S'il vous plaît soyez patient ...</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
-        <translation>TELOS convertit en zTELOS</translation>
+        <translation>para convertit en zpara</translation>
     </message>
     <message>
         <source>Zerocoin Spend</source>
@@ -4813,12 +4813,12 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Exportation réussie</translation>
     </message>
     <message>
-        <source>Received TELOS from zTELOS</source>
-        <translation>TELOS reçu depuis zTELOS</translation>
+        <source>Received para from zpara</source>
+        <translation>para reçu depuis zpara</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zTELOS</source>
-        <translation>Dépense Zerocoin, monnaie rendue en zTELOS</translation>
+        <source>Zerocoin Spend, Change in zpara</source>
+        <translation>Dépense Zerocoin, monnaie rendue en zpara</translation>
     </message>
     <message>
         <source>The transaction history was successfully saved to %1.</source>
@@ -4854,8 +4854,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Envoyer des pièces</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 TELOS.</source>
-        <translation>SwiftX ne supporte pas l'envoi de montants aussi élevés. Les transactions sont actuellement lmitées à %1 TELOS.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 para.</source>
+        <translation>SwiftX ne supporte pas l'envoi de montants aussi élevés. Les transactions sont actuellement lmitées à %1 para.</translation>
     </message>
 </context>
 <context>
@@ -4886,10 +4886,10 @@ S'il vous plaît soyez patient ...</translation>
     </message>
 </context>
 <context>
-    <name>ZTelosControlDialog</name>
+    <name>ZparaControlDialog</name>
     <message>
-        <source>Select zTELOS to Spend</source>
-        <translation>Choisir les zTELOS à dépenser</translation>
+        <source>Select zpara to Spend</source>
+        <translation>Choisir les zpara à dépenser</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4900,8 +4900,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTELOS</source>
-        <translation>zTELOS</translation>
+        <source>zpara</source>
+        <translation>zpara</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4939,8 +4939,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Le point de contrôle de l'accumulateur qui a été calculé ne correspond pas à ce qui est enregistré par l'index de bloc</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. TELOS Core is probably already running.</source>
-        <translation>Impossible de vérouiller le répertoire de données %s. TELOS Core est probablement déjà en cours d'exécution.</translation>
+        <source>Cannot obtain a lock on data directory %s. para Core is probably already running.</source>
+        <translation>Impossible de vérouiller le répertoire de données %s. para Core est probablement déjà en cours d'exécution.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4971,16 +4971,16 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Activer la frappe automatique de monnaie à partir d’adresses spécifiques (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zTELOS minting (0-1, default: %u)</source>
-        <translation>Activer les sauvegardes automatiques de portefeuille déclenchées après chaque frappe zTELOS (0-1, par défaut: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each zpara minting (0-1, default: %u)</source>
+        <translation>Activer les sauvegardes automatiques de portefeuille déclenchées après chaque frappe zpara (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for TELOS inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées TELOS (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for para inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées para (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zTELOS inputs (0-1, default: %u)</source>
-        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zTELOS (0-1, par défaut: %u)</translation>
+        <source>Enable or disable staking functionality for zpara inputs (0-1, default: %u)</source>
+        <translation>Active ou désactive la fonctionnalité de staking pour les entrées zpara (0-1, par défaut: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -5015,12 +5015,12 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Exécuter la commande lorsque le meilleur bloc change  (%s dans cmd est remplacé par le hash du bloc)</translation>
     </message>
     <message>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Les frais (en TELOS / Kb) inférieurs à ceux-ci sont considérés comme des frais nuls pour le relais (par défaut: %s)</translation>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Les frais (en para / Kb) inférieurs à ceux-ci sont considérés comme des frais nuls pour le relais (par défaut: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TELOS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Les frais (en TELOS / Kb) inférieurs à cette valeur sont considérés comme des frais nuls pour la création de transaction (par défaut: %s)</translation>
+        <source>Fees (in para/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Les frais (en para / Kb) inférieurs à cette valeur sont considérés comme des frais nuls pour la création de transaction (par défaut: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -5135,20 +5135,20 @@ S'il vous plaît soyez patient ...</translation>
         <translation>La longueur totale de la chaîne dans la version réseau (%i) dépasse la longueur maximale (%i). Réduisez le nombre ou la taille des commentaires de l'Agent Utilisateur</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. TELOS Core is probably already running.</source>
-        <translation>Impossible de se lier à %s depuis cet ordinateur. TELOS Core est probablement déjà en cours d'exécution.</translation>
+        <source>Unable to bind to %s on this computer. para Core is probably already running.</source>
+        <translation>Impossible de se lier à %s depuis cet ordinateur. para Core est probablement déjà en cours d'exécution.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 TELOS.</source>
-        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 10000 TELOS.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 para.</source>
+        <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 10000 para.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 TELOS.</source>
-        <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 10000 TELOS.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 para.</source>
+        <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 10000 para.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5163,8 +5163,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Attention: -paytxfee est réglé très haut! Ce sont les frais de transaction que vous paierez si vous envoyez une transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong TELOS Core will not work properly.</source>
-        <translation>Avertissement: Veuillez vérifier que la date et l'heure de votre ordinateur sont correctes! Si votre horloge est incorrecte, TELOS Core ne fonctionnera pas correctement.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong para Core will not work properly.</source>
+        <translation>Avertissement: Veuillez vérifier que la date et l'heure de votre ordinateur sont correctes! Si votre horloge est incorrecte, para Core ne fonctionnera pas correctement.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5172,7 +5172,7 @@ S'il vous plaît soyez patient ...</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>Attention: Il semble que nous soyons en désaccord avec nos pairs sur le réseau! Cela signifie que vous pourriez avoir besoin de mettre à jour votre TELOS Core, ou que les autres noeuds aient besoin de se mettre à jour de leur côté.</translation>
+        <translation>Attention: Il semble que nous soyons en désaccord avec nos pairs sur le réseau! Cela signifie que vous pourriez avoir besoin de mettre à jour votre para Core, ou que les autres noeuds aient besoin de se mettre à jour de leur côté.</translation>
     </message>
     <message>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
@@ -5303,8 +5303,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Copyright (C) 2014-%i Les développeurs de DASH Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The TELOS Core Developers</source>
-        <translation>Copyright (C) 2015-%i Les développeurs de TELOS Core</translation>
+        <source>Copyright (C) 2015-%i The para Core Developers</source>
+        <translation>Copyright (C) 2015-%i Les développeurs de para Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -5351,8 +5351,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Activer la frappe automatique Zerocoin (0-1, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zTELOS spends and stakes (0-1, default %u)</source>
-        <translation>Autoriser le pré-calcul des ZTELOS dépensés et stakés (0-1, défaut %u)</translation>
+        <source>Enable precomputation of zpara spends and stakes (0-1, default %u)</source>
+        <translation>Autoriser le pré-calcul des Zpara dépensés et stakés (0-1, défaut %u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -5387,8 +5387,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Erreur de chargement du fichier wallet.dat: Portefeuille corrompu</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of TELOS Core</source>
-        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du TELOS core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of para Core</source>
+        <translation>Erreur de chargement du fichier wallet.dat: Le portefeuille nécessite une version plus récente du para core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -5443,8 +5443,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Impossible de lire le bloc</translation>
     </message>
     <message>
-        <source>Fee (in TELOS/kB) to add to transactions you send (default: %s)</source>
-        <translation>Frais (en TELOS/kB) à ajouter aux transactions envoyées (défaut: %s)</translation>
+        <source>Fee (in para/kB) to add to transactions you send (default: %s)</source>
+        <translation>Frais (en para/kB) à ajouter aux transactions envoyées (défaut: %s)</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
@@ -5483,8 +5483,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. TELOS Core is shutting down.</source>
-        <translation>Échec de la vérification de l'initialisation. TELOS Core va fermer.</translation>
+        <source>Initialization sanity check failed. para Core is shutting down.</source>
+        <translation>Échec de la vérification de l'initialisation. para Core va fermer.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5547,20 +5547,20 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Pourcentage de Zerocoin Auto-monnayé (1-100, par défaut: %u)</translation>
     </message>
     <message>
-        <source>Recalculating TELOS supply...</source>
-        <translation>Recalcule de TELOS émis</translation>
+        <source>Recalculating para supply...</source>
+        <translation>Recalcule de para émis</translation>
     </message>
     <message>
-        <source>Recalculating minted ZTELOS...</source>
-        <translation>Recalcule des ZTELOS générés</translation>
+        <source>Recalculating minted Zpara...</source>
+        <translation>Recalcule des Zpara générés</translation>
     </message>
     <message>
-        <source>Recalculating spent ZTELOS...</source>
-        <translation>Recalcule des ZTELOS dépensés</translation>
+        <source>Recalculating spent Zpara...</source>
+        <translation>Recalcule des Zpara dépensés</translation>
     </message>
     <message>
-        <source>Reindex the TELOS and zTELOS money supply statistics</source>
-        <translation>Recalculer les statistiques sur l'approvisionnement en TELOS et zTELOS</translation>
+        <source>Reindex the para and zpara money supply statistics</source>
+        <translation>Recalculer les statistiques sur l'approvisionnement en para et zpara</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5604,8 +5604,8 @@ S'il vous plaît soyez patient ...</translation>
 </translation>
     </message>
     <message>
-        <source>Disable all TELOS specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Désactiver toutes les fonctionnalités spécifiques à TELOS (Masternodes, Zerocoin, SwiftX, Budgétisation) (0-1, défaut: %u)</translation>
+        <source>Disable all para specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Désactiver toutes les fonctionnalités spécifiques à para (Masternodes, Zerocoin, SwiftX, Budgétisation) (0-1, défaut: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
@@ -5640,12 +5640,12 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Dénomination préférée pour les Zerocoin Auto-monnayés (1/5/10/50/100/500/1000/5000), 0 pour aucune préférence. par défaut: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zTELOS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zTELOS. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente. Si le chemin de la sauvegarde est défini, il y aura 4 versions de sauvegardes</translation>
+        <source>Specify custom backup path to add a copy of any automatic zpara backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zpara. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente. Si le chemin de la sauvegarde est défini, il y aura 4 versions de sauvegardes</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zTELOS. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zpara. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
     </message>
     <message>
         <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
@@ -6060,8 +6060,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Synchronisation des sporks ...</translation>
     </message>
     <message>
-        <source>Syncing zTELOS wallet...</source>
-        <translation>Synchronisation du portefeuille zTELOS ...</translation>
+        <source>Syncing zpara wallet...</source>
+        <translation>Synchronisation du portefeuille zpara ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -6172,8 +6172,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zTELOS</source>
-        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zTELOS</translation>
+        <source>Value is below the smallest available denomination (= 1) of zpara</source>
+        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zpara</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6184,8 +6184,8 @@ S'il vous plaît soyez patient ...</translation>
         <translation>Vérification du portefeuille...</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart TELOS Core to complete</source>
-        <translation>Le portefeuille doit être réécrit: redémarrez TELOS Core pour terminer</translation>
+        <source>Wallet needed to be rewritten: restart para Core to complete</source>
+        <translation>Le portefeuille doit être réécrit: redémarrez para Core pour terminer</translation>
     </message>
     <message>
         <source>Wallet options:</source>
