@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2021 The papara developers
+// Copyright (c) 2017-2021 The Transcendence developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -107,16 +107,16 @@ public:
 
         vAlertPubKey = ParseHex("0317dc37cb1011c0a162fc113358cdad2a12b85a0f841c4c48346bd85f45ec5c1d");
         nDefaultPort = 8051;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // papara starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Transcendence starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 30; // papara: 1.5 minutes
-        nTargetSpacingSlowLaunch = 10 * 60;  // papara: 10 minutes (Slow launch - Block 288)
-        nTargetSpacing = 1 * 60;  // papara: 60 Seconds
+        nTargetTimespan = 1 * 30; // Transcendence: 1.5 minutes
+        nTargetSpacingSlowLaunch = 10 * 60;  // Transcendence: 10 minutes (Slow launch - Block 288)
+        nTargetSpacing = 1 * 60;  // Transcendence: 60 Seconds
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 40000000 * COIN;
@@ -142,7 +142,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "papara new blockchain is here";
+        const char* pszTimestamp = "Transcendence new blockchain is here";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -164,8 +164,8 @@ public:
         //AWS instance DNS-seeder
         //vSeeds.push_back(CDNSSeedData("5.189.139.203", "5.189.139.203"));
 
-	//vSeeds.push_back(CDNSSeedData("papara.cloud", "dnsseed1.papara.cloud"));
-	//vSeeds.push_back(CDNSSeedData("papara.cloud", "dnsseed2.papara.cloud"));
+	//vSeeds.push_back(CDNSSeedData("Transcendence.cloud", "dnsseed1.Transcendence.cloud"));
+	//vSeeds.push_back(CDNSSeedData("Transcendence.cloud", "dnsseed2.Transcendence.cloud"));
        vSeeds.push_back(CDNSSeedData("159.69.33.146", "159.69.33.146"));
        vSeeds.push_back(CDNSSeedData("159.69.18.181", "159.69.18.181"));
        vSeeds.push_back(CDNSSeedData("49.12.47.183", "49.12.47.183"));
@@ -236,8 +236,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // papara: 1 day
-        nTargetSpacing = 1 * 60;  // papara: 1 minute
+        nTargetTimespan = 1 * 60; // Transcendence: 1 day
+        nTargetSpacing = 1 * 60;  // Transcendence: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -277,14 +277,14 @@ public:
        	vSeeds.push_back(CDNSSeedData("95.216.152.134", "95.216.152.134"));
 		vSeeds.push_back(CDNSSeedData("[2a02:c207:3003:4813::2]", "[2a02:c207:3003:4813::2]"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet papara addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet papara script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet Transcendence addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet Transcendence script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet papara BIP32 pubkeys start with 'DRKV'
+        // Testnet Transcendence BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet papara BIP32 prvkeys start with 'DRKP'
+        // Testnet Transcendence BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet papara BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet Transcendence BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -331,8 +331,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // papara: 1 day
-        nTargetSpacing = 1 * 60;        // papara: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Transcendence: 1 day
+        nTargetSpacing = 1 * 60;        // Transcendence: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1515524400;
         genesis.nBits = 0x1e0ffff0;
