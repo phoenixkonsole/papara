@@ -11,7 +11,7 @@
 #include "reverse_iterate.h"
 #include "util.h"
 #include "libzerocoin/Denominations.h"
-#include "ztelos/zerocoin.h"
+#include "zpara/zerocoin.h"
 #include <list>
 #include <map>
 std::vector<CZerocoinMint> SelectMintsFromList(const CAmount nValueTarget, CAmount& nSelectedValue,

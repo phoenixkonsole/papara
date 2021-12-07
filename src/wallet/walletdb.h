@@ -12,7 +12,7 @@
 #include "wallet/db.h"
 #include "key.h"
 #include "keystore.h"
-#include "ztelos/zerocoin.h"
+#include "zpara/zerocoin.h"
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
 

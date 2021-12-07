@@ -9,7 +9,7 @@
 #include "txdb.h"
 #include <boost/test/unit_test.hpp>
 #include <iostream>
-#include <ztelos/accumulators.h>
+#include <zpara/accumulators.h>
 
 using namespace libzerocoin;
 

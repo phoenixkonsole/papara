@@ -9,7 +9,7 @@
 #include "main.h"
 #include "pow.h"
 #include "uint256.h"
-#include "ztelos/accumulators.h"
+#include "zpara/accumulators.h"
 
 #include <stdint.h>
 

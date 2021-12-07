@@ -169,9 +169,9 @@ BITCOIN_CORE_H = \
   wallet/wallet.h \
   wallet/wallet_ismine.h \
   wallet/walletdb.h \
-  ztelos/accumulators.h \
-  ztelos/deterministicmint.h \
-  ztelos/zerocoin.h \
+  zpara/accumulators.h \
+  zpara/deterministicmint.h \
+  zpara/zerocoin.h \
   zmq/zmqabstractnotifier.h \
   zmq/zmqconfig.h \
   zmq/zmqnotificationinterface.h \
@@ -251,16 +251,16 @@ libbitcoin_wallet_a_SOURCES = \
   masternodeconfig.cpp \
   masternodeman.cpp \
   wallet/rpcdump.cpp \
-  ztelos/zerocoin.cpp \
-  ztelos/deterministicmint.cpp \
+  zpara/zerocoin.cpp \
+  zpara/deterministicmint.cpp \
   wallet/rpcwallet.cpp \
   kernel.cpp \
   wallet/wallet.cpp \
   wallet/wallet_ismine.cpp \
   wallet/walletdb.cpp \
-  ztelos/deterministicmint.cpp \
-  ztelos/zerocoin.cpp \
-  ztelos/accumulators.cpp \
+  zpara/deterministicmint.cpp \
+  zpara/zerocoin.cpp \
+  zpara/accumulators.cpp \
   $(BITCOIN_CORE_H)
 
 # crypto primitives library
@@ -353,7 +353,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
-  ztelos/accumulators.cpp \
+  zpara/accumulators.cpp \
   accumulatormap.cpp \
   allocators.cpp \
   amount.cpp \
@@ -363,9 +363,9 @@ libbitcoin_common_a_SOURCES = \
   coins.cpp \
   compressor.cpp \
   primitives/block.cpp \
-  ztelos/deterministicmint.cpp \
+  zpara/deterministicmint.cpp \
   primitives/transaction.cpp \
-  ztelos/zerocoin.cpp \
+  zpara/zerocoin.cpp \
   core_read.cpp \
   core_write.cpp \
   hash.cpp \
@@ -533,7 +533,7 @@ CLEANFILES += univalue/*.gcda univalue/*.gcno
 CLEANFILES += wallet/*.gcda wallet/*.gcno
 CLEANFILES += wallet/test/*.gcda wallet/test/*.gcno
 CLEANFILES += zmq/*.gcda zmq/*.gcno
-CLEANFILES += ztelos/*.gcda ztelos/*.gcno
+CLEANFILES += zpara/*.gcda zpara/*.gcno
 CLEANFILES += obj/build.h
 
 EXTRA_DIST =

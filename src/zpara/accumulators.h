@@ -8,7 +8,7 @@
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
 #include "libzerocoin/Coin.h"
-#include "ztelos/zerocoin.h"
+#include "zpara/zerocoin.h"
 #include "uint256.h"
 std::map<libzerocoin::CoinDenomination, int> GetMintMaturityHeight();
 

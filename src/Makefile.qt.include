@@ -65,7 +65,7 @@ QT_FORMS_UI = \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
   qt/papara/forms/loadingdialog.ui \
-  qt/forms/zteloscontroldialog.ui \
+  qt/forms/zparacontroldialog.ui \
   qt/papara/forms/snackbar.ui \
   qt/papara/forms/navmenuwidget.ui \
   qt/papara/forms/lockunlock.ui \
@@ -170,7 +170,7 @@ QT_MOC_CPP = \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
   qt/papara/moc_loadingdialog.cpp \
-  qt/moc_zteloscontroldialog.cpp \
+  qt/moc_zparacontroldialog.cpp \
   qt/papara/moc_pwidget.cpp \
   qt/papara/moc_snackbar.cpp \
   qt/papara/moc_navmenuwidget.cpp \
@@ -308,7 +308,7 @@ BITCOIN_QT_H = \
   qt/papara/loadingdialog.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/zteloscontroldialog.h \
+  qt/zparacontroldialog.h \
   qt/papara/pwidget.h \
   qt/papara/snackbar.h \
   qt/papara/navmenuwidget.h \
@@ -540,11 +540,11 @@ RES_ICONS = \
   qt/papara/res/img/ic-receive-off.svg \
   qt/papara/res/img/img-empty-staking-on.svg \
   qt/papara/res/img/ic-arrow-drop-up-white.svg \
-  qt/papara/res/img/ic-coin-ztelos.png \
+  qt/papara/res/img/ic-coin-zpara.png \
   qt/papara/res/img/ic-receive-on.svg \
   qt/papara/res/img/img-empty-transactions.svg \
   qt/papara/res/img/ic-arrow-drop-up.svg \
-  qt/papara/res/img/ic-coin-ztelos.svg \
+  qt/papara/res/img/ic-coin-zpara.svg \
   qt/papara/res/img/ic-received.svg \
   qt/papara/res/img/img-logo-papara.png \
   qt/papara/res/img/ic-arrow-drop-white-down.svg \
@@ -690,7 +690,7 @@ BITCOIN_QT_WALLET_CPP = \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
   qt/papara/loadingdialog.cpp \
-  qt/zteloscontroldialog.cpp \
+  qt/zparacontroldialog.cpp \
   qt/papara/pwidget.cpp \
   qt/papara/snackbar.cpp \
   qt/papara/navmenuwidget.cpp \
