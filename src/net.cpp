@@ -1161,7 +1161,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "papara " + FormatFullVersion();
+        string strDesc = "Transcendence " + FormatFullVersion();
 
         try {
             while (true) {
