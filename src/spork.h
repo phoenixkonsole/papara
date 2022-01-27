@@ -64,6 +64,10 @@ using namespace boost;
 #define SPORK_19_LOWERED_MASTERNODE_PAYMENT_DEFAULT 1276502       //block height
 #define SPORK_20_REWARD_HALVING_START_DEFAULT 1578902             //block height
 #define SPORK_20_REWARD_HALVING_PERIOD_DEFAULT 525600             //blocks count
+#define SPORK_20_REWARD_VALUE 25
+#define SPORK_21_SUPERBLOCK_START_DEFAULT 1999000                 //block height - TODO set valid value of July 2022
+#define SPORK_21_SUPERBLOCK_PERIOD_DEFAULT 45000                  //blocks count - TODO set valid value 30 days
+#define SPORK_21_REWARD_VALUE 1000
 
 class CSporkMessage;
 class CSporkManager;

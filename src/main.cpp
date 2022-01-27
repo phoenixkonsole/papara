@@ -2169,20 +2169,42 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 100 * COIN;
     } else if (nHeight > SPORK_17_MASTERNODE_PAYMENT_CHECK_DEFAULT && nHeight < SPORK_20_REWARD_HALVING_START_DEFAULT) {
         nSubsidy = 50 * COIN;
-    } else if (nHeight >= SPORK_20_REWARD_HALVING_START_DEFAULT) {
-        nSubsidy = GetHalvingReward(nHeight) * COIN;
-    } else {
+    } else if (nHeight >= SPORK_20_REWARD_HALVING_START_DEFAULT && nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT) {
+        nSubsidy = GetHalvingReward(nHeight, SPORK_20_REWARD_VALUE) * COIN;
+    } else if (nHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT) {
+        if (nHeight % SPORK_21_SUPERBLOCK_PERIOD_DEFAULT == 0) {
+            nSubsidy = GetSuperblockHalvingReward(nHeight) * COIN;
+        } else {
+            nSubsidy = GetHalvingReward(nHeight, SPORK_21_REWARD_VALUE) * COIN;
+        }
+    } else{
         nSubsidy = 0.1 * COIN;
     }
 
     return nSubsidy;
 }
 
-double GetHalvingReward(int nHeight)
+bool GetCharityPayee(CScript& payee)
 {
-    double reward = 25;
+    std::string charity = "GTRoWabtpWo6Q5PoEv9ycQCVYZpoyhjmrY";
+    return GetScriptForAddress(charity, payee);
+}
 
+double GetHalvingReward(int nHeight, double reward)
+{
     const int period = (nHeight - SPORK_20_REWARD_HALVING_START_DEFAULT) / SPORK_20_REWARD_HALVING_PERIOD_DEFAULT;
+    if (period > 0) {
+        reward /= period + 1;
+    }
+
+    return reward;
+}
+
+double GetSuperblockHalvingReward(int nHeight) 
+{
+    double reward = 300000;
+
+    const int period = (nHeight - SPORK_21_SUPERBLOCK_START_DEFAULT) / SPORK_20_REWARD_HALVING_PERIOD_DEFAULT;
     if (period > 0) {
         reward /= period + 1;
     }
@@ -2201,8 +2223,22 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 		  ret = blockValue  / 100 * 90;               // %90
 	} else if (nHeight < SPORK_19_LOWERED_MASTERNODE_PAYMENT_DEFAULT ) {
 		  ret = blockValue  / 100 * 80;               // %80
-	} else {
+	} else if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT ) {
 		  ret = blockValue  / 100 * 70;               // %70
+    } else{
+        ret = blockValue  / 100 * 40;
+    }
+
+    return ret;
+}
+
+int64_t GetCharityPayment(int nHeight, int64_t blockValue) {
+    int64_t ret = 0;
+
+    if (nHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT) {
+        ret = blockValue  / 100 * 20; // 20%
+    }else{
+        ret = 0;
     }
 
     return ret;

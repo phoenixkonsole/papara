@@ -318,6 +318,22 @@ CScript GetScriptForDestination(const CTxDestination& dest)
     return script;
 }
 
+bool GetScriptForAddress(std::string& address, CScript& script)
+{
+    CBitcoinAddress btAddress(address);
+    if (!btAddress.IsValid())
+    {
+        return false;
+    }
+    const CTxDestination dest = btAddress.Get();
+    if (boost::get<CNoDestination>(&dest))
+    {
+        return false;
+    }
+    script = GetScriptForDestination(dest);
+    return true;
+}
+
 CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys)
 {
     CScript script;

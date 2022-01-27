@@ -8,6 +8,7 @@
 
 #include "script/interpreter.h"
 #include "uint256.h"
+#include "base58.h"
 
 #include <boost/variant.hpp>
 
@@ -90,6 +91,7 @@ bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet)
 bool ExtractDestinations(const CScript& scriptPubKey, txnouttype& typeRet, std::vector<CTxDestination>& addressRet, int& nRequiredRet);
 
 CScript GetScriptForDestination(const CTxDestination& dest);
+bool GetScriptForAddress(std::string& address, CScript& script);
 CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
 
 #endif // BITCOIN_SCRIPT_STANDARD_H

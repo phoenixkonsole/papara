@@ -309,6 +309,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     CAmount masternodePayment = GetMasternodePayment(pindexPrev->nHeight, blockValue);
+    CAmount charityPayment = GetCharityPayment(pindexPrev->nHeight, blockValue);
 
     if (hasPayment) {
         if (fProofOfStake) {
@@ -324,6 +325,17 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
             //subtract mn payment from the stake reward
             txNew.vout[i - 1].nValue -= masternodePayment;
+            if (charityPayment > 0) {
+                //subtract charity payment from the stake reward
+                CScript charityPayee;
+                bool isValid = GetCharityPayee(charityPayee);
+                if (isValid) {
+                    txNew.vout.resize(i + 2);
+                    txNew.vout[i + 1].scriptPubKey = charityPayee;
+                    txNew.vout[i + 1].nValue = charityPayment;
+                    txNew.vout[i - 1].nValue -= charityPayment;
+                }
+            }
         } else {
             txNew.vout.resize(2);
             txNew.vout[1].scriptPubKey = payee;
