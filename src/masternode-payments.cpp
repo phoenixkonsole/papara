@@ -287,6 +287,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     bool hasPayment = true;
     CScript payee;
+    CScript charityPayee;
 
     if (!masternodePayments.GetBlockPayee(pindexPrev->nHeight + 1, payee)) {
         //no masternode detected
@@ -327,7 +328,6 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             txNew.vout[i - 1].nValue -= masternodePayment;
             if (charityPayment > 0) {
                 //subtract charity payment from the stake reward
-                CScript charityPayee;
                 bool isValid = GetCharityPayee(charityPayee);
                 if (isValid) {
                     txNew.vout.resize(i + 2);
@@ -346,8 +346,12 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         CTxDestination address1;
         ExtractDestination(payee, address1);
         CBitcoinAddress address2(address1);
+        CTxDestination addressCharity1;
+        ExtractDestination(charityPayee, addressCharity1);
+        CBitcoinAddress addressCharity2(addressCharity1);
 
         LogPrint("masternode","Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), address2.ToString().c_str());
+        LogPrint("masternode","Charity payment of %s to %s\n", FormatMoney(charityPayment).c_str(), addressCharity2.ToString().c_str());
     } else {
 		if (!fProofOfStake)
 			txNew.vout[0].nValue = blockValue - masternodePayment;

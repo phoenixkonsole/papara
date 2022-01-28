@@ -43,24 +43,37 @@ namespace
 
 BOOST_AUTO_TEST_CASE(test_tier_from_outputs_old_tiers)
 {
-    unsigned int tiers[MasternodeTiers::TIER_NONE] = {MasternodeTiers::TIER_1K, MasternodeTiers::TIER_3K, MasternodeTiers::TIER_10K,
-                                                      MasternodeTiers::TIER_30K, MasternodeTiers::TIER_100K, MasternodeTiers::TIER_NONE,
-                                                      MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE};
-    bool isMastermodeOutput[MasternodeTiers::TIER_NONE] = {true, true, true, true, true, false, false, false, false};
+    unsigned int tiers[MasternodeTiers::TIER_NONE] = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_300, MasternodeTiers::TIER_1K, 
+                                                      MasternodeTiers::TIER_3K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_30K, 
+                                                      MasternodeTiers::TIER_100K, MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE, 
+                                                      MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE};
+    bool isMastermodeOutput[MasternodeTiers::TIER_NONE] = {false, false, true, true, true, true, true, false, false, false, false};
     TierFromOutputTest(tiers, isMastermodeOutput, TIER_BLOCK_HEIGHT);
 }
 
 BOOST_AUTO_TEST_CASE(test_tier_from_outputs_new_tiers)
 {
-    unsigned int tiers[MasternodeTiers::TIER_NONE] = {MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE,
-                                                      MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_100K, MasternodeTiers::TIER_300K,
+    unsigned int tiers[MasternodeTiers::TIER_NONE] = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_300, MasternodeTiers::TIER_NONE,
+                                                      MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE, MasternodeTiers::TIER_NONE,
+                                                      MasternodeTiers::TIER_100K, MasternodeTiers::TIER_300K,
                                                       MasternodeTiers::TIER_1KK, MasternodeTiers::TIER_3KK, MasternodeTiers::TIER_10KK};
-    bool isMastermodeOutput[MasternodeTiers::TIER_NONE] = {false, false, false, false, true, true, true, true, true};
+    bool isMastermodeOutput[MasternodeTiers::TIER_NONE] = {false, false, false, false, false, false, true, true, true, true, true};
     TierFromOutputTest(tiers, isMastermodeOutput, SPORK_17_MASTERNODE_PAYMENT_CHECK_DEFAULT);
+}
+BOOST_AUTO_TEST_CASE(test_tier_from_outputs_truncated_tiers)
+{
+    unsigned int tiers[MasternodeTiers::TIER_NONE] = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_300,  MasternodeTiers::TIER_1K,
+                                                      MasternodeTiers::TIER_3K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_30K,
+                                                      MasternodeTiers::TIER_100K, MasternodeTiers::TIER_300K, MasternodeTiers::TIER_1KK,
+                                                      MasternodeTiers::TIER_3KK, MasternodeTiers::TIER_10KK};
+    bool isMastermodeOutput[MasternodeTiers::TIER_NONE] = {true, true, true, true, true, false, false, false, false, false, false};
+    TierFromOutputTest(tiers, isMastermodeOutput, SPORK_21_SUPERBLOCK_START_DEFAULT);
 }
 
 BOOST_AUTO_TEST_CASE(test_masternode_coins)
 {
+    BOOST_CHECK_EQUAL(GetMastenodeTierCoins(MasternodeTiers::TIER_100), 100);
+    BOOST_CHECK_EQUAL(GetMastenodeTierCoins(MasternodeTiers::TIER_300), 300);
     BOOST_CHECK_EQUAL(GetMastenodeTierCoins(MasternodeTiers::TIER_1K), 1000);
     BOOST_CHECK_EQUAL(GetMastenodeTierCoins(MasternodeTiers::TIER_3K), 3000);
     BOOST_CHECK_EQUAL(GetMastenodeTierCoins(MasternodeTiers::TIER_10K), 10000);
@@ -76,6 +89,8 @@ BOOST_AUTO_TEST_CASE(test_masternode_coins)
 
 BOOST_AUTO_TEST_CASE(test_obfuscation_value)
 {
+    BOOST_TEST(GetObfuscationValueForTier(MasternodeTiers::TIER_100) == 99.99, boost::test_tools::tolerance(0.0001));
+    BOOST_TEST(GetObfuscationValueForTier(MasternodeTiers::TIER_300) == 299.99, boost::test_tools::tolerance(0.0001));
     BOOST_TEST(GetObfuscationValueForTier(MasternodeTiers::TIER_1K) == 999.99, boost::test_tools::tolerance(0.0001));
     BOOST_TEST(GetObfuscationValueForTier(MasternodeTiers::TIER_3K) == 2999.99, boost::test_tools::tolerance(0.0001));
     BOOST_TEST(GetObfuscationValueForTier(MasternodeTiers::TIER_10K) == 9999.99, boost::test_tools::tolerance(0.0001));
@@ -179,6 +194,17 @@ BOOST_AUTO_TEST_CASE(test_winning_tier_new_tiers)
                                            MasternodeTiers::TIER_300K, MasternodeTiers::TIER_1KK, MasternodeTiers::TIER_1KK,
                                            MasternodeTiers::TIER_3KK, MasternodeTiers::TIER_3KK, MasternodeTiers::TIER_10KK,
                                            MasternodeTiers::TIER_10KK};
+    WinningTierTest(vecTierSizes, vecBlockNumbers, vecTiers);
+}
+
+BOOST_AUTO_TEST_CASE(test_winning_tier_truncated_tiers)
+{
+    std::vector<size_t> vecTierSizes = {100, 40, 20, 10, 5, 0, 0, 0, 0, 0, 0}; 
+    std::vector<int> vecBlockNumbers = {115, 116, 256, 257, 491, 492, 845, 846, 1437, 1438, 1825};
+    std::vector<unsigned int> vecTiers = {MasternodeTiers::TIER_10K, MasternodeTiers::TIER_10K,  MasternodeTiers::TIER_30K,
+                                           MasternodeTiers::TIER_30K, MasternodeTiers::TIER_100K, MasternodeTiers::TIER_100K,
+                                           MasternodeTiers::TIER_300K, MasternodeTiers::TIER_300K, MasternodeTiers::TIER_1KK,
+                                           MasternodeTiers::TIER_1KK, TIER_300K};
     WinningTierTest(vecTierSizes, vecBlockNumbers, vecTiers);
 }
 

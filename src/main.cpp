@@ -2187,7 +2187,19 @@ int64_t GetBlockValue(int nHeight)
 bool GetCharityPayee(CScript& payee)
 {
     std::string charity = "GTRoWabtpWo6Q5PoEv9ycQCVYZpoyhjmrY";
-    return GetScriptForAddress(charity, payee);
+    CBitcoinAddress btAddress(charity);
+    if (!btAddress.IsValid())
+    {
+        return false;
+    }
+    const CTxDestination dest = btAddress.Get();
+    if (boost::get<CNoDestination>(&dest))
+    {
+        return false;
+    }
+
+    payee = GetScriptForDestination(dest);
+    return true;
 }
 
 double GetHalvingReward(int nHeight, double reward)
@@ -2232,13 +2244,15 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     return ret;
 }
 
-int64_t GetCharityPayment(int nHeight, int64_t blockValue) {
+int64_t GetCharityPayment(int nHeight, int64_t blockValue)
+{
     int64_t ret = 0;
 
-    if (nHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT) {
-        ret = blockValue  / 100 * 20; // 20%
-    }else{
+    if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT)
+    {
         ret = 0;
+    }else{
+        ret = blockValue  / 100 * 20; // 20%
     }
 
     return ret;

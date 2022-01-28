@@ -139,4 +139,10 @@ BOOST_AUTO_TEST_CASE(superblock_halving_test)
     BOOST_CHECK(GetSuperblockHalvingReward(((SPORK_21_SUPERBLOCK_START_DEFAULT + 525600 * 4) / SPORK_21_SUPERBLOCK_PERIOD_DEFAULT + 1) * SPORK_21_SUPERBLOCK_PERIOD_DEFAULT) == (standartReward / 5));
 }
 
+BOOST_AUTO_TEST_CASE(charity_address_valid_test)
+{
+    CScript payee;
+    BOOST_CHECK(GetCharityPayee(payee) == true);
+}
+
 BOOST_AUTO_TEST_SUITE_END()
