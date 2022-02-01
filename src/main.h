@@ -241,7 +241,7 @@ bool DisconnectBlocksAndReprocess(int blocks);
 double ConvertBitsToDouble(unsigned int nBits);
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount = 0);
 int64_t GetCharityPayment(int nHeight, int64_t blockValue);
-bool GetCharityPayee(CScript& payee);
+bool GetCharityPayee(int nHeight, CScript& payee);
 double GetHalvingReward(int nHeight, double reward);
 double GetSuperblockHalvingReward(int nHeight);
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader* pblock, bool fProofOfStake);

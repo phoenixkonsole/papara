@@ -112,7 +112,7 @@ static unsigned int TierByHash(std::vector<std::pair<size_t, unsigned int>>& wei
 
 unsigned int CalculateWinningTier(const std::vector<size_t>& vecTierSizes, uint256 blockHash)
 {
-    const unsigned int distribution[MasternodeTiers::TIER_NONE] = {1, 3, 10, 30, 100, 300, 1000, 3000, 10000};
+    const unsigned int distribution[MasternodeTiers::TIER_NONE] = {1, 1, 1, 3, 10, 30, 100, 300, 1000, 3000, 10000};
     double nDenominator = 0; // Summ( distribution[i]*count[i] )
     unsigned int nMod = 0; // modulus = Summ( distribution[i] )
 

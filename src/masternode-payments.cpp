@@ -246,7 +246,7 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
         }
     }
 
-    //check for masternode payee
+    //check for payees
     if (masternodePayments.IsTransactionValid(txNew, nBlockHeight))
         return true;
     LogPrint("masternode","Invalid mn payment detected %s\n", txNew.ToString().c_str());
@@ -328,7 +328,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
             txNew.vout[i - 1].nValue -= masternodePayment;
             if (charityPayment > 0) {
                 //subtract charity payment from the stake reward
-                bool isValid = GetCharityPayee(charityPayee);
+                bool isValid = GetCharityPayee(pindexPrev->nHeight, charityPayee);
                 if (isValid) {
                     txNew.vout.resize(i + 2);
                     txNew.vout[i + 1].scriptPubKey = charityPayee;
@@ -568,35 +568,61 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
 
     // if we don't have at least 6 signatures on a payee, approve whichever is the longest chain
     if (nMaxSignatures < MNPAYMENTS_SIGNATURES_REQUIRED) return true;
-
+    bool masternodePaymentFound = false;
     BOOST_FOREACH (CMasternodePayee& payee, vecPayments) {
-        bool found = false;
         BOOST_FOREACH (CTxOut out, txNew.vout) {
             if (payee.scriptPubKey == out.scriptPubKey) {
                 if(out.nValue >= requiredMasternodePayment)
-                    found = true;
+                    masternodePaymentFound = true;
                 else
                     LogPrint("masternode","Masternode payment is out of drift range. Paid=%s Min=%s\n", FormatMoney(out.nValue).c_str(), FormatMoney(requiredMasternodePayment).c_str());
             }
         }
 
         if (payee.nVotes >= MNPAYMENTS_SIGNATURES_REQUIRED) {
-            if (found) return true;
+            if (!masternodePaymentFound)
+            {
+                CTxDestination address1;
+                ExtractDestination(payee.scriptPubKey, address1);
+                CBitcoinAddress address2(address1);
 
-            CTxDestination address1;
-            ExtractDestination(payee.scriptPubKey, address1);
-            CBitcoinAddress address2(address1);
-
-            if (strPayeesPossible == "") {
-                strPayeesPossible += address2.ToString();
-            } else {
-                strPayeesPossible += "," + address2.ToString();
+                if (strPayeesPossible == "") {
+                    strPayeesPossible += address2.ToString();
+                } else {
+                    strPayeesPossible += "," + address2.ToString();
+                }
+                LogPrint("masternode","CMasternodePayments::IsTransactionValid - Missing required payment of %s to %s\n", FormatMoney(requiredMasternodePayment).c_str(), strPayeesPossible.c_str()); 
             }
         }
     }
+    bool charityPaymentRequired = false;
+    bool charityPaymentFound = false;
+    if (nBlockHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT)
+    {
+        charityPaymentRequired = true;
+        // check for charity payee
+        CScript charityPayee;
+        CAmount requiredCharityPayment = GetCharityPayment(nBlockHeight, nReward);
+        GetCharityPayee(nBlockHeight, charityPayee);
+        BOOST_FOREACH (CTxOut out, txNew.vout) {
+            if (charityPayee == out.scriptPubKey) {
+                if(out.nValue == requiredCharityPayment)
+                    charityPaymentFound = true;
+                else
+                    LogPrint("masternode","Charity payment is out of drift range. Paid=%s Min=%s\n", FormatMoney(out.nValue).c_str(), FormatMoney(requiredCharityPayment).c_str());
+            }
+        }
+        if (!charityPaymentFound)
+        {
+            CTxDestination address1;
+            ExtractDestination(charityPayee, address1);
+            CBitcoinAddress address2(address1);
+            LogPrint("masternode","CMasternodePayments::IsTransactionValid - Missing required charity payment of %s to %s\n", FormatMoney(requiredCharityPayment).c_str(), address2.ToString().c_str()); 
+        }
+        
+    }
 
-    LogPrint("masternode","CMasternodePayments::IsTransactionValid - Missing required payment of %s to %s\n", FormatMoney(requiredMasternodePayment).c_str(), strPayeesPossible.c_str());
-    return false;
+    return masternodePaymentFound && (!charityPaymentRequired ? true : charityPaymentFound);
 }
 
 std::string CMasternodeBlockPayees::GetRequiredPaymentsString()
@@ -815,6 +841,23 @@ bool CMasternodePayments::ValidateMasternodeWinner(const CTxOut& mnPaymentOut, i
    // if (nBlockHeight > MNPAYMENTS_FIX_WINNER_CHECK)
    //     return mnPaymentOut.nValue >= masternodePayment && isMasternodePayeeCorrect;
     return mnPaymentOut.nValue >= masternodePayment;
+}
+
+bool CMasternodePayments::ValidateCharityPayee(const CTxOut& chPaymentOut, int nBlockHeight)
+{
+    CScript charityPayee;
+    bool isValid = GetCharityPayee(nBlockHeight, charityPayee);
+    if (!isValid) 
+        return false;
+
+    CAmount nReward = GetBlockValue(nBlockHeight);
+    CAmount charityPayment = GetCharityPayment(nBlockHeight, nReward);
+    const bool isCharityPayeeCorrect = chPaymentOut.scriptPubKey == charityPayee;
+    if (!isCharityPayeeCorrect)
+        LogPrintf("CMasternodePayments::ValidateCharityPayee() - script pubkey did not match\n");
+    if (chPaymentOut.nValue < charityPayment)
+        LogPrintf("CMasternodePayments::ValidateCharityPayee() - charityPayment did not match\n");
+    return chPaymentOut.nValue == charityPayment;
 }
 
 void CMasternodePaymentWinner::Relay()
