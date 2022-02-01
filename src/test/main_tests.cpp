@@ -142,7 +142,13 @@ BOOST_AUTO_TEST_CASE(superblock_halving_test)
 BOOST_AUTO_TEST_CASE(charity_address_valid_test)
 {
     CScript payee;
-    BOOST_CHECK(GetCharityPayee(payee) == true);
+    BOOST_CHECK(GetCharityPayee(SPORK_21_SUPERBLOCK_START_DEFAULT, payee) == true);
+}
+
+BOOST_AUTO_TEST_CASE(charity_address_invalid_test)
+{
+    CScript payee;
+    BOOST_CHECK(GetCharityPayee(SPORK_20_REWARD_HALVING_START_DEFAULT, payee) == false);
 }
 
 BOOST_AUTO_TEST_SUITE_END()
