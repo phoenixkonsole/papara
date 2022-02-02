@@ -7,6 +7,7 @@
 
 #include "primitives/transaction.h"
 #include "main.h"
+#include "spork.h"
 
 #include <boost/test/unit_test.hpp>
 
@@ -92,16 +93,62 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
         BOOST_CHECK(nSubsidy == 25 * COIN);
         nSum += nSubsidy;
     }
+
+    for (int nHeight = 1578902; nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT; nHeight += 1) {
+        /* Standard reward of 25 coin until 21th spork and halving */
+        CAmount nSubsidy = GetBlockValue(nHeight);
+        BOOST_CHECK(nSubsidy == 25 * COIN);
+        nSum += nSubsidy;
+    }
+
+    for (int nHeight = SPORK_21_SUPERBLOCK_START_DEFAULT; nHeight < SPORK_20_REWARD_HALVING_START_DEFAULT+SPORK_20_REWARD_HALVING_PERIOD_DEFAULT; nHeight += 1) {
+        /* Standard reward of 1000 or 300000 coin after 21th spork and halving */
+        CAmount nSubsidy = GetBlockValue(nHeight);
+        if (nHeight % SPORK_21_SUPERBLOCK_PERIOD_DEFAULT == 0) {
+            BOOST_CHECK(nSubsidy == 300000 * COIN);
+        }else{
+            BOOST_CHECK(nSubsidy == 1000 * COIN);
+        }
+
+        nSum += nSubsidy;
+    }
 }
 
 BOOST_AUTO_TEST_CASE(halving_test)
 {
-    double standartReward = 25;
+    int blockBeforeSporkAndHalving = (SPORK_20_REWARD_HALVING_START_DEFAULT + (SPORK_21_SUPERBLOCK_START_DEFAULT - SPORK_20_REWARD_HALVING_START_DEFAULT)) - 10;
 
-    BOOST_CHECK(GetHalvingReward(0) == standartReward);
-    BOOST_CHECK(GetHalvingReward(1578902) == standartReward);
-    BOOST_CHECK(GetHalvingReward(1578902 + 525600) == (standartReward / 2));
-    BOOST_CHECK(GetHalvingReward(1578902 + 525600 + 525600 + 525600 + 525600) == (standartReward / 5));
+    BOOST_CHECK(GetHalvingReward(0, SPORK_20_REWARD_VALUE) == SPORK_20_REWARD_VALUE);
+    BOOST_CHECK(GetHalvingReward(SPORK_20_REWARD_HALVING_START_DEFAULT, SPORK_20_REWARD_VALUE) == SPORK_20_REWARD_VALUE);
+    /* Before 21 spork block reward is still 25 and default because halving will have not reached */
+    BOOST_CHECK(GetHalvingReward(blockBeforeSporkAndHalving, SPORK_20_REWARD_VALUE) == SPORK_20_REWARD_VALUE);
+    /* On 21 spork block reward is new but default because halving will have not reached */
+    BOOST_CHECK(GetHalvingReward(SPORK_21_SUPERBLOCK_START_DEFAULT, SPORK_21_REWARD_VALUE) == SPORK_21_REWARD_VALUE);
+    /* Cases when 21 spork and halving are reached */
+    BOOST_CHECK(GetHalvingReward(1578902 + 525600, SPORK_21_REWARD_VALUE) == (SPORK_21_REWARD_VALUE / 2)); // 
+    BOOST_CHECK(GetHalvingReward(1578902 + 525600 + 525600 + 525600 + 525600, SPORK_21_REWARD_VALUE) == (SPORK_21_REWARD_VALUE / 5));
+}
+
+BOOST_AUTO_TEST_CASE(superblock_halving_test)
+{
+    double standartReward = 300000;
+
+    BOOST_CHECK(GetSuperblockHalvingReward(0) == standartReward);
+    BOOST_CHECK(GetSuperblockHalvingReward( (SPORK_21_SUPERBLOCK_START_DEFAULT / SPORK_21_SUPERBLOCK_PERIOD_DEFAULT + 1) * SPORK_21_SUPERBLOCK_PERIOD_DEFAULT) == standartReward);
+    BOOST_CHECK(GetSuperblockHalvingReward(((SPORK_21_SUPERBLOCK_START_DEFAULT + 525600) / SPORK_21_SUPERBLOCK_PERIOD_DEFAULT + 1) * SPORK_21_SUPERBLOCK_PERIOD_DEFAULT) == (standartReward / 2));
+    BOOST_CHECK(GetSuperblockHalvingReward(((SPORK_21_SUPERBLOCK_START_DEFAULT + 525600 * 4) / SPORK_21_SUPERBLOCK_PERIOD_DEFAULT + 1) * SPORK_21_SUPERBLOCK_PERIOD_DEFAULT) == (standartReward / 5));
+}
+
+BOOST_AUTO_TEST_CASE(charity_address_valid_test)
+{
+    CScript payee;
+    BOOST_CHECK(GetCharityPayee(SPORK_21_SUPERBLOCK_START_DEFAULT, payee) == true);
+}
+
+BOOST_AUTO_TEST_CASE(charity_address_invalid_test)
+{
+    CScript payee;
+    BOOST_CHECK(GetCharityPayee(SPORK_20_REWARD_HALVING_START_DEFAULT, payee) == false);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

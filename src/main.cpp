@@ -2169,20 +2169,61 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 100 * COIN;
     } else if (nHeight > SPORK_17_MASTERNODE_PAYMENT_CHECK_DEFAULT && nHeight < SPORK_20_REWARD_HALVING_START_DEFAULT) {
         nSubsidy = 50 * COIN;
-    } else if (nHeight >= SPORK_20_REWARD_HALVING_START_DEFAULT) {
-        nSubsidy = GetHalvingReward(nHeight) * COIN;
-    } else {
+    } else if (nHeight >= SPORK_20_REWARD_HALVING_START_DEFAULT && nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT) {
+        nSubsidy = GetHalvingReward(nHeight, SPORK_20_REWARD_VALUE) * COIN;
+    } else if (nHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT) {
+        if (nHeight % SPORK_21_SUPERBLOCK_PERIOD_DEFAULT == 0) {
+            nSubsidy = GetSuperblockHalvingReward(nHeight) * COIN;
+        } else {
+            nSubsidy = GetHalvingReward(nHeight, SPORK_21_REWARD_VALUE) * COIN;
+        }
+    } else{
         nSubsidy = 0.1 * COIN;
     }
 
     return nSubsidy;
 }
 
-double GetHalvingReward(int nHeight)
-{
-    double reward = 25;
+bool GetCharityPayee(int nHeight, CScript& payee)
+{   
+    std::string charity = "Gd7de7cVE7AA5rL4jaBiRWt5Eyux4JUdRF";
+    // link charity address to specific period
+    // replace it in new sporks if required
+    if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT)
+    {
+        return false;
+    }
 
+    CBitcoinAddress btAddress(charity);
+    if (!btAddress.IsValid())
+    {
+        return false;
+    }
+    const CTxDestination dest = btAddress.Get();
+    if (boost::get<CNoDestination>(&dest))
+    {
+        return false;
+    }
+
+    payee = GetScriptForDestination(dest);
+    return true;
+}
+
+double GetHalvingReward(int nHeight, double reward)
+{
     const int period = (nHeight - SPORK_20_REWARD_HALVING_START_DEFAULT) / SPORK_20_REWARD_HALVING_PERIOD_DEFAULT;
+    if (period > 0) {
+        reward /= period + 1;
+    }
+
+    return reward;
+}
+
+double GetSuperblockHalvingReward(int nHeight) 
+{
+    double reward = 300000;
+
+    const int period = (nHeight - SPORK_21_SUPERBLOCK_START_DEFAULT) / SPORK_20_REWARD_HALVING_PERIOD_DEFAULT;
     if (period > 0) {
         reward /= period + 1;
     }
@@ -2201,8 +2242,24 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 		  ret = blockValue  / 100 * 90;               // %90
 	} else if (nHeight < SPORK_19_LOWERED_MASTERNODE_PAYMENT_DEFAULT ) {
 		  ret = blockValue  / 100 * 80;               // %80
-	} else {
+	} else if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT ) {
 		  ret = blockValue  / 100 * 70;               // %70
+    } else {
+        ret = blockValue  / 100 * 40;
+    }
+
+    return ret;
+}
+
+int64_t GetCharityPayment(int nHeight, int64_t blockValue)
+{
+    int64_t ret = 0;
+
+    if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT)
+    {
+        ret = 0;
+    } else {
+        ret = blockValue  / 100 * 20; // 20%
     }
 
     return ret;
@@ -4020,14 +4077,18 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         
     // Check masternode payments
     if (nHeight > GetSporkValue(SPORK_17_MASTERNODE_PAYMENT_CHECK) && block.IsProofOfStake()) {
+        const bool spork21Active = nHeight >= SPORK_21_SUPERBLOCK_PERIOD_DEFAULT ? true : false;
         const CTransaction& tx = block.vtx[1];
         const unsigned int outs = tx.vout.size();
         if (outs < 3)
             return state.DoS(100, error("CheckBlock() : no payment for masternode found"));
 
         if (masternodeSync.IsSynced()) { //there is no budget data to use to check anything -- find the longest chain
-            if (!masternodePayments.ValidateMasternodeWinner(tx.vout[outs-1], nHeight))
+            const int masternodePaymentPos = spork21Active && outs == 4 ? outs-2 : outs-1;
+            if (!masternodePayments.ValidateMasternodeWinner(tx.vout[masternodePaymentPos], nHeight))
                 return state.DoS(100, error("CheckBlock() : wrong masternode address"));
+            if (spork21Active && !masternodePayments.ValidateCharityPayee(tx.vout[outs-1], nHeight))
+                return state.DoS(100, error("CheckBlock() : wrong charity address"));
         } else {
             LogPrintf("CheckBlock() : Client not synced, skipping block payee checks\n");
         }
