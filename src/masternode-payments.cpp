@@ -595,11 +595,10 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
             }
         }
     }
-    bool charityPaymentRequired = false;
-    bool charityPaymentFound = false;
+    bool charityPaymeentOk = true;
     if (nBlockHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT)
     {
-        charityPaymentRequired = true;
+        charityPaymeentOk = false;
         // check for charity payee
         CScript charityPayee;
         CAmount requiredCharityPayment = GetCharityPayment(nBlockHeight, nReward);
@@ -607,12 +606,12 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         BOOST_FOREACH (CTxOut out, txNew.vout) {
             if (charityPayee == out.scriptPubKey) {
                 if(out.nValue == requiredCharityPayment)
-                    charityPaymentFound = true;
+                    charityPaymeentOk = true;
                 else
                     LogPrint("masternode","Charity payment is out of drift range. Paid=%s Min=%s\n", FormatMoney(out.nValue).c_str(), FormatMoney(requiredCharityPayment).c_str());
             }
         }
-        if (!charityPaymentFound)
+        if (!charityPaymeentOk)
         {
             CTxDestination address1;
             ExtractDestination(charityPayee, address1);
@@ -622,7 +621,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         
     }
 
-    return masternodePaymentFound && (!charityPaymentRequired ? true : charityPaymentFound);
+    return masternodePaymentFound && charityPaymeentOk;
 }
 
 std::string CMasternodeBlockPayees::GetRequiredPaymentsString()
@@ -846,18 +845,18 @@ bool CMasternodePayments::ValidateMasternodeWinner(const CTxOut& mnPaymentOut, i
 bool CMasternodePayments::ValidateCharityPayee(const CTxOut& chPaymentOut, int nBlockHeight)
 {
     CScript charityPayee;
-    bool isValid = GetCharityPayee(nBlockHeight, charityPayee);
+    const bool isValid = GetCharityPayee(nBlockHeight, charityPayee);
     if (!isValid) 
         return false;
 
-    CAmount nReward = GetBlockValue(nBlockHeight);
-    CAmount charityPayment = GetCharityPayment(nBlockHeight, nReward);
+    const CAmount nReward = GetBlockValue(nBlockHeight);
+    const CAmount charityPayment = GetCharityPayment(nBlockHeight, nReward);
     const bool isCharityPayeeCorrect = chPaymentOut.scriptPubKey == charityPayee;
     if (!isCharityPayeeCorrect)
         LogPrintf("CMasternodePayments::ValidateCharityPayee() - script pubkey did not match\n");
     if (chPaymentOut.nValue < charityPayment)
         LogPrintf("CMasternodePayments::ValidateCharityPayee() - charityPayment did not match\n");
-    return chPaymentOut.nValue == charityPayment;
+    return chPaymentOut.nValue == charityPayment && isCharityPayeeCorrect;
 }
 
 void CMasternodePaymentWinner::Relay()

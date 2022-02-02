@@ -2186,14 +2186,13 @@ int64_t GetBlockValue(int nHeight)
 
 bool GetCharityPayee(int nHeight, CScript& payee)
 {   
-    std::string charity;
-
+    std::string charity = "Gd7de7cVE7AA5rL4jaBiRWt5Eyux4JUdRF";
     // link charity address to specific period
     // replace it in new sporks if required
-    if (nHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT)
-        charity = "Gd7de7cVE7AA5rL4jaBiRWt5Eyux4JUdRF";
-    else
+    if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT)
+    {
         return false;
+    }
 
     CBitcoinAddress btAddress(charity);
     if (!btAddress.IsValid())
@@ -2245,7 +2244,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 		  ret = blockValue  / 100 * 80;               // %80
 	} else if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT ) {
 		  ret = blockValue  / 100 * 70;               // %70
-    } else{
+    } else {
         ret = blockValue  / 100 * 40;
     }
 
@@ -2259,7 +2258,7 @@ int64_t GetCharityPayment(int nHeight, int64_t blockValue)
     if (nHeight < SPORK_21_SUPERBLOCK_START_DEFAULT)
     {
         ret = 0;
-    }else{
+    } else {
         ret = blockValue  / 100 * 20; // 20%
     }
 
@@ -4078,7 +4077,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         
     // Check masternode payments
     if (nHeight > GetSporkValue(SPORK_17_MASTERNODE_PAYMENT_CHECK) && block.IsProofOfStake()) {
-        bool spork21Active = nHeight >= SPORK_21_SUPERBLOCK_PERIOD_DEFAULT ? true : false;
+        const bool spork21Active = nHeight >= SPORK_21_SUPERBLOCK_PERIOD_DEFAULT ? true : false;
         const CTransaction& tx = block.vtx[1];
         const unsigned int outs = tx.vout.size();
         if (outs < 3)

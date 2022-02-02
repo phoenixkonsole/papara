@@ -108,16 +108,16 @@ BOOST_AUTO_TEST_CASE(test_obfuscation_value)
 BOOST_AUTO_TEST_CASE(test_intial_distribution)
 {
     std::vector<size_t> vecTierSizes;
-    std::vector<int> vecBlockNumbers = {0, 1, 2, 3, 
-                                        4, 13, 14, 43, 
-                                        44, 143, 144, 443,
-                                        444, 1443, 1444, 4443, 
-                                        4444, 8156, 14443, 14444};
+    std::vector<int> vecBlockNumbers = {0, 3, 10, 24, 
+                                        43, 45, 111, 143, 
+                                        145, 345, 443, 444,
+                                        1443, 1444, 14443, 14444, 
+                                        144443, 144444, 144445, 144448};
     std::vector<unsigned int> vecTiers = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_300, MasternodeTiers::TIER_1K, MasternodeTiers::TIER_3K, 
-                                          MasternodeTiers::TIER_3K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_30K, 
-                                          MasternodeTiers::TIER_30K, MasternodeTiers::TIER_100K, MasternodeTiers::TIER_100K, MasternodeTiers::TIER_300K,
-                                          MasternodeTiers::TIER_300K, MasternodeTiers::TIER_1KK, MasternodeTiers::TIER_1KK, MasternodeTiers::TIER_3KK,
-                                          MasternodeTiers::TIER_3KK, MasternodeTiers::TIER_10KK, MasternodeTiers::TIER_10KK, MasternodeTiers::TIER_10KK};
+                                          MasternodeTiers::TIER_3K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_10K, 
+                                          MasternodeTiers::TIER_30K, MasternodeTiers::TIER_30K, MasternodeTiers::TIER_30K, MasternodeTiers::TIER_100K,
+                                          MasternodeTiers::TIER_100K, MasternodeTiers::TIER_300K, MasternodeTiers::TIER_1KK, MasternodeTiers::TIER_3KK,
+                                          MasternodeTiers::TIER_10KK, MasternodeTiers::TIER_100, MasternodeTiers::TIER_300, MasternodeTiers::TIER_1K};
 
     for (auto i = 0; i < MasternodeTiers::TIER_NONE; i++) {
         vecTierSizes.push_back(1);
@@ -164,35 +164,39 @@ BOOST_AUTO_TEST_CASE(test_winning_tier)
 {
     std::vector<size_t> vecTierSizes = {120, 50, 30, 20, 10, 5, 0, 0, 0, 0, 0};
     std::vector<int> vecBlockNumbers = {0, 9, 12, 
-                                        14, 15, 17, 
-                                        20, 23, 29, 
-                                        33, 40, 52};
-    std::vector<unsigned int> vecTiers = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_100, MasternodeTiers::TIER_300,
-                                           MasternodeTiers::TIER_300, MasternodeTiers::TIER_300, MasternodeTiers::TIER_1K,
-                                           MasternodeTiers::TIER_3K, MasternodeTiers::TIER_3K, MasternodeTiers::TIER_10K,
-                                           MasternodeTiers::TIER_30K, MasternodeTiers::TIER_30K, MasternodeTiers::TIER_100};
+                                        15, 17, 32, 
+                                        33, 68, 69, 
+                                        142, 143, 443, 
+                                        444};
+    std::vector<unsigned int> vecTiers = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_100, MasternodeTiers::TIER_100,
+                                           MasternodeTiers::TIER_300, MasternodeTiers::TIER_300, MasternodeTiers::TIER_300,
+                                           MasternodeTiers::TIER_1K, MasternodeTiers::TIER_1K, MasternodeTiers::TIER_3K,
+                                           MasternodeTiers::TIER_10K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_30K,
+                                           MasternodeTiers::TIER_100};
     WinningTierTest(vecTierSizes, vecBlockNumbers, vecTiers);
 }
 
 BOOST_AUTO_TEST_CASE(test_winning_tier2)
 {
     std::vector<size_t> vecTierSizes = {100, 20, 10, 5, 2, 0, 0, 0, 0, 0, 0};
-    std::vector<int> vecBlockNumbers = {0, 3, 10, 
-                                        11, 12, 13, 
-                                        15, 61, 97};
+    std::vector<int> vecBlockNumbers = {0, 10, 24, 
+                                        36, 38, 60, 
+                                        93, 97, 139,
+                                        144};
     std::vector<unsigned int> vecTiers = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_100, MasternodeTiers::TIER_300,
-                                           MasternodeTiers::TIER_300, MasternodeTiers::TIER_1K, MasternodeTiers::TIER_3K,
-                                           MasternodeTiers::TIER_10K, MasternodeTiers::TIER_3K, MasternodeTiers::TIER_100};
+                                           MasternodeTiers::TIER_300, MasternodeTiers::TIER_1K, MasternodeTiers::TIER_1K,
+                                           MasternodeTiers::TIER_3K, MasternodeTiers::TIER_10K, MasternodeTiers::TIER_10K,
+                                           MasternodeTiers::TIER_100};
     WinningTierTest(vecTierSizes, vecBlockNumbers, vecTiers);
 }
 
 BOOST_AUTO_TEST_CASE(test_winning_tier3)
 {
     std::vector<size_t> vecTierSizes = {100, 40, 0, 5, 1, 1, 1, 0, 0, 0, 0};
-    std::vector<int> vecBlockNumbers = {0, 65, 72, 
-                                        78, 85, 92,
-                                        110, 141, 149,
-                                        200};
+    std::vector<int> vecBlockNumbers = {0, 81, 178, 
+                                        301, 381, 623,
+                                        1430, 1433, 1434,
+                                        1534};
     std::vector<unsigned int> vecTiers = {MasternodeTiers::TIER_100, MasternodeTiers::TIER_300, MasternodeTiers::TIER_3K,
                                            MasternodeTiers::TIER_10K, MasternodeTiers::TIER_30K, MasternodeTiers::TIER_30K,
                                            MasternodeTiers::TIER_100K, MasternodeTiers::TIER_100K, MasternodeTiers::TIER_100, 
@@ -203,11 +207,14 @@ BOOST_AUTO_TEST_CASE(test_winning_tier3)
 BOOST_AUTO_TEST_CASE(test_winning_tier_new_tiers)
 {
     std::vector<size_t> vecTierSizes = {0, 0, 0, 0, 0, 0, 100, 20, 10, 5, 1};
-    std::vector<int> vecBlockNumbers = {328, 329, 3462, 3463, 5105, 5106, 11033, 11034, 26123, 26321};
+    std::vector<int> vecBlockNumbers = {328, 15444, 28235, 
+                                        45175, 45176, 73410, 
+                                        73411, 115763, 115764, 
+                                        144000};
     std::vector<unsigned int> vecTiers = {MasternodeTiers::TIER_100K, MasternodeTiers::TIER_100K,  MasternodeTiers::TIER_300K,
                                            MasternodeTiers::TIER_300K, MasternodeTiers::TIER_1KK, MasternodeTiers::TIER_1KK,
                                            MasternodeTiers::TIER_3KK, MasternodeTiers::TIER_3KK, MasternodeTiers::TIER_10KK,
-                                           MasternodeTiers::TIER_10KK};
+                                           MasternodeTiers::TIER_100K};
     WinningTierTest(vecTierSizes, vecBlockNumbers, vecTiers);
 }
 
