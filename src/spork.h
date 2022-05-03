@@ -67,7 +67,7 @@ using namespace boost;
 #define SPORK_20_REWARD_VALUE 25
 #define SPORK_21_SUPERBLOCK_START_DEFAULT 1999000                 //block height
 #define SPORK_21_SUPERBLOCK_PERIOD_DEFAULT 45000                  //blocks count
-#define SPORK_21_REWARD_VALUE 1000
+#define SPORK_21_REWARD_VALUE 1000000
 
 class CSporkMessage;
 class CSporkManager;
