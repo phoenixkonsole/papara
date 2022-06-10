@@ -4077,7 +4077,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         
     // Check masternode payments
     if (nHeight > GetSporkValue(SPORK_17_MASTERNODE_PAYMENT_CHECK) && block.IsProofOfStake()) {
-        const bool spork21Active = nHeight >= SPORK_21_SUPERBLOCK_PERIOD_DEFAULT ? true : false;
+        const bool spork21Active = nHeight >= SPORK_21_SUPERBLOCK_START_DEFAULT ? true : false;
         const CTransaction& tx = block.vtx[1];
         const unsigned int outs = tx.vout.size();
         if (outs < 3)
