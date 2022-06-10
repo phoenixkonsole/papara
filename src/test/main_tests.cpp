@@ -105,9 +105,9 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
         /* Standard reward of 1000 or 300000 coin after 21th spork and halving */
         CAmount nSubsidy = GetBlockValue(nHeight);
         if (nHeight % SPORK_21_SUPERBLOCK_PERIOD_DEFAULT == 0) {
-            BOOST_CHECK(nSubsidy == 300000 * COIN);
+            BOOST_CHECK(nSubsidy == 30000000 * COIN);
         }else{
-            BOOST_CHECK(nSubsidy == 1000 * COIN);
+            BOOST_CHECK(nSubsidy == 1000000 * COIN);
         }
 
         nSum += nSubsidy;
@@ -131,7 +131,7 @@ BOOST_AUTO_TEST_CASE(halving_test)
 
 BOOST_AUTO_TEST_CASE(superblock_halving_test)
 {
-    double standartReward = 300000;
+    double standartReward = 30000000;
 
     BOOST_CHECK(GetSuperblockHalvingReward(0) == standartReward);
     BOOST_CHECK(GetSuperblockHalvingReward( (SPORK_21_SUPERBLOCK_START_DEFAULT / SPORK_21_SUPERBLOCK_PERIOD_DEFAULT + 1) * SPORK_21_SUPERBLOCK_PERIOD_DEFAULT) == standartReward);
