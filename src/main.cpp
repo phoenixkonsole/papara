@@ -2221,7 +2221,7 @@ double GetHalvingReward(int nHeight, double reward)
 
 double GetSuperblockHalvingReward(int nHeight) 
 {
-    double reward = 300000;
+    double reward = 30000000;
 
     const int period = (nHeight - SPORK_21_SUPERBLOCK_START_DEFAULT) / SPORK_20_REWARD_HALVING_PERIOD_DEFAULT;
     if (period > 0) {
