@@ -34,6 +34,10 @@ bool CMasternodeSync::IsBlockchainSynced()
     static bool fBlockchainSynced = false;
     static int64_t lastProcess = GetTime();
 
+    // @TODO Remove L:38 and L:39 after stuck chain is fixed
+    fBlockchainSynced = true;
+    return true;
+
     // if the last call to this function was more than 60 minutes ago (client was in sleep mode) reset the sync process
     if (GetTime() - lastProcess > 60 * 60) {
         Reset();
